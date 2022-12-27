@@ -334,9 +334,10 @@ header{
     }
    
     img{
-        //width: 160px;
+        width: 100%;
         position: relative;
-        height: 127px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
     }
     .tile-details{
         padding: 10px 10px;
@@ -601,9 +602,19 @@ footer{
     .git-card {
         margin-bottom: 2rem;
     }
+    
+    .tile-card img {
+        position: relative;
+        height:auto;
+        width: 100% !important;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
 
 }
-
+.flex-box{
+    display: block !important;
+}
 @keyframes round {
     from{
         transform: rotate(0deg);
