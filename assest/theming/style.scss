@@ -7,7 +7,83 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+.left-trig{
+    left: 17px;
+    top: 188px;
+    border-radius: 50%;
+    background-color: $c-green-100;
+    color: white;
+    padding: 22px 26px;
+}
+.right-trig{
+    right: 17px;
+    top: 188px;
+    border-radius: 50%;
+    background-color: $c-purple-100;
+    color: white;
+    padding: 22px 26px;
+}
 
+.tab-list{
+    a{
+        border-radius: 50%;
+        padding: 10px 17px;
+        font-size: 2rem !important;
+        color: $c-white !important;
+        &.js{
+            background: $c-pisYellow-100;
+        }
+        &.angular{
+            background: $c-red-10;
+        }
+        &.react{
+            background-color: $c-purple-100;
+        }
+        &.html{
+            background-color: $c-red-100;
+        }
+        &.bootstrap{
+            background-color: $c-blue-100;
+        }
+        &.scss{
+            background-color: $c-purple-10;
+        }
+    }
+}
+footer{
+    .site-menu{
+        a{
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            background-color: $c-white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.18);
+
+            &.fb{
+                color: $c-blue-100;
+            }
+            &.insta{
+                color: $c-pink-100
+            }
+            &.wp{
+                color:$c-green-100
+            }
+            &.ytb{
+                color: $c-red-100;
+            }
+        }
+    }
+}
+.main-heigtlight{
+    font-family: 'Source Serif Pro', serif;
+    text-transform: capitalize;
+    span{
+        color: $c-pisPink-100;
+    }
+}
 @mixin buttonV1(){
     padding: 1rem 0.2rem;
     color: $c-white !important;
@@ -120,7 +196,7 @@ header{
 .hero-card{
     width:100%;
     .site-menu{
-        width: 465px;
+        width: 362px;
         ul{
             width: 100%;
             overflow-x: scroll;
@@ -318,6 +394,7 @@ header{
     background: #FFFFFF;
     border: 0.5px solid rgba(0, 0, 0, 0.29);
     border-radius: 4px;
+    color: $c-black-10;
     h4{
         text-transform: uppercase;
     }
@@ -327,9 +404,10 @@ header{
     }
 }
 .git-card:hover{
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px -2px 30px 0px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
 }
+
 .top-large{
     margin-top:230px;
 }
@@ -383,7 +461,22 @@ header{
     margin-right: 0.5rem;
 }
 
-
+footer{
+    //background-color: $c-green-10;
+    .footer-shape{
+        z-index: 1;
+    }
+    .footer-widget{
+        z-index: 9999999;
+    }
+   .footer-logo img{
+        z-index: 999999;
+        width: 425px;
+   }
+   .main-title span{
+    color: $c-green-100;
+   }
+}
 
 @keyframes round {
     from{

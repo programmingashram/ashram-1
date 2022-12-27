@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="assest/theming/style.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+
+
     </head>
     <body>
         <header class="p-1 relative">
@@ -150,18 +156,18 @@
                 </div>
             </div>
         </section>
-        <article class="mt-2 mb-2">
+        <article class="mt-2 mb-2 relative">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="head-title mb-3">
                             <h2>Ashram Updates</h2>
                         </div>
-                       <div class="blog-area">
+                       <div class="blog-area ">
                             <div class="site-menu">
                                 <ul>
                                     <li class="me-2">
-                                        <a href="#">
+                                        <a href="#first">
                                             <div class="blog-card">
                                                 <div class="blog-img">
                                                     <img src="./assest/images/blog-1.svg" alt="" class="w-100"> 
@@ -266,7 +272,7 @@
                                         </a>
                                     </li>
                                     <li class="me-2">
-                                        <a href="#">
+                                        <a href="#" id="last">
                                             <div class="blog-card">
                                                 <div class="blog-img">
                                                     <img src="./assest/images/blog-1.svg" alt="" class="w-100"> 
@@ -281,8 +287,10 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>  
+                            </div>
                        </div>
+                       <a href="#first" class="absolute right-trig"><i class="fa fa-angle-right"></i></a>
+                       <a href="#last" class="absolute left-trig"> <i class="fa fa-angle-left"></i></a>
                     </div>
                 </div>
             </div>
@@ -415,27 +423,43 @@
                 </div>
                 <div class="row">
                     <div class="col">
+                        <div class="main-heigtlight mb-4">
+                            <h1>
+                                <span>We are holding</span> <br> 
+                                "Mock Interviews" for your best Practice. 
+                            </h1>
+                        </div>
                         <div class="tab-list">
                             <div class="site-menu">
                                 <ul>
                                     <li class="me-2">
-                                        <a href="#">
-                                            JavaScript
+                                        <a href="#" class="js">
+                                            <i class="fa-brands fa-js"></i>
                                         </a>
                                     </li>
                                     <li class="me-2">
-                                        <a href="#">
-                                            JavaScript
+                                        <a href="#" class="angular">
+                                            <i class="fa-brands fa-angular"></i>
                                         </a>
                                     </li>
                                     <li class="me-2">
-                                        <a href="#">
-                                            JavaScript
+                                        <a href="#" class="react">
+                                            <i class="fa-brands fa-react"></i>
                                         </a>
                                     </li>
                                     <li class="me-2">
-                                        <a href="#">
-                                            JavaScript
+                                        <a href="#"  class="html">
+                                            <i class="fa-brands fa-html5"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a href="#" class="bootstrap">
+                                            <i class="fa-brands fa-bootstrap"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a href="#" class="scss">
+                                            <i class="fa-brands fa-sass"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -542,10 +566,11 @@
         </article>
 
         <article class="relative green-bg mb-5">
+            <img src="./assest/images/bg-shape.svg" alt="" class="bg-shape w-100 absolute">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="head-title text-white mb-3">
+                        <div class="head-title text-white mb-2">
                             <h2>MocK APIs </h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry
@@ -586,14 +611,14 @@
                     </div>
                 </div>
             </div>
-            <img src="./assest/images/bg-shape.svg" alt="" class="bg-shape w-100 absolute">
+          
         </article>
 
         <article class="top-large">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="head-title mb-3">
+                        <div class="head-title mb-3 text-white">
                             <h2>Ashram Workflow </h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry
@@ -612,21 +637,21 @@
                         <div class="git-card p-1 mb-1">
                             <h4 class="mb-1">Join Our GitHub </h4>
                             <p class="mb-1">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum suscipit.
+                                Lorem ipsum dolor sitamet consectetur, <br> adipisicing elit. Illum suscipit.
                             </p>
                             <a href="#">JOIN NOW</a>
                         </div>
                         <div class="git-card p-1 mb-1">
                             <h4 class="mb-1">Check Issues </h4>
                             <p class="mb-1">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum suscipit.
+                                Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Illum suscipit.
                             </p>
                             <a href="#">JOIN NOW</a>
                         </div>
                         <div class="git-card p-1">
                             <h4 class="mb-1">Collaborate with ashram </h4>
                             <p class="mb-1">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum suscipit.
+                                Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Illum suscipit.
                             </p>
                             <a href="#">JOIN NOW</a>
                         </div>
@@ -639,5 +664,59 @@
                 </div>
             </div>
         </article>
+
+        <footer class="relative mt-3">
+            <img src="./assest/images/foot-shape.svg" alt="" class="absolute w-100 footer-shape">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-widget relative text-white">
+                            <h1 class="main-title mb-2">Programming <span>Ashram</span></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laudantium earum hic praesentium ipsam temporibus dolor vitae saepe, illum consectetur facere neque culpa modi possimus quis maxime. Id, quia repudiandae.</p>
+                            <form action="" class="mt-2">
+                                <div class="search-bar">
+                                    <label for="" class="p-1"><i class="fa fa-search" aria-hidden="true"></i></label>
+                                    <input type="text" placeholder="Ex. - JavaScript, Angular, React JS" class="pe-3 ps-3 search pb-05 pt-05">
+                                </div>
+                            </form>
+                           <div class="site-menu mt-2">
+                                <ul>
+                                    <li class="me-1">
+                                        <a href="#" class="fb">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-1">
+                                        <a href="#" class="wp">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-1">
+                                        <a href="#" class="insta">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-1">
+                                        <a href="#" class="ytb">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-1">
+                                        <a href="#">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-logo text-end">
+                            <img src="./assest/images/baba-1.svg" alt="" class="relative">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

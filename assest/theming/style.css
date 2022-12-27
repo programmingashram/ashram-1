@@ -195,6 +195,81 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.left-trig {
+  left: 17px;
+  top: 188px;
+  border-radius: 50%;
+  background-color: #3BB44A;
+  color: white;
+  padding: 22px 26px;
+}
+
+.right-trig {
+  right: 17px;
+  top: 188px;
+  border-radius: 50%;
+  background-color: #B568FF;
+  color: white;
+  padding: 22px 26px;
+}
+
+.tab-list a {
+  border-radius: 50%;
+  padding: 10px 17px;
+  font-size: 2rem !important;
+  color: #FFFFFF !important;
+}
+.tab-list a.js {
+  background: #FDB03C;
+}
+.tab-list a.angular {
+  background: #F35A28;
+}
+.tab-list a.react {
+  background-color: #B568FF;
+}
+.tab-list a.html {
+  background-color: #E31E25;
+}
+.tab-list a.bootstrap {
+  background-color: #25A6FF;
+}
+.tab-list a.scss {
+  background-color: #BFB2F3;
+}
+
+footer .site-menu a {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.18);
+}
+footer .site-menu a.fb {
+  color: #25A6FF;
+}
+footer .site-menu a.insta {
+  color: #FF61F6;
+}
+footer .site-menu a.wp {
+  color: #3BB44A;
+}
+footer .site-menu a.ytb {
+  color: #E31E25;
+}
+
+.main-heigtlight {
+  font-family: "Source Serif Pro", serif;
+  text-transform: capitalize;
+}
+.main-heigtlight span {
+  color: #C95C95;
+}
+
 .container {
   margin: 0 auto;
   width: 95%;
@@ -316,7 +391,7 @@ header {
   width: 100%;
 }
 .hero-card .site-menu {
-  width: 465px;
+  width: 362px;
 }
 .hero-card .site-menu ul {
   width: 100%;
@@ -522,6 +597,7 @@ header {
   background: #FFFFFF;
   border: 0.5px solid rgba(0, 0, 0, 0.29);
   border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
 }
 .git-card h4 {
   text-transform: uppercase;
@@ -532,7 +608,7 @@ header {
 }
 
 .git-card:hover {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px -2px 30px 0px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
 }
 
@@ -584,6 +660,20 @@ header {
 .git-progress img {
   width: 177px;
   margin-right: 0.5rem;
+}
+
+footer .footer-shape {
+  z-index: 1;
+}
+footer .footer-widget {
+  z-index: 9999999;
+}
+footer .footer-logo img {
+  z-index: 999999;
+  width: 425px;
+}
+footer .main-title span {
+  color: #3BB44A;
 }
 
 @-webkit-keyframes round {
