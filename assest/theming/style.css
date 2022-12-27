@@ -670,7 +670,10 @@ footer .footer-widget {
 }
 footer .footer-logo img {
   z-index: 999999;
-  width: 425px;
+  width: 503px;
+  height: 441px;
+  top: -105px;
+  margin-bottom: -97px;
 }
 footer .main-title span {
   color: #3BB44A;

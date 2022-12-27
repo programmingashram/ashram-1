@@ -77,6 +77,7 @@ footer{
         }
     }
 }
+
 .main-heigtlight{
     font-family: 'Source Serif Pro', serif;
     text-transform: capitalize;
@@ -471,7 +472,10 @@ footer{
     }
    .footer-logo img{
         z-index: 999999;
-        width: 425px;
+        width: 503px;
+        height: 441px;
+        top: -105px;
+        margin-bottom: -97px;
    }
    .main-title span{
     color: $c-green-100;
