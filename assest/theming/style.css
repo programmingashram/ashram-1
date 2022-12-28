@@ -733,6 +733,9 @@ footer .main-title span {
     margin-bottom: 3rem;
     left: 0;
     right: 50%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .hero-img img {
     width: 100%;
@@ -794,6 +797,9 @@ footer .main-title span {
     width: 100% !important;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+  }
+  .slot.me-1 {
+    margin-right: 0rem !important;
   }
 }
 .flex-box {

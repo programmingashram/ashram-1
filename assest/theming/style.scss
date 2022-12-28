@@ -355,6 +355,7 @@ header{
     }
 }
 
+
 .progress{
     img{
         width: 77px;
@@ -537,6 +538,9 @@ footer{
         margin-bottom: 3rem;
         left: 0;
         right: 50%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
         img{
             width: 100%;
@@ -565,7 +569,7 @@ footer{
             float: left;
         }
     }
-
+   
     .float-left{
         float: left;
     }
@@ -609,6 +613,11 @@ footer{
         width: 100% !important;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
+    }
+    .slot {
+        &.me-1{
+            margin-right: 0rem !important;
+        }
     }
 
 }
