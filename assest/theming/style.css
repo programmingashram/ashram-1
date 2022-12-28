@@ -680,6 +680,12 @@ footer .main-title span {
 }
 
 @media (max-width: 767px) {
+  .hero-card {
+    margin-top: 36px;
+  }
+  .hero-card .site-menu {
+    width: auto;
+  }
   footer {
     padding: 20px 0px;
   }
