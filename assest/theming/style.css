@@ -699,6 +699,12 @@ footer .main-title span {
     margin-bottom: 0px;
     height: auto;
   }
+  section .col-2 {
+    width: 100%;
+  }
+  section .col-2 .ring {
+    top: -40px;
+  }
   .mobile-hide {
     display: none;
   }
@@ -723,7 +729,7 @@ footer .main-title span {
   }
   .hero-img {
     margin-bottom: 3rem;
-    left: 36%;
+    left: 0;
     right: 50%;
   }
   .hero-img img {
