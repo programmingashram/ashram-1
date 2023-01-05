@@ -394,12 +394,17 @@ header{
         color: $c-white;
     }
 }
-
+.git-images{
+    top: -50px;
+    img{
+        border-radius: 4px;
+    }
+} 
 .git-card{
     background: #FFFFFF;
     border: 0.5px solid rgba(0, 0, 0, 0.29);
-    border-radius: 4px;
     color: $c-black-10;
+    width: 396px;
     h4{
         text-transform: uppercase;
     }
@@ -487,12 +492,18 @@ footer{
 }
 
 @media(max-width:767px){
-    .tree-section img {
-        position: absolute;
-        top: -362px;
-        z-index: -1;
-        right: 0;
-        height: 414px;
+    .custom-pose {
+        left: 0 !important;
+        width: 79%;
+        bottom: -131px;
+        border-radius: 8px;
+    }
+    .git-images{
+        margin-bottom: 8rem;
+        top: 0;
+    }
+    .git-card{
+        width: 100%;
     }
     .hero-card {
         margin-top: 36px;
@@ -629,6 +640,12 @@ footer{
         }
     }
 
+}
+.custom-pose{
+    left: -64px;
+    width: 78%;
+    bottom: -131px;
+    border-radius: 8px;
 }
 .flex-box{
     display: block !important;
