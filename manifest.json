@@ -1,9 +1,9 @@
 {
-  "name": "Programming'Ashram",
+  "name": "Programming Ashram",
   "short_name": "Programming Ashram",
   "start_url": "app.html",
   "display": "standalone",
-  "background_color": "#3BB44A",
+  "background_color": "#3bb44a",
   "theme_color": "#3BB44A",
   "orientation": "portrait-primary",
   "scope": "./",
