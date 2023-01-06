@@ -1,6 +1,6 @@
 {
-  "name": "Dev'Coffee",
-  "short_name": "DevCoffee",
+  "name": "Programming'Ashram",
+  "short_name": "PA",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fdfdfd",
