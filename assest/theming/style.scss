@@ -492,6 +492,9 @@ footer{
 }
 
 @media(max-width:767px){
+    header{
+        position: static !important;
+    }
     .custom-pose {
         left: 0 !important;
         width: 79%;
