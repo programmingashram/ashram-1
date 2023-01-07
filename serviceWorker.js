@@ -1,7 +1,7 @@
 const ProgrammingAshram = "programming-ashram-v1";
 const assets = [
   "/",
-  "/app.html",
+  "./app.html",
   "/assest/theming/style.css",
   "/js/app.js",
 ];
