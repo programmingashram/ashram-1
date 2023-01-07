@@ -1,0 +1,17 @@
+.mobile-header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.fixed-cntent{
+    position: fixed;
+    bottom: 0;
+}
+.banner-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
