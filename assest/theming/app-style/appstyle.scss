@@ -23,12 +23,14 @@
         color: #6c757d!important;
     }
     .nav-link.active{
+        border-bottom: 1px solid black;
         color: black!important;
     }
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: transparent;
     color: black;
+    
 }
 
 .sub-menu{

@@ -26,6 +26,7 @@
   color: #6c757d !important;
 }
 .nav-pills .nav-link.active {
+  border-bottom: 1px solid black;
   color: black !important;
 }
 
