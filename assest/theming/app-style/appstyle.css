@@ -17,4 +17,27 @@
   border-radius: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.nav-pills li {
+  width: 50%;
+}
+.nav-pills .nav-link {
+  color: #6c757d !important;
+}
+.nav-pills .nav-link.active {
+  color: black !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: black;
+}
+
+.sub-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 47px;
+  background-color: white;
+  z-index: 9999;
 }/*# sourceMappingURL=appstyle.css.map */

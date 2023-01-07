@@ -15,3 +15,25 @@
     border-radius: 1rem;
     object-fit: cover;
 }
+.nav-pills{
+    li{
+        width: 50%;
+    }
+    .nav-link{
+        color: #6c757d!important;
+    }
+    .nav-link.active{
+        color: black!important;
+    }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: black;
+}
+
+.sub-menu{
+    position: sticky;
+    top: 47px;
+    background-color: white;
+    z-index: 9999;
+}
