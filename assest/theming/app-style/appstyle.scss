@@ -23,8 +23,8 @@
         color: #6c757d!important;
     }
     .nav-link.active{
-        border-bottom: 1px solid #8ac187;
-        color: #8ac187!important;
+        border-bottom: 1px solid black;
+        color: black!important;
     }
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
@@ -39,11 +39,10 @@
     background-color: white;
     z-index: 9999;
 }
-
-.float-card, .cardv1{
-    background-color: #8ac187;
+.accordion-button:not(.collapsed){
+    background-color: #dc3545!important;
     color: white;
-    a{
-        color: white !important;
-    }
+}
+.accordion-button:not(.collapsed)::after{
+    filter: invert(1);
 }
