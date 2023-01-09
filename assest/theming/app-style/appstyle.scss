@@ -60,7 +60,8 @@
     }
     .nav-link.active{
         border-bottom: 2px solid #49a54c;
-        color: #49a54c;
+        color: #49a54c !important;
+        font-weight: 700;
         border-radius: 0 !important;
     }
 }
