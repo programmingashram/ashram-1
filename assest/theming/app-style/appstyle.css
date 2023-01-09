@@ -6,6 +6,10 @@
   background-color: #49a54c;
 }
 
+.bg-green {
+  background-color: #49a54c;
+}
+
 .cardv1, .courses {
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
   background-color: white;
