@@ -9,12 +9,27 @@
 .cardv1, .courses{
     box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
     background-color: white;
+    img{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .card-controls{
+        i{
+            font-size: 1rem;
+        }
+    }
 }
 .courses{
+    a{
+        box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
+    }
     i{
-        font-size: 42px;
+       
+        font-size: 18px !important;
         right: 20px;
-        top: 7px;
+        top: 7px !important;
+        padding-right: 3px !important;
+        padding-left: 4px !important;
     }
 }
 
@@ -72,6 +87,7 @@
     padding: 3px;
     border-bottom: 1px solid #49a54c !important;
     border: none;
+    border-radius: 0px;
 }
 .searchbar:focus{
     outline: none;

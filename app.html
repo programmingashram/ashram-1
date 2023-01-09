@@ -74,13 +74,13 @@
         <div class="container-fluid sub-menu shadow-sm">
             <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
                 <li class="nav-item text-left" role="presentation">
-                  <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Explore</a>
+                  <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item text-center" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-updated" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Updates</button>
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-updated" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-newspaper"></i> News</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Dashboard</button>
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-code-compare"></i>  Collab</button>
                 </li>
                 
             </ul>
@@ -160,28 +160,21 @@
                                 </div>
                                 <hr>
                                 <div class="col-md-12">
-                                    <div class="courses shadow-lg p-3 rounded position-relative">
+                                    <div class="courses shadow-lg rounded position-relative">
                                         <div class="course-card">
-                                            <h1 class="h5">
-                                                <span>
-                                                    <i class="fa-brands fa-angular text-danger position-absolute"></i>
-                                                </span>
-
-                                                Angular Tutorials
-                                            </h1>
-                                            <hr>
-                                            <div class="disc">
-                                                <h1 class="h6 text-success">Course Description</h1>
-                                               
-                                                <p>
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            
-                                            </div>
-                                            <hr>
-                                            <div class="course-card-footer">
-                                                <a href="html5.html" class="text-success nav-link p-0">Check Syllabus</a>
-                                            </div>
+                                           <img src="./assest/images/course-angular.svg" alt="" class="w-100">
+                                           <div class="course-details ps-3 pt-3 p-2">
+                                                <span class="badge bg-success">Online</span>
+                                                <span class="badge bg-info">Offline</span>
+                                                <h1 class="h5 mt-1">Angular - Basic Level (01)</h1>
+                                                <h1 class="h6 text-secondary">Lorem Ipsum Basic Level</h1>
+                                           </div>
+                                           <div class="card-controls ps-3 pe-3 pb-3 d-flex justify-content-between align-items-center">
+                                                <a href="#" class="nav-link p-0 text-secondary">Take Classes</a>
+                                                <a href="#" class="bg-danger h6 nav-link p-0 text-white p-3 rounded">
+                                                    <i class="fa fa-play text-light"></i>
+                                                </a>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +202,7 @@
                                                         <i class="fa-brands h1 mb-0 fa-angular text-danger"></i>
                                                     </div>
                                                     <div class="title-header p-3">
-                                                        <h1 class="h4 mb-0 text-secondary">Angular is release version.</h1>
+                                                        <h1 class="h6 mb-0 text-secondary">Angular is release version.</h1>
                                                     </div>
                                                 </div>
                                             </a>
@@ -226,7 +219,7 @@
                                                         <i class="fa-brands h1 mb-0 fa-react text-primary"></i>
                                                     </div>
                                                     <div class="title-header p-3">
-                                                        <h1 class="h4 mb-0 text-secondary">React is release version.</h1>
+                                                        <h1 class="h6 mb-0 text-secondary">React is release version.</h1>
                                                     </div>
                                                 </div>
                                             </a>
@@ -253,7 +246,7 @@
                                 <hr>
                                 <div class="col-md-6">
                                     <div class="joincard bg-primary p-3 rounded mb-3 shadow-lg d-flex justify-content-between align-items-center">
-                                        <a href="#" class="bg-light ps-3 pe-3 rounded nav-link">
+                                        <a href="#" class="bg-light shadow-lg ps-3 pe-3 rounded nav-link">
                                             <i class="fas fa-code-branch"></i>
                                         </a>
                                         <h3 class="h6 mb-0 text-light">Stacblitz Tutorials</h3>
@@ -262,7 +255,7 @@
                                         </a>
                                     </div>
                                     <div class="joincard bg-danger p-3 rounded mb-3 shadow-lg d-flex justify-content-between align-items-center">
-                                        <a href="#" class="bg-light text-danger rounded nav-link">
+                                        <a href="#" class="bg-light shadow-lg text-danger rounded nav-link">
                                             <i class="fa-brands fa-youtube "></i>
                                         </a>
                                         <h3 class="h6 mb-0 text-light">Youtube Tutorials</h3>
@@ -271,7 +264,7 @@
                                         </a>
                                     </div>
                                     <div class="joincard bg-dark p-3 rounded mb-3 shadow-lg d-flex justify-content-between align-items-center">
-                                        <a href="#" class="bg-light text-dark rounded nav-link">
+                                        <a href="#" class="bg-light shadow-lg text-dark rounded nav-link">
                                             <i class="fa-brands fa-github"></i>
                                         </a>
                                         <h3 class="h6 mb-0 text-light">Gitub Tutorials</h3>
@@ -317,7 +310,7 @@
                                                     <i class="fa-brands h1 mb-0 fa-angular text-danger"></i>
                                                 </div>
                                                 <div class="title-header p-3">
-                                                    <h1 class="h4 mb-0 text-secondary">Angular is release version.</h1>
+                                                    <h1 class="h6 mb-0 text-secondary">Angular is release version.</h1>
                                                 </div>
                                             </div>
                                         </a>
@@ -334,7 +327,7 @@
                                                     <i class="fa-brands h1 mb-0 fa-react text-primary"></i>
                                                 </div>
                                                 <div class="title-header p-3">
-                                                    <h1 class="h4 mb-0 text-secondary">React is release version.</h1>
+                                                    <h1 class="h6 mb-0 text-secondary">React is release version.</h1>
                                                 </div>
                                             </div>
                                         </a>
