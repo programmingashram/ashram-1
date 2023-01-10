@@ -126,4 +126,19 @@
 
 .accordion-button:not(.collapsed)::after {
   filter: invert(1);
+}
+
+.show {
+  display: block !important;
+}
+
+.site-menu {
+  position: fixed;
+  height: 100%;
+  width: 60%;
+  display: none;
+  background-color: white;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0px 12px 88px 5px rgba(0, 0, 0, 0.4784313725);
 }/*# sourceMappingURL=appstyle.css.map */
