@@ -7,6 +7,23 @@
   background-color: #49a54c;
 }
 
+.news-icon {
+  width: 60px;
+}
+.news-icon i {
+  padding: 11px 14px;
+  border: 1px solid rgba(128, 128, 128, 0.3294117647);
+  border-radius: 8px;
+  margin-top: 17px;
+}
+
+.title-header h1 {
+  width: 232px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .cardv1, .courses {
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
   background-color: white;
@@ -82,6 +99,7 @@
 
 .blog-card {
   background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1411764706);
 }
 
 .searchbar {
