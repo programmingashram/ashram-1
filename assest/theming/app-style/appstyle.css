@@ -31,8 +31,7 @@
   border-top-right-radius: 8px !important;
 }
 .cardv1 img, .courses img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 8px;
 }
 .cardv1 .card-controls i, .courses .card-controls i {
   font-size: 1rem;
