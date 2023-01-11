@@ -1,3 +1,8 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .mobile-header {
   z-index: 9999;
   background-color: #49a54c;
@@ -27,14 +32,13 @@
 .cardv1, .courses {
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
   background-color: white;
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
-}
-.cardv1 img, .courses img {
-  border-radius: 8px;
 }
 .cardv1 .card-controls i, .courses .card-controls i {
   font-size: 1rem;
+}
+
+.cardv1 img {
+  border-radius: 8px;
 }
 
 .courses a {
@@ -46,6 +50,10 @@
   top: 7px !important;
   padding-right: 3px !important;
   padding-left: 4px !important;
+}
+.courses img {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
 }
 
 .slider img {
@@ -115,6 +123,7 @@
 
 [placeholder="Search Here..."] {
   color: green;
+  border-radius: 0;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
