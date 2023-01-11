@@ -24,7 +24,7 @@ body {
 
 .title-header h1 {
   width: 232px;
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -35,6 +35,20 @@ body {
 }
 .cardv1 .card-controls i, .courses .card-controls i {
   font-size: 1rem;
+}
+
+.course-list {
+  gap: 10px 19px;
+  background-color: white;
+  border-radius: 8px;
+}
+.course-list .list-icon {
+  background-color: white;
+  border-radius: 8px;
+}
+.course-list .list-icon i {
+  padding: 1rem;
+  font-size: 1.3rem;
 }
 
 .cardv1 img {
