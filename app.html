@@ -19,18 +19,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <!-- PWA -->
         <link rel="manifest" href="manifest.json">
-        <!-- ios support -->
-        <!-- <link rel="apple-touch-icon" href="assest/images/icons/icon-72x72.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-96x96.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-128x128.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-144x144.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-152x152.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-192x192.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-384x384.png">
-        <link rel="apple-touch-icon" href="assest/images/icons/icon-512x512.png">
-        <meta name="apple-mobile-web-app-status-bar" content="#db4938">
-        <meta name="theme-color" content="#db4938"> -->
-
     </head>
     <body id="body" class="bg-light">
         <header class="p-1 relative shadow-sm mobile-header">
@@ -83,7 +71,6 @@
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-code-compare"></i>  Collab</button>
                 </li>
-                
             </ul>
         </div>
         
@@ -149,12 +136,12 @@
                                 <div class="col-md-12">
                                     <div class="course-list mb-2 shadow-lg d-flex align-items-center p-3">
                                         <div class="list-icon shadow-lg">
-                                            <i class="fa-brands fa-react text-info"></i>
+                                            <i class="fa-brands fa-js text-warning"></i>
                                         </div>
                                         <div class="list-details">
-                                            <h1 class="h6">React Js Tutorials</h1>
-                                            <p class="text-secondary mb-0">
-                                                80 syllabus available...
+                                            <h1 class="h6">JavaScript Tutorials</h1>
+                                            <p class="mb-0">
+                                                <a href="./js-tutorial/index.html" class="nav-link text-secondary p-0">80 syllabus available...</a>
                                             </p>
                                         </div>
                                     </div>
@@ -164,8 +151,8 @@
                                         </div>
                                         <div class="list-details">
                                             <h1 class="h6">Bootstrap Tutorials</h1>
-                                            <p class="text-secondary mb-0">
-                                                80 syllabus available...
+                                            <p class="mb-0">
+                                                <a href="#" class="nav-link text-secondary p-0">80 syllabus available...</a>
                                             </p>
                                         </div>
                                     </div>
@@ -175,8 +162,8 @@
                                         </div>
                                         <div class="list-details">
                                             <h1 class="h6">Angular Tutorials</h1>
-                                            <p class="text-secondary mb-0">
-                                                80 syllabus available...
+                                            <p class="mb-0">
+                                                <a href="#" class="nav-link text-secondary p-0">80 syllabus available...</a>
                                             </p>
                                         </div>
                                     </div>
@@ -191,7 +178,7 @@
                                 <div class="col-md-12">
                                     <div class="head mb-3 d-flex align-items-center justify-content-between">
                                         <h1 class="h4"><i class="fa-solid fa-code-branch me-1"></i> Start Learning</h1>
-                                        <a href="#" class="nav-link text-success">View all</a>
+                                        <a href="./js-tutorial/index.html" class="nav-link text-success">View all</a>
                                     </div>
                                 </div>
                                 <hr>
@@ -309,8 +296,6 @@
                                 <div class="col-md-12">
                                     <div class="head mb-3 d-flex align-items-center justify-content-between">
                                         <h1 class="h4"><i class="fa-solid fa-thumbs-up me-1"></i>
-
-
                                              Join us</h1>
                                     </div>
                                 </div>
@@ -454,37 +439,37 @@
             </div>
         </article>
 
-            <div class="site-menu p-3" id="site-menu">
-                <div class="profile text-center">
-                    <a href="#" class="position-absolute top-0 end-0 nav-link text-danger" id="close">
-                        <i class="fa fa-close"></i>
-                    </a>
-                    <img src="./assest/images/logo.svg" alt="">
-                    <div class="pro-title mt-1">
-                        <h1 class="h5">Programing Ashram</h1>
-                        <h3 class="h6 text-secondary">IT Training Center</h3>
-                    </div>
-                    <hr>
+        <div class="site-menu p-3" id="site-menu">
+            <div class="profile text-center">
+                <a href="#" class="position-absolute top-0 end-0 nav-link text-danger" id="close">
+                    <i class="fa fa-close"></i>
+                </a>
+                <img src="./assest/images/logo.svg" alt="">
+                <div class="pro-title mt-1">
+                    <h1 class="h5">Programing Ashram</h1>
+                    <h3 class="h6 text-secondary">IT Training Center</h3>
                 </div>
-             
-                <div class="default-menu mt-5">
-                    <h3 class="h6">Our Menu</h3>
-                    <ul class="navbar-nav text-left">
-                        <li class="nav-item text-left">
-                            <a href="#" class="nav-link text-dark"><i class="fa-sharp fa-solid fa-house"></i> Go Home</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a href="#" class="nav-link text-dark"><i class="fa-solid fa-newspaper"></i> News & Updates</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a href="#" class="nav-link text-dark">
-                                <i class="fa fa-cog"></i>
-                                Setings</a>
-                        </li>
-                    </ul>
-                </div>
-             
+                <hr>
             </div>
+            
+            <div class="default-menu mt-5">
+                <h3 class="h6">Our Menu</h3>
+                <ul class="navbar-nav text-left">
+                    <li class="nav-item text-left">
+                        <a href="#" class="nav-link text-dark"><i class="fa-sharp fa-solid fa-house"></i> Go Home</a>
+                    </li>
+                    <li class="nav-item text-left">
+                        <a href="#" class="nav-link text-dark"><i class="fa-solid fa-newspaper"></i> News & Updates</a>
+                    </li>
+                    <li class="nav-item text-left">
+                        <a href="#" class="nav-link text-dark">
+                            <i class="fa fa-cog"></i>
+                            Setings</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
       
 
         <script src="./js/app.js"></script>
