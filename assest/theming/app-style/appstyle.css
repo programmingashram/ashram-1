@@ -202,5 +202,7 @@ body {
 }
 
 .stack-iframe iframe {
-  height: 350px;
+  height: 470px;
+  width: 100%;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=appstyle.css.map */
