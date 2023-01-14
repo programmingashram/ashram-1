@@ -12,11 +12,29 @@ let jsSyllabus= [
         exampleLink:"https://stackblitz.com/edit/js-doms?embed=1&file=index.js&hideNavigation=1&theme=light",
         id:"syl2"
     },{
+        title: "Var,Let and Cost",
+        icon: "../assest/images/var.svg",
+        theoryLink:"https://programmingashram.github.io/javascript-function/",
+        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
+        id:"syl3"
+    },{
         title: "Function in JS",
         icon: "../assest/images/function.svg",
         theoryLink:"https://programmingashram.github.io/javascript-function/",
         exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
         id:"syl3"
+    },{
+        title: "Var,Let and Cost",
+        icon: "../assest/images/var.svg",
+        theoryLink:"https://programmingashram.github.io/javascript-function/",
+        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
+        id:"syl3"
+    },{
+        title: "Object in JS",
+        icon: "../assest/images/object.svg",
+        theoryLink:"https://programmingashram.github.io/javascript-function/",
+        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
+        id:"syl4"
     }
 ]
 
