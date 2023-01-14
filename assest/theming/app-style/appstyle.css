@@ -16,6 +16,10 @@ body {
   height: 800px;
 }
 
+.markdown-body {
+  font-size: 13px !important;
+}
+
 .news-icon {
   width: 60px;
 }
