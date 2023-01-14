@@ -22,19 +22,13 @@ let jsSyllabus= [
         icon: "../assest/images/function.svg",
         theoryLink:"https://programmingashram.github.io/javascript-function/",
         exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
-        id:"syl3"
-    },{
-        title: "Var,Let and Cost",
-        icon: "../assest/images/var.svg",
-        theoryLink:"https://programmingashram.github.io/javascript-function/",
-        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
-        id:"syl3"
+        id:"syl4"
     },{
         title: "Object in JS",
         icon: "../assest/images/object.svg",
         theoryLink:"https://programmingashram.github.io/javascript-function/",
         exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
-        id:"syl4"
+        id:"syl6"
     }
 ]
 
