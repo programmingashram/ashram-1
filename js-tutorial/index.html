@@ -118,8 +118,9 @@
                                 </a>
                                 <div class="collapse" id="collapseExample1">
                                     <div class="card card-body">
-                                       <iframe src="https://programmingashram.github.io/ashram-teams/"  sandbox="allow-same-origin"
-                                       onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+                                       <iframe src="https://programmingashram.github.io/ashram-teams/" sandbox="allow-same-origin" class="mb-2" id="read-iframe">
+                                        </iframe>
+
                                         <div class="stack-iframe mt-2">
                                             <iframe src="https://stackblitz.com/edit/js-doms?embed=1&file=index.js&hideNavigation=1&theme=light"  frameborder="0"></iframe>
                                         </div>
@@ -205,10 +206,23 @@
         </div>
       
         <script>
-              function resizeIframe(obj){
-                obj.style.height = 100;
-                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-                }
+            function resizeIFrameToFitContent( iFrame ) {
+
+            iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+            iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+            }
+
+            window.addEventListener('DOMContentLoaded', function(e) {
+
+            var iFrame = document.getElementById( 'iFrame1' );
+            resizeIFrameToFitContent( iFrame );
+
+            // or, to resize all iframes:
+            var iframes = document.querySelectorAll("iframe");
+            for( var i = 0; i < iframes.length; i++) {
+                resizeIFrameToFitContent( iframes[i] );
+            }
+            } );
         </script>
         <script src="../js/app.js"></script>
       

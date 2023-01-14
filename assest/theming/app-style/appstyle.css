@@ -12,6 +12,10 @@ body {
   background-color: #49a54c;
 }
 
+#read-iframe {
+  height: 800px;
+}
+
 .news-icon {
   width: 60px;
 }

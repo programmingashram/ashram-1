@@ -8,14 +8,3 @@ if ("serviceWorker" in navigator) {
 }
 
 
-let x = document.getElementById('menu-trig');
-let y = document.getElementById('site-menu');
-let z = document.getElementById('close');
-
-x.addEventListener('click', function(){
-    y.classList.toggle('show');
-})
-
-z.addEventListener('click', function(){
-  y.classList.remove('show');
-})
