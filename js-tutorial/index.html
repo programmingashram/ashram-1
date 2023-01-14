@@ -24,43 +24,14 @@
         <link rel="manifest" href="manifest.json">
     </head>
     <body id="body" class="bg-light">
-        <header class="p-1 relative shadow-sm mobile-header">
-            <nav>
-               <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="s_logo me-2">
-                               <div class="d-flex align-items-center justify-content-between">
-                                <a href="../app.html" class="h4 mt-2 d-inline-block me-2 text-dark nav-link p-0">Back</a>
-                                <!-- <input type="search" placeholder="Search Here..." class="searchbar"> -->
-                                <img src="../assest/images/logo.svg" alt="">
-                               </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="site-menu mobile-menu">
-                                <div class="site-menu d-none">
-                                <ul class="nav navbar">
-                                    <li class="me-1 nav-item">
-                                        <a href="#" class="active nav-link">Courses</a>
-                                    </li>
-                                    <li class="me-1 nav-item">
-                                        <a href="#" class="nav-link">Our Products</a>
-                                    </li>
-                                    <li class="me-1 nav-item">
-                                        <a href="#" class="nav-link">About Ashram</a>
-                                    </li>
-                                    <li class="me-1 nav-item">
-                                        <a href="#" class="nav-link">About Help</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>  
-               </div>
-            </nav>
-        </header>
+     
+        <div class="container-fluid sub-menu shadow-sm bg-warning">
+            <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
+                <li class="nav-item text-left" role="presentation">
+                    <a href="../app.html" class="d-inline-block h4 p-0 me-2 mt-2 nav-link" style="color: white !important;"><i class="fa-solid fa-arrow-left"></i></a>
+                </li>
+            </ul>
+        </div>
 
         <article class="mt-4 mb-5">
             <div class="container">
@@ -80,7 +51,7 @@
                     <div class="col-md-12">
                         <div class="heading mb-3">
                             <h1 class="h6">
-                                <i class="fa fa-code h6 text-secondary" aria-hidden="true"></i>
+                                <i class="fa-brands fa-codepen"></i>
                                Let's Start 
                             </h1>
                         </div>
@@ -118,11 +89,34 @@
                                 </a>
                                 <div class="collapse" id="collapseExample1">
                                     <div class="card card-body">
-                                       <iframe src="https://programmingashram.github.io/ashram-teams/" sandbox="allow-same-origin" class="mb-2" id="read-iframe">
+                                       <iframe src="https://programmingashram.github.io/ashram-teams/" sandbox="allow-same-origin" class="mb-5" id="read-iframe">
                                         </iframe>
 
                                         <div class="stack-iframe mt-2">
                                             <iframe src="https://stackblitz.com/edit/js-doms?embed=1&file=index.js&hideNavigation=1&theme=light"  frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog rounded mt-3">
+                                <a class="nav-link rounded blog-card p-0 shadow-lg" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <div class="d-flex justify-content-start align-items-center px-2">
+                                        <div>
+                                            <img src="../assest/images/function.svg" alt="" class="syl-icon">
+                                        </div>
+                                        <div class="title-header p-3">
+                                            <h1 class="h6 mb-0 text-dark">Function in JS</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="card card-body">
+                                       <iframe src="https://programmingashram.github.io/js-function/" sandbox="allow-same-origin" class="mb-5" id="read-iframe">
+                                        </iframe>
+
+                                        <div class="stack-iframe mt-2">
+                                            <iframe src="https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light"  frameborder="0"></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +134,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12"> 
                         <div class="bottom-menu">
-                            <ul class="navbar ps-0 bg-light"  style="position: fixed; bottom: -17px; background-color: white; width: 100%; left: 0;">
+                            <ul class="navbar ps-0 bg-light"  style="position: fixed; bottom: -17px; background-color: white !important; width: 100%; left: 0;">
                                 <li class="nav-link">
                                     <a href="#" class="h4 text-danger p-0">
                                         <i class="fa-solid fa-code"></i>
@@ -197,8 +191,8 @@
                     </li>
                     <li class="nav-item text-left">
                         <a href="#" class="nav-link text-dark">
-                            <i class="fa fa-cog"></i>
-                            Setings</a>
+                        <i class="fa fa-cog"></i>
+                        Setings</a>
                     </li>
                 </ul>
             </div>
