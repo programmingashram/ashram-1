@@ -9,7 +9,7 @@ let jsSyllabus= [
         title: "How to install ?",
         icon: "../assest/images/question.svg",
         theoryLink:"https://programmingashram.github.io/js-how-two/",
-        exampleLink:"https://stackblitz.com/edit/js-qzkq3r?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
+        exampleLink:"https://stackblitz.com/edit/js-sq2sjs?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
         id:"syl2"
     },{
         title: "Var,Let and Cost",
