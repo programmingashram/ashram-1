@@ -118,13 +118,11 @@
                                 </a>
                                 <div class="collapse" id="collapseExample1">
                                     <div class="card card-body">
-                                        <p>
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos itaque ad sequi assumenda voluptate rem provident officiis ex, commodi, nemo pariatur quo ea quis molestias quam, omnis nulla. Distinctio, explicabo!
-                                        </p>
-                                        <h2 class="h2">
-                                        
-                                        </h2>
-                                        <iframe src="https://stackblitz.com/edit/js-doms?embed=1&file=index.js&hideNavigation=1&theme=light" height="100%" frameborder="0"></iframe>
+                                       <iframe src="https://programmingashram.github.io/ashram-teams/"  sandbox="allow-same-origin"
+                                       onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+                                        <div class="stack-iframe mt-2">
+                                            <iframe src="https://stackblitz.com/edit/js-doms?embed=1&file=index.js&hideNavigation=1&theme=light"  frameborder="0"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +204,12 @@
             
         </div>
       
-
+        <script>
+              function resizeIframe(obj){
+                obj.style.height = 100;
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+                }
+        </script>
         <script src="../js/app.js"></script>
       
     </body>

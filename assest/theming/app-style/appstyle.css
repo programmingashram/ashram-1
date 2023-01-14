@@ -191,4 +191,8 @@ body {
 
 .blog .d-flex {
   gap: 0px 10px;
+}
+
+.stack-iframe iframe {
+  height: 350px;
 }/*# sourceMappingURL=appstyle.css.map */
