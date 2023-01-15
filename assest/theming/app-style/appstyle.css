@@ -49,6 +49,10 @@ body {
   font-size: 1rem;
 }
 
+.blog .card-body {
+  padding: 0.5rem 0rem;
+}
+
 .syl-icon {
   width: 33px;
 }
