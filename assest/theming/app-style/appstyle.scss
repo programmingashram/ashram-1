@@ -6,6 +6,9 @@ body{
     z-index: 9999;
     background-color: #49a54c;
 }
+.markdown-body h1 a{
+    display: none !important;
+}
 .bg-green{
     background-color: #49a54c;
 }

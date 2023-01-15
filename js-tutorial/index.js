@@ -3,19 +3,19 @@ let jsSyllabus= [
         title: "Introduction",
         icon: "../assest/images/bulb.svg",
         theoryLink:"https://programmingashram.github.io/Js-Introduction/",
-        exampleLink:"",
+        exampleLink:"/",
         id:"syl1"
     },{
         title: "How to install ?",
         icon: "../assest/images/question.svg",
         theoryLink:"https://programmingashram.github.io/js-how-two/",
-        exampleLink:"https://stackblitz.com/edit/js-sq2sjs?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
+        exampleLink:"https://stackblitz.com/edit/js-how-to-enable?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
         id:"syl2"
     },{
         title: "Var,Let and Cost",
         icon: "../assest/images/var.svg",
-        theoryLink:"https://programmingashram.github.io/javascript-function/",
-        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
+        theoryLink:"https://programmingashram.github.io/Js-variables/",
+        exampleLink:"https://stackblitz.com/edit/js-cn7icq?embed=1&file=index.js&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
         id:"syl3"
     },{
         title: "Function in JS",
@@ -34,6 +34,8 @@ let jsSyllabus= [
 
 let jsData = document.getElementById('blog-space');
 
+
+
 for(let i in jsSyllabus){
     jsData.innerHTML +=`
     <div class="blog rounded mt-3">
@@ -49,14 +51,20 @@ for(let i in jsSyllabus){
         </a>
         <div class="collapse" id="${jsSyllabus[i].id}">
             <div class="card card-body">
-            <iframe src="${jsSyllabus[i].theoryLink}" sandbox="allow-same-origin" class="mb-3" id="read-iframe">
+            <iframe src="${jsSyllabus[i].theoryLink}" sandbox="allow-same-origin" class="mb-2" id="read-iframe">
                 </iframe>
 
-                <div class="stack-iframe mt-2">
-                    <iframe src="${jsSyllabus[i].exampleLink}"  frameborder="0"></iframe>
+                <div class="stack-iframe mt-1">
+                    <iframe src="${jsSyllabus[i].exampleLink}" class="exiframe" allow-script="yes" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
     `;
+}
+
+// Remove all blank iframe src
+let validate = document.querySelectorAll('[src="/"]');
+for(let x = 0; x < validate.length; x++){
+    validate[x].style.display = "none";
 }
