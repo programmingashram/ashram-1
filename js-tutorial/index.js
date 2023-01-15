@@ -24,13 +24,14 @@ let jsSyllabus= [
         exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
         id:"syl4"
     },{
-        title: "Object in JS",
+        title: "Data Type",
         icon: "../assest/images/object.svg",
-        theoryLink:"https://programmingashram.github.io/javascript-function/",
-        exampleLink:"https://stackblitz.com/edit/js-nwxnjw?embed=1&file=index.js&theme=light",
-        id:"syl6"
+        theoryLink:"https://programmingashram.github.io/Js-Data-Type/",
+        exampleLink:"/",
+        id:"syl5"
     }
 ]
+
 
 let jsData = document.getElementById('blog-space');
 
