@@ -39,7 +39,7 @@ let jsData = document.getElementById('blog-space');
 
 for(let i in jsSyllabus){
     jsData.innerHTML +=`
-    <div class="blog rounded mt-3">
+    <div class="blog rounded mt-3 mb-3">
         <a class="nav-link rounded blog-card p-0 shadow-lg" data-bs-toggle="collapse" href="#${jsSyllabus[i].id}" role="button" aria-expanded="false" aria-controls="collapseExample">
             <div class="d-flex justify-content-start align-items-center pe-2">
                 <div class="icon-tile">

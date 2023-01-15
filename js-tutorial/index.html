@@ -23,7 +23,7 @@
         <!-- PWA -->
         <link rel="manifest" href="manifest.json">
     </head>
-    <body id="body" class="bg-light app">
+    <body id="body" class="bg-light js-app">
      
     <div class="container-fluid top-menu sub-menu shadow-sm">
         <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
@@ -35,10 +35,10 @@
     <div class="container-fluid sub-menu shadow-sm">
         <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
             <li class="nav-item text-left" role="presentation">
-              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
+              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#code" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-sharp fa-solid fa-house"></i> Code</a>
             </li>
             <li class="nav-item text-center" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-updated" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1"><i class="fa-solid fa-newspaper"></i> News</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-updated" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1"><i class="fa-brands fa-youtube"></i> Video</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1"><i class="fa-solid fa-code-compare"></i>  Collab</button>
@@ -52,9 +52,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading mb-3">
-                        <h1 class="h4">
-                            <i class="fa-brands fa-js text-dark h4"></i> <span class="text-warning">Java</span> Script 
-                        </h1>
+                        <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt="" class="w-100 rounded shadow-lg">
                         <hr>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique esse porro recusandae vitae.
@@ -71,12 +69,17 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="blog-area mb-5" id="blog-space"></div>
+                   
                 </div>
             </div>
         </div>
     </article>
 
+    <div class="container mb-5 pb-5" id="code">
+        <div class="blog-area mb-5" id="blog-space">
+
+        </div>
+    </div>
 
 
     <article clsss="fixed-cntent p-4 shadow-sm mb-5">

@@ -51,6 +51,8 @@ body{
 }
 .syl-icon{
     width: 33px;
+    height: 33px;
+    object-fit: fill;
 }
 .course-list{
     gap: 10px 19px;
@@ -203,26 +205,26 @@ body{
         margin-bottom: 24px;
     }
 }
-.app{
+.js-app{
     .top-menu{
-        background-color: #49a54c;
+        background-color: #fbd601;
+    }
+    .nav-pills .nav-link.active {
+        border-bottom: 2px solid rgb(251 214 1);
+        color: rgb(251 214 1) !important;
+        font-weight: 200;
+        border-radius: 0 !important;
     }
 }
 .blog:nth-child(odd){
-    .card-body{
-        background: bisque;
-    }
     .icon-tile{
         padding: 1rem;
-        background: #ffc10759;
+        background: rgb(251 214 1);
     }
 }
 .blog:nth-child(even){
-    .card-body{
-        background: #ae9991;
-    }
     .icon-tile{
         padding: 1rem;
-        background: #79554899;
+        background: rgb(43 42 55);
     }
 }

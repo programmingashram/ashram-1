@@ -55,6 +55,9 @@ body {
 
 .syl-icon {
   width: 33px;
+  height: 33px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .course-list {
@@ -215,22 +218,22 @@ body {
   margin-bottom: 24px;
 }
 
-.app .top-menu {
-  background-color: #49a54c;
+.js-app .top-menu {
+  background-color: #fbd601;
+}
+.js-app .nav-pills .nav-link.active {
+  border-bottom: 2px solid rgb(251, 214, 1);
+  color: rgb(251, 214, 1) !important;
+  font-weight: 200;
+  border-radius: 0 !important;
 }
 
-.blog:nth-child(odd) .card-body {
-  background: bisque;
-}
 .blog:nth-child(odd) .icon-tile {
   padding: 1rem;
-  background: rgba(255, 193, 7, 0.3490196078);
+  background: rgb(251, 214, 1);
 }
 
-.blog:nth-child(even) .card-body {
-  background: #ae9991;
-}
 .blog:nth-child(even) .icon-tile {
   padding: 1rem;
-  background: rgba(121, 85, 72, 0.6);
+  background: rgb(43, 42, 55);
 }/*# sourceMappingURL=appstyle.css.map */
