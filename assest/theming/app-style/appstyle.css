@@ -227,13 +227,29 @@ body {
   font-weight: 200;
   border-radius: 0 !important;
 }
-
-.blog:nth-child(odd) .icon-tile {
+.js-app .blog:nth-child(odd) .icon-tile {
   padding: 1rem;
   background: rgb(251, 214, 1);
 }
-
-.blog:nth-child(even) .icon-tile {
+.js-app .blog:nth-child(even) .icon-tile {
   padding: 1rem;
   background: rgb(43, 42, 55);
+}
+
+.ng-app .top-menu {
+  background-color: rgb(229, 0, 43);
+}
+.ng-app .nav-pills .nav-link.active {
+  border-bottom: 2px solid rgb(229, 0, 43);
+  color: rgb(229, 0, 43) !important;
+  font-weight: 200;
+  border-radius: 0 !important;
+}
+.ng-app .blog:nth-child(odd) .icon-tile {
+  padding: 1rem;
+  background: rgb(229, 0, 43);
+}
+.ng-app .blog:nth-child(even) .icon-tile {
+  padding: 1rem;
+  background: rgb(0, 117, 194);
 }/*# sourceMappingURL=appstyle.css.map */
