@@ -41,8 +41,8 @@ for(let i in jsSyllabus){
     jsData.innerHTML +=`
     <div class="blog rounded mt-3">
         <a class="nav-link rounded blog-card p-0 shadow-lg" data-bs-toggle="collapse" href="#${jsSyllabus[i].id}" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <div class="d-flex justify-content-start align-items-center px-2">
-                <div>
+            <div class="d-flex justify-content-start align-items-center pe-2">
+                <div class="icon-tile">
                     <img src="${jsSyllabus[i].icon}" alt="" class="syl-icon">
                 </div>
                 <div class="title-header p-3">

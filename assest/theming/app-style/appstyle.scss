@@ -203,3 +203,26 @@ body{
         margin-bottom: 24px;
     }
 }
+.app{
+    .top-menu{
+        background-color: #49a54c;
+    }
+}
+.blog:nth-child(odd){
+    .card-body{
+        background: bisque;
+    }
+    .icon-tile{
+        padding: 1rem;
+        background: #ffc10759;
+    }
+}
+.blog:nth-child(even){
+    .card-body{
+        background: #ae9991;
+    }
+    .icon-tile{
+        padding: 1rem;
+        background: #79554899;
+    }
+}
