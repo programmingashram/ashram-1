@@ -43,7 +43,6 @@ body {
 
 .cardv1, .courses {
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
-  background-color: white;
 }
 .cardv1 .card-controls i, .courses .card-controls i {
   font-size: 1rem;
