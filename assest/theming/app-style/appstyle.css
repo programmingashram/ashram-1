@@ -100,7 +100,6 @@ body {
 }
 .slider .sliderBlock {
   width: 100%;
-  overflow-x: scroll;
   box-shadow: 0px 20px 72px -10px rgba(255, 193, 7, 0.2784313725);
 }
 
