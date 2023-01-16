@@ -249,4 +249,11 @@ body {
 .ng-app .blog:nth-child(even) .icon-tile {
   padding: 1rem;
   background: rgb(0, 117, 194);
+}
+
+.course-list.js-course {
+  border-bottom: 13px solid #fec006;
+}
+.course-list.ng-course {
+  border-bottom: 13px solid #e31e25;
 }/*# sourceMappingURL=appstyle.css.map */

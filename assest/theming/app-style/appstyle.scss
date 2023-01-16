@@ -246,3 +246,11 @@ body{
         }
     }
 }
+.course-list{
+    &.js-course{
+        border-bottom: 13px solid #fec006;
+    }
+    &.ng-course{
+        border-bottom: 13px  solid #e31e25;
+    }
+}
