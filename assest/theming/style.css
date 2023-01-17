@@ -247,6 +247,15 @@ html {
   background-color: #BFB2F3;
 }
 
+.blog-card img {
+  height: 200px !important;
+}
+
+#blog-details {
+  display: flex;
+  align-items: flex-start;
+}
+
 .left-trig {
   left: 17px;
   top: 188px;

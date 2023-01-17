@@ -47,7 +47,13 @@ html{
 .scss{
     background-color: $c-purple-10;
 }
-
+.blog-card img{
+    height: 200px !important;
+}
+#blog-details{
+    display: flex;
+    align-items: flex-start;
+}
 
 .left-trig{
     left: 17px;
