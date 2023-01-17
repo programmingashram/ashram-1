@@ -224,27 +224,27 @@ html {
 }
 
 .js {
-  background: #FDB03C;
+  color: #FDB03C;
 }
 
 .angular {
-  background: #F35A28;
+  color: #F35A28;
 }
 
 .react {
-  background-color: #B568FF;
+  color: #B568FF;
 }
 
 .html {
-  background-color: #E31E25;
+  color: #E31E25;
 }
 
 .bootstrap {
-  background-color: #25A6FF;
+  color: #25A6FF;
 }
 
 .scss {
-  background-color: #BFB2F3;
+  color: #BFB2F3;
 }
 
 .left-trig {
