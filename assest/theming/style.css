@@ -251,6 +251,29 @@ html {
   height: 200px !important;
 }
 
+.social-links {
+  position: absolute;
+  right: 34px;
+  top: 34px;
+  display: flex;
+  gap: 0px 24px;
+}
+.social-links a {
+  font-size: 1.4rem;
+  line-height: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.social-links a .fa-facebook {
+  color: lightskyblue;
+}
+.social-links a .fa-github {
+  color: #595959;
+}
+.social-links a .fa-instagram {
+  color: palevioletred;
+}
+
 #blog-details {
   display: flex;
   align-items: flex-start;
