@@ -51,7 +51,7 @@ html{
     height: 200px !important;
 }
 .social-links{
-    display: none;
+    display: none !important;
 }
 .social-links{
     position: absolute;
@@ -563,7 +563,7 @@ footer{
 
 @media(max-width:767px){
     .social-links{
-        display: block;
+        display: block !important;
     }
     header{
         position: static !important;

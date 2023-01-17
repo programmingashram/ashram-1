@@ -252,7 +252,7 @@ html {
 }
 
 .social-links {
-  display: none;
+  display: none !important;
 }
 
 .social-links {
@@ -776,7 +776,7 @@ footer .main-title span {
 
 @media (max-width: 767px) {
   .social-links {
-    display: block;
+    display: block !important;
   }
   header {
     position: static !important;
