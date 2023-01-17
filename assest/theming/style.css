@@ -199,6 +199,54 @@ html {
   scroll-behavior: smooth;
 }
 
+.bg-redlight {
+  background-color: #f4e3de !important;
+}
+
+.bg-yellowlight {
+  background-color: #e4e46a !important;
+}
+
+.bg-bluelight {
+  background-color: #9deaf8 !important;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.blue-light {
+  color: #00a3c1;
+}
+
+.js {
+  background: #FDB03C;
+}
+
+.angular {
+  background: #F35A28;
+}
+
+.react {
+  background-color: #B568FF;
+}
+
+.html {
+  background-color: #E31E25;
+}
+
+.bootstrap {
+  background-color: #25A6FF;
+}
+
+.scss {
+  background-color: #BFB2F3;
+}
+
 .left-trig {
   left: 17px;
   top: 188px;

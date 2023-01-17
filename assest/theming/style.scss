@@ -10,6 +10,44 @@
 html{
     scroll-behavior: smooth;
 }
+// css
+.bg-redlight{
+    background-color: #f4e3de !important;
+}
+.bg-yellowlight{
+    background-color:#e4e46a !important ;
+}
+.bg-bluelight{
+    background-color: #9deaf8 !important ;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.blue-light{
+    color: #00a3c1;
+}
+.js{
+    background: $c-pisYellow-100;
+}
+.angular{
+    background: $c-red-10;
+}
+.react{
+    background-color: $c-purple-100;
+}
+.html{
+    background-color: $c-red-100;
+}
+.bootstrap{
+    background-color: $c-blue-100;
+}
+.scss{
+    background-color: $c-purple-10;
+}
+
 
 .left-trig{
     left: 17px;
