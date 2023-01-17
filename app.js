@@ -54,10 +54,9 @@ for(let i in blog){
                 <img src="${blog[i].image}" alt="" class="w-100"> 
             </div>
             <div class="blog-title">
-                <h4>${blog[i].Title}</h4>
+                <h5>${blog[i].Title}</h5>
             </div>
             <div class="blog-description">
-               <h5>  ${blog[i].Descriptionshort} </h5>
                  <p> ${blog[i].Descriptionfull}</p>
             </div>
         </div>
