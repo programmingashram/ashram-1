@@ -248,12 +248,15 @@ header{
     display: flex;
     align-items: center;
     label{
-        padding: 10px;
+        padding: 6px 10px;
         background: #3BB44A;
         color: white;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
         cursor: pointer;
+        position: relative;
+        top: 0px;
+        font-size: 17px;
     }
     .search{
         padding: 10px 5px;
