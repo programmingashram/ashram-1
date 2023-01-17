@@ -56,9 +56,9 @@ html{
 .social-links{
     position: absolute;
     right: 34px;
-    top: 34px;
+    top: 27px;
     display: flex;
-    gap: 0px 24px;
+    gap: 0px 13px;
     a{
         font-size: 1.4rem;
         line-height: 0;
@@ -560,10 +560,17 @@ footer{
     color: $c-green-100;
    }
 }
-
+#installApp{
+    padding: 0.4rem;
+    border: none;
+    background: #3bb44a;
+    color: white;
+    border-radius: 4px;
+}
 @media(max-width:767px){
     .social-links{
-        display: block !important;
+        display: flex !important;
+        align-items: center;
     }
     header{
         position: static !important;
