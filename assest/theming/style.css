@@ -199,6 +199,103 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans Cherokee", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.bg-redlight {
+  background-color: #f4e3de !important;
+}
+
+.bg-yellowlight {
+  background-color: #e4e46a !important;
+}
+
+.bg-bluelight {
+  background-color: #9deaf8 !important;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.blue-light {
+  color: #00a3c1;
+}
+
+.js {
+  background: #FDB03C;
+}
+
+.angular {
+  background: #F35A28;
+}
+
+.react {
+  background-color: #B568FF;
+}
+
+.html {
+  background-color: #E31E25;
+}
+
+.bootstrap {
+  background-color: #25A6FF;
+}
+
+.scss {
+  background-color: #BFB2F3;
+}
+
+.blog-card img {
+  height: 200px !important;
+}
+
+.social-links {
+  display: none !important;
+}
+
+.social-links {
+  position: absolute;
+  right: 34px;
+  top: 27px;
+  display: flex;
+  gap: 0px 13px;
+}
+.social-links a {
+  font-size: 1.4rem;
+  line-height: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.social-links a .fa-facebook {
+  color: lightskyblue;
+}
+.social-links a .fa-github {
+  color: #595959;
+}
+.social-links a .fa-instagram {
+  color: palevioletred;
+}
+
+#blog-details {
+  display: flex;
+  align-items: flex-start;
+}
+
 .left-trig {
   left: 17px;
   top: 188px;
@@ -313,7 +410,7 @@ header {
 }
 .site-menu ul li a {
   color: rgba(0, 0, 0, 0.65);
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .site-menu ul li .active {
@@ -342,12 +439,15 @@ header {
   align-items: center;
 }
 .search-bar label {
-  padding: 10px;
+  padding: 6px 10px;
   background: #3BB44A;
   color: white;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   cursor: pointer;
+  position: relative;
+  top: 0px;
+  font-size: 17px;
 }
 .search-bar .search {
   padding: 10px 5px;
@@ -690,7 +790,19 @@ footer .main-title span {
   color: #3BB44A;
 }
 
+#installApp {
+  padding: 0.4rem;
+  border: none;
+  background: #3bb44a;
+  color: white;
+  border-radius: 4px;
+}
+
 @media (max-width: 767px) {
+  .social-links {
+    display: flex !important;
+    align-items: center;
+  }
   header {
     position: static !important;
   }

@@ -9,6 +9,88 @@
 
 html{
     scroll-behavior: smooth;
+   
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans Cherokee', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+p{
+    font-size: 0.9rem;
+}
+// css
+.bg-redlight{
+    background-color: #f4e3de !important;
+}
+.bg-yellowlight{
+    background-color:#e4e46a !important ;
+}
+.bg-bluelight{
+    background-color: #9deaf8 !important ;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.blue-light{
+    color: #00a3c1;
+}
+.js{
+    background: $c-pisYellow-100;
+}
+.angular{
+    background: $c-red-10;
+}
+.react{
+    background-color: $c-purple-100;
+}
+.html{
+    background-color: $c-red-100;
+}
+.bootstrap{
+    background-color: $c-blue-100;
+}
+.scss{
+    background-color: $c-purple-10;
+}
+.blog-card img{
+    height: 200px !important;
+}
+.social-links{
+    display: none !important;
+}
+.social-links{
+    position: absolute;
+    right: 34px;
+    top: 27px;
+    display: flex;
+    gap: 0px 13px;
+    a{
+        font-size: 1.4rem;
+        line-height: 0;
+        padding: 0;
+        text-decoration: none;
+        .fa-facebook{
+            color: lightskyblue;
+        }
+        .fa-github{
+            color: #595959;
+        }
+        .fa-instagram{
+            color: palevioletred;
+        }
+    }
+}
+#blog-details{
+    display: flex;
+    align-items: flex-start;
 }
 
 .left-trig{
@@ -137,7 +219,7 @@ header{
         li{
           a{
                 color: $c-black-10;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 text-decoration: none;
           }
           .active{
@@ -166,12 +248,15 @@ header{
     display: flex;
     align-items: center;
     label{
-        padding: 10px;
+        padding: 6px 10px;
         background: #3BB44A;
         color: white;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
         cursor: pointer;
+        position: relative;
+        top: 0px;
+        font-size: 17px;
     }
     .search{
         padding: 10px 5px;
@@ -491,8 +576,18 @@ footer{
     color: $c-green-100;
    }
 }
-
+#installApp{
+    padding: 0.4rem;
+    border: none;
+    background: #3bb44a;
+    color: white;
+    border-radius: 4px;
+}
 @media(max-width:767px){
+    .social-links{
+        display: flex !important;
+        align-items: center;
+    }
     header{
         position: static !important;
     }
