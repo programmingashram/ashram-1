@@ -29,6 +29,12 @@ let jsSyllabus= [
         theoryLink:"https://programmingashram.github.io/Js-Data-Type/",
         exampleLink:"/",
         id:"syl5"
+    },{
+        title: "Events In JS",
+        icon: "../assest/images/events.png",
+        theoryLink:"https://programmingashram.github.io/js-events/",
+        exampleLink:"/",
+        id:"syl6"
     }
 ]
 
