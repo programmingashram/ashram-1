@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="mainPage">
+        <div class="header p-2 bg-success">
+            <div class="container">
+                <div class="d-flex justify-content-start align-item-center">
+                    <div class="logo w-100">
+                        <h1 class="text-light">
+                            Logo
+                        </h1>
+                    </div> 
+                    <div class="menu w-100">
+                        <ul class="navbar nav">
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                             <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                             <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                             <li class="nav-item ">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="sginup">
+                    <div class="loginpage p-3 bg-primary rounded shadow-lg text-light">
+                        <h1 class="h4">SginUp  Form</h1>
+                        <hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="email" onkeyup="btnvalid()">
+                            </div>
+                            <div class="form-group">
+                                <label for="">password</label>
+                                <input type="password" class="form-control" id="pass" onkeyup="btnvalid()">
+                            </div>
+                            <button type="button"  id="sginButton" onclick="addData();" class="btn btn-success mt-4 disabled">Sign Up Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6" id="login">
+                    <div class="loginpage p-3 bg-danger rounded shadow-lg text-light">
+                        <h1 class="h4">Login  Form</h1>
+                        <hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="Logemail" onkeyup="loginbtnvalid()">
+                            </div>
+                            <div class="form-group">
+                                <label for="">password</label>
+                                <input type="password" class="form-control" id="Logpass" onkeyup="loginbtnvalid()">
+                            </div>
+                            <button type="button" id="loginbtn" onclick="matchUser();" class="btn btn-success mt-4 disabled">Login Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-4" id="admin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table shadow-lg p-3">
+                        <h1 class="h2">Welcome to Admin Panel</h1>
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+                                        Password
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableData">
+                                
+                            </tbody>
+                        </table>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+    <script src="index.js"></script>
+
+</body>
