@@ -37,9 +37,6 @@ body{
 }
 .cardv1, .courses{
     box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
-    background-color: white;
-    
-   
     .card-controls{
         i{
             font-size: 1rem;
@@ -92,15 +89,13 @@ body{
 
 .slider{
     img{
-        height: 117px;
         border-radius: 8px;
-        width: 92% !important;
+        width: 100% !important;
         object-fit: cover;
-        box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
     }
     .sliderBlock{
-        overflow-x: scroll;
-        width: 100%;
+         width: 100%;
+        box-shadow: 0px 20px 72px -10px #ffc10747
     }
 }
 .cardv1{
@@ -249,5 +244,13 @@ body{
             padding: 1rem;
             background: rgb(0 117 194);
         }
+    }
+}
+.course-list{
+    &.js-course{
+        border-bottom: 13px solid #fec006;
+    }
+    &.ng-course{
+        border-bottom: 13px  solid #e31e25;
     }
 }

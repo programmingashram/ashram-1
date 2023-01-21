@@ -43,7 +43,6 @@ body {
 
 .cardv1, .courses {
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
-  background-color: white;
 }
 .cardv1 .card-controls i, .courses .card-controls i {
   font-size: 1rem;
@@ -94,16 +93,14 @@ body {
 }
 
 .slider img {
-  height: 117px;
   border-radius: 8px;
-  width: 92% !important;
+  width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2) !important;
 }
 .slider .sliderBlock {
-  overflow-x: scroll;
   width: 100%;
+  box-shadow: 0px 20px 72px -10px rgba(255, 193, 7, 0.2784313725);
 }
 
 .cardv1 i {
@@ -252,4 +249,11 @@ body {
 .ng-app .blog:nth-child(even) .icon-tile {
   padding: 1rem;
   background: rgb(0, 117, 194);
+}
+
+.course-list.js-course {
+  border-bottom: 13px solid #fec006;
+}
+.course-list.ng-course {
+  border-bottom: 13px solid #e31e25;
 }/*# sourceMappingURL=appstyle.css.map */

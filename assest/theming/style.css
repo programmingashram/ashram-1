@@ -199,6 +199,101 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Noto Sans Cherokee", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.container {
+  width: 90%;
+}
+.container .row {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon i {
+  font-size: 50px;
+}
+
+.details a {
+  color: white;
+}
+
+.js {
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  color: white;
+}
+
+.fa-js {
+  color: yellow;
+}
+
+.angular {
+  background-color: gray;
+}
+
+.fa-angular {
+  color: red !important;
+}
+
+.react {
+  background-color: whitesmoke;
+}
+
+.fa-react {
+  color: rgba(49, 27, 146, 0.8784313725) !important;
+}
+
+.bootstrap {
+  background-color: rgba(143, 234, 242, 0.4392156863);
+}
+
+.fa-bootstrap {
+  color: black !important;
+}
+
+.sass {
+  background-color: rgba(78, 58, 168, 0.48);
+}
+
+.fa-sass {
+  color: white !important;
+}
+
+.main {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+}
+
+.main2 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: rgba(128, 128, 128, 0.9411764706);
+}
+
+.main3 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
 .bg-redlight {
   background-color: #f4e3de !important;
 }
@@ -245,6 +340,42 @@ html {
 
 .scss {
   color: #BFB2F3;
+}
+
+.blog-card img {
+  height: 200px !important;
+}
+
+.social-links {
+  display: none !important;
+}
+
+.social-links {
+  position: absolute;
+  right: 34px;
+  top: 27px;
+  display: flex;
+  gap: 0px 13px;
+}
+.social-links a {
+  font-size: 1.4rem;
+  line-height: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.social-links a .fa-facebook {
+  color: lightskyblue;
+}
+.social-links a .fa-github {
+  color: #595959;
+}
+.social-links a .fa-instagram {
+  color: palevioletred;
+}
+
+#blog-details {
+  display: flex;
+  align-items: flex-start;
 }
 
 .left-trig {
@@ -390,12 +521,15 @@ header {
   align-items: center;
 }
 .search-bar label {
-  padding: 10px;
+  padding: 6px 10px;
   background: #3BB44A;
   color: white;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   cursor: pointer;
+  position: relative;
+  top: 0px;
+  font-size: 17px;
 }
 .search-bar .search {
   padding: 10px 5px;
@@ -738,7 +872,19 @@ footer .main-title span {
   color: #3BB44A;
 }
 
+#installApp {
+  padding: 0.4rem;
+  border: none;
+  background: #3bb44a;
+  color: white;
+  border-radius: 4px;
+}
+
 @media (max-width: 767px) {
+  .social-links {
+    display: flex !important;
+    align-items: center;
+  }
   header {
     position: static !important;
   }
