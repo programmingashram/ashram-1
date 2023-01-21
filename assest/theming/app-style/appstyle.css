@@ -97,12 +97,60 @@ body {
   width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+}
+.slider .shine {
+  position: absolute;
+  width: 14px;
+  height: 238px;
+  background: rgba(255, 255, 255, 0.4196078431);
+  z-index: 999999;
+  top: -96px;
+  transform: skew(239deg);
 }
 .slider .sliderBlock {
   width: 100%;
   box-shadow: 0px 20px 72px -10px rgba(255, 193, 7, 0.2784313725);
 }
+.slider .sliderBlock img:nth-child(1) {
+  top: 19px;
+  transform: scale(0.93);
+  position: relative;
+}
+.slider .sliderBlock img:nth-child(2) {
+  top: 0px;
+}
+.slider .sliderBlock img:nth-child(2):hover {
+  transition: 2s;
+  -webkit-animation: zick 1s;
+          animation: zick 1s;
+  z-index: -1;
+  transform: scale(0.83);
+}
 
+@-webkit-keyframes zick {
+  from {
+    opacity: 1;
+    z-index: 99999;
+  }
+  to {
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.83);
+  }
+}
+
+@keyframes zick {
+  from {
+    opacity: 1;
+    z-index: 99999;
+  }
+  to {
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.83);
+  }
+}
 .cardv1 i {
   font-size: 21px;
   top: -28px;
@@ -249,6 +297,10 @@ body {
 .ng-app .blog:nth-child(even) .icon-tile {
   padding: 1rem;
   background: rgb(0, 117, 194);
+}
+
+.course-card {
+  background: white;
 }
 
 .course-list.js-course {
