@@ -260,6 +260,10 @@ body {
   margin-bottom: 24px;
 }
 
+.course-card iframe {
+  height: 11pc !important;
+}
+
 .js-app .top-menu {
   background-color: #fbd601;
 }
