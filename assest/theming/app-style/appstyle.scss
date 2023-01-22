@@ -251,11 +251,7 @@ body{
         margin-bottom: 24px;
     }
 }
-.course-card{
-    iframe{
-        height: 11pc !important;
-    }
-}
+
 .js-app{
     .top-menu{
         background-color: #fbd601;
@@ -350,6 +346,11 @@ body{
 }
 
 @media(max-width: 767px){
+    .course-card{
+        iframe{
+            height: 11pc !important;
+        }
+    }
     body{
         font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Noto Sans JP', sans-serif;
