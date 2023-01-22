@@ -112,20 +112,20 @@ body{
         
     }
 
-    .sliderBlock img:nth-child(1){
-        top: 19px;
-        transform: scale(0.93);
-        position: relative;
-    }
-    .sliderBlock img:nth-child(2){
-        top: 0px;
-    }
-    .sliderBlock img:nth-child(2):hover{
-        transition: 2s;
-        animation: zick 1s;
-        z-index: -1;
-        transform: scale(0.83);
-    }
+    // .sliderBlock img:nth-child(1){
+    //     top: 19px;
+    //     transform: scale(0.93);
+    //     position: relative;
+    // }
+    // .sliderBlock img:nth-child(2){
+    //     top: 0px;
+    // }
+    // .sliderBlock img:nth-child(2):hover{
+    //     transition: 2s;
+    //     animation: zick 1s;
+    //     z-index: -1;
+    //     transform: scale(0.83);
+    // }
 }
 
 @keyframes zick{
