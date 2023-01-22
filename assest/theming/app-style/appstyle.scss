@@ -298,6 +298,39 @@ body{
     }
 }
 
+.text-accent{
+    color: lightskyblue;
+}
+.text-primary{
+    color: blue;
+}
+.text-red{
+    color: #dc3545!important
+}
+.text-pink{
+    color: lightpink
+}
+.text-orange{
+    color: orange;
+}
+// icon color
+.fa-php{
+    @extend .text-primary;
+}
+.fa-angular{
+    @extend .text-red;
+}
+.fa-js{
+    @extend .text-orange;
+}
+.fa-bootstrap{
+    @extend .text-accent;
+}
+.fa-sass{
+    @extend .text-pink;
+}
+
+
 .joincard{
     width: 33.333%;
     float: left;
