@@ -49,7 +49,7 @@ let feature = document.getElementById('blogFeature');
 for(let p in blog){
     feature.innerHTML +=`
     <div class="blog rounded">
-        <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="#${blog[p].blogid}" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="#${blog[p].blogid}001" role="button" aria-expanded="false" aria-controls="collapseExample">
             <div class="d-flex justify-content-start align-items-start px-2">
                 <div class="news-icon">
                     <i class="fa-brands h1 mb-0 fa-${blog[p].lang} text-${blog[p].lang}"></i>
@@ -64,7 +64,7 @@ for(let p in blog){
                 </div>
             </div>
         </a>
-        <div class="collapse" id=""${blog[p].blogid}">
+        <div class="collapse" id="${blog[p].blogid}001">
             <div class="card p-3 card-body">
                 ${blog[p].Descriptionfull}
             </div>
@@ -76,7 +76,7 @@ for(let p in blog){
 for(let o in blog){
     appBlog.innerHTML +=`
     <div class="blog rounded">
-        <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="${blog[o].blogid}" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="#${blog[o].blogid}001" role="button" aria-expanded="false" aria-controls="collapseExample">
             <div class="d-flex justify-content-start align-items-start px-2">
                 <div class="news-icon">
                     <i class="fa-brands h1 mb-0 fa-${blog[o].lang} text-${blog[o].lang}"></i>
@@ -91,7 +91,7 @@ for(let o in blog){
                 </div>
             </div>
         </a>
-        <div class="collapse" id=""${blog[o].blogid}">
+        <div class="collapse" id="${blog[o].blogid}001">
             <div class="card p-3 card-body">
                 ${blog[o].Descriptionfull}
             </div>
