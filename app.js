@@ -40,13 +40,11 @@ let blog = {
         "lang": "js"
     },
    
-    
  };
-let blogs = document.getElementById("blog-details");
-let appBlog = document.getElementById('blogArea');
-let feature = document.getElementById('blogFeature');
+
 
 for(let p in blog){
+    let feature = document.getElementById('blogFeature');
     feature.innerHTML +=`
     <div class="blog rounded">
         <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="#${blog[p].blogid}001" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -74,6 +72,7 @@ for(let p in blog){
 }
 
 for(let o in blog){
+    let appBlog = document.getElementById('blogArea');
     appBlog.innerHTML +=`
     <div class="blog rounded">
         <a class="nav-link  blog-card p-0 shadow-sm" data-bs-toggle="collapse" href="#${blog[o].blogid}001" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -101,6 +100,7 @@ for(let o in blog){
 }
 
 for(let i in blog){
+let blogs = document.getElementById("blog-details");
  blogs.innerHTML += `
  <li class="me-2">
     <a href="#first">
