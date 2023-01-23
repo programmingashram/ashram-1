@@ -74,6 +74,10 @@
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-code-compare"></i>  Collab</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="a" data-bs-toggle="pill" data-bs-target="#posts" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-code-compare"></i>  Posts</button>
+                  </li>
+                  
                 
             </ul>
         </div>
@@ -280,7 +284,6 @@
                     </article>
                 </div>
             </div>
-
             <div class="tab-pane fade" id="pills-updated">
                 <article class="mt-5">
                     <div class="container">
@@ -291,6 +294,15 @@
                         </div>
                     </div>
                 </article>
+            </div>
+            <div class="tab-pane fade" id="posts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="instafeed-container"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
       
@@ -376,6 +388,17 @@
             data-lang="en"
             crossorigin="anonymous"
             async>
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+        <script type="text/javascript">
+            var userFeed = new Instafeed({
+                get: 'user',
+                target: "instafeed-container",
+                resolution: 'low_resolution',
+                accessToken: 'IGQVJXUHJvUkh0NTFFY2hoTFlxWkVCZAWlfQUhVSEg1azV1QVdlUkZAkMzQtZAG4xdWxBRHRRYmlMNkhOOGFSSm9yU1RBYUppekRJVjZALd0FUR0h5MnhNUkNKcm1HcDNmc3YwVTN0S1ZAJMWRpNkNRc3lBRAZDZD'
+            });
+            userFeed.run();
         </script>
     </body>
 </html>

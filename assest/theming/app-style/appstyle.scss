@@ -159,9 +159,16 @@ body{
     border-radius: 1rem;
     object-fit: cover;
 }
+#instafeed-container{
+    a{
+        img{
+            width: 25%;
+        }
+    }
+}
 .nav-pills{
     li{
-        width: 33.3333%;
+        width: 25%;
     }
     .nav-link{
         color: #6c757d!important;
@@ -346,6 +353,15 @@ body{
 }
 
 @media(max-width: 767px){
+    #instafeed-container{
+        a{
+            display: inline-block;
+            margin: 1.2rem 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
     .course-card{
         iframe{
             height: 11pc !important;
@@ -478,10 +494,11 @@ body{
     }
     .nav-pills{
         li{
-            width: 33.3333%;
+            width: 25%;
         }
         .nav-link{
             color: #6c757d!important;
+            font-size: 0.7rem;
         }
         .nav-link.active{
             border-bottom: 2px solid #49a54c;
@@ -513,6 +530,7 @@ body{
         color: black;
         
     }
+   
     .s_logo{
         padding: 5px 10px;
         background: white;
