@@ -331,6 +331,15 @@ body {
 .course-list.ng-course {
   border-bottom: 13px solid #e31e25;
 }
+.course-list.react-course {
+  border-bottom: 13px solid #1e1ee3;
+}
+.course-list.sass-course {
+  border-bottom: 13px solid #d61ee3;
+}
+.course-list.py-course {
+  border-bottom: 13px solid #1ea5e3;
+}
 
 @media (max-width: 767px) {
   #instafeed-container a {

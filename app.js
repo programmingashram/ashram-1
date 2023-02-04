@@ -117,8 +117,6 @@ let blogs = document.getElementById("blog-details");
         </div>
     </a>
 </li>`;
-
-
 }
 
 let ashramLanguage = {
