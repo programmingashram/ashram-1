@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
+
+     <!-- PWA -->
+     <link rel="manifest" href="manifest.json">
+     <!-- ios support -->
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-72x72.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-96x96.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-128x128.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-144x144.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-152x152.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-192x192.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-384x384.png">
+     <link rel="apple-touch-icon" href="assest/images/icons/icon-512x512.png">
+     <meta name="apple-mobile-web-app-status-bar" content="#db4938">
+     <meta name="theme-color" content="#db4938">
+
+    <style>
+        .circle-1{
+            position: fixed;
+            bottom: 0;
+            z-index: -1;
+            width: 200px;   
+        }
+        .circle-2{
+            position: fixed;
+            top: 100px;
+            right: 0;
+            width: 200px;
+            z-index: -1;
+        }
+        @media(max-width: 767px){
+            .col-md-6, .col-md-3, .col-md-4, .col-md-5{
+                width: 100% !important;
+            }
+            .sys-grid{
+                flex-direction: column;
+            }
+            .display-3{
+                font-size: 2.5rem;
+            }
+            .sys-menu{
+                display: none;
+            }
+            .sys-menu{
+                display: none;
+            }
+            .mobile-menu{
+                display: block;
+                animation: slideLeft 1s;
+            }
+            .img-rwd{
+                width: 100%;
+            }
+            .cusm-grid{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="p-2"></div>
+
+    <header class="sys-header bg-light mb-5">
+        <div class="sys-container">
+          <div class="sys-grid">
+            <div class="col-md-6">
+              <div class="header-wrapper">
+                <img src="./assest/images/logo.svg">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="sys-menu header-wrapper text-center">
+                <ul class="sys-navbar mt-2 justify-c-center">
+                    <li><a href="#" class="text-dark">Visit Ashram </a></li>
+                    <li><a href="#" class="text-secondary-65">About us</a></li>
+                    <li><a href="#" class="text-secondary-65">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+     <section>
+        <div class="sys-container">
+            <div class="sys-grid align-i-center">
+                <div class="col-md-6">
+                    <div class="hero-block">
+                        <img src="./assest/images/android os.png" alt="">
+                        <h1 class="h2 mb-2">Programming <span class="text-olive">Ashram</span></h1>
+                        <div class="badge-group mb-2 mt-2">
+                            <span class="sys-pin-badge badge-accent me-3 sys-elevation-v2">
+                                <i class="fa fa-check"></i> Android
+                            </span>
+                            <span class="sys-pin-badge badge-error me-3 sys-elevation-v2">
+                                <i class="fa fa-cancel"></i> IOS
+                            </span>
+                        </div>
+                        <h1 class="h4 mb-1">Download Application</h1>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sunt nesciunt ipsa reiciendis nihil iste illum cupiditate error maiores ullam expedita architecto omnis soluta,
+                        </p>
+
+                        <div class="sys-action mt-2">
+                            <a href="#" id="installApp" class="sys-btn-outline-olive text-olive">
+                                <i class="fa-brands fa-android"></i>   Download
+                            </a>
+                           <button type="button" role="button" class="sys-btn-outline-secondary text-secondary">
+                            <i class="fa-solid fa-puzzle-piece"></i> Explore
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-block text-center text-center">
+                        <img src="./assest/images/frame-1.png" alt="" class="w-75 img-rwd">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <article class="mt-5">
+        <div class="sys-container">
+            <div class="sys-grid align-i-center">
+                <div class="col-md-6">
+                    <h1 class="h3 mb-3"><i class="fa-solid fa-puzzle-piece"></i> What we have </h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                    <div class="list-blck">
+                        <div class="p-3 bg-olive mb-3 sys-radius sys-elevation-v2 w-50">
+                            <h1 class="h6"><i class="fa-solid fa-puzzle-piece"></i>  Coding Tutorials</h1>
+                        </div>
+                        <div class="p-3 bg-accent mb-3 sys-radius sys-elevation-v2 w-75">
+                            <h1 class="h6"><i class="fa-solid fa-puzzle-piece"></i> Collaboration</h1>
+                        </div>
+                        <div class="p-3 bg-error mb-3 sys-radius sys-elevation-v2">
+                            <h1 class="h6"><i class="fa-brands fa-youtube"></i> Youtube Tutorial</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="./assest/images/frame-2.png" alt="" class="img-rwd">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </article>
+
+     <article class="mt-5 cusm-grid">
+        <div class="sys-container">
+            <div class="sys-grid align-i-center cusm-grid">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="./assest/images/frame-3.png" alt="" class="w-100 img-rwd">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="h3 mb-3"><i class="fa-solid fa-puzzle-piece"></i> Find fixes/Solutions</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                    <div class="list-blck">
+                        <h1 class="h6"><i class="fa-solid fa-check text-olive"></i>  Post Question</h1>
+                        <h1 class="h6"><i class="fa-solid fa-check text-olive"></i>  Post Answer</h1>
+                        <h1 class="h6"><i class="fa-solid fa-check text-olive"></i>  Collaborate</h1>
+                        <h1 class="h6"><i class="fa-solid fa-check text-olive"></i>  Get Solutions</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </article>
+
+     <footer>
+        <div class="sys-container">
+            <div class="sys-grid justify-c-center">
+                <div class="footer-wrapper text-center mb-4">
+                    <button type="button" role="button" class="sys-btn-outline-olive text-olive">
+                        <i class="fa-brands fa-android"></i>   Download
+                   </button>
+                   <div class="sys-action p-0 mt-4">
+                        <a href="www.programmingashram.in" class="text-accent">www.programmingashram.in</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+     <img src="./assest/images/circle-1.png" alt="" class="circle-1">
+     <img src="./assest/images/cricle-2.png" alt="" class="circle-2">
+
+     <script src="./js/app.js"></script>
+     <script>
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            deferredPrompt = e;
+        });
+
+        const installApp = document.getElementById('installApp');
+        installApp.addEventListener('click', async () => {
+            if (deferredPrompt !== null) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    deferredPrompt = null;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
