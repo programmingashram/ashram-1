@@ -294,6 +294,17 @@ a {
   border: 1px solid black;
 }
 
+.ol-list {
+  display: flex;
+  flex-direction: row;
+  gap: 13px 30px;
+  flex-wrap: wrap;
+}
+.ol-list li {
+  width: 31.33%;
+  float: left;
+}
+
 .bg-redlight {
   background-color: #f4e3de !important;
 }
@@ -881,6 +892,10 @@ footer .main-title span {
 }
 
 @media (max-width: 767px) {
+  .ol-list li {
+    width: 100% !important;
+    float: left;
+  }
   .social-links {
     display: flex !important;
     align-items: center;
