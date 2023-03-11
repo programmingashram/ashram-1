@@ -121,7 +121,7 @@ let blogs = document.getElementById("blog-details");
 
 let ashramLanguage = {
     javascript:{
-        icon:"js",
+        "icon":"js",
         title:'JavaScript',
         description:"Learn JavaScript with easy and best tutorial or join ashram for coaching",
     },

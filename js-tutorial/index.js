@@ -18,6 +18,12 @@ let jsSyllabus= [
         exampleLink:"https://stackblitz.com/edit/js-cn7icq?embed=1&file=index.js&hideExplorer=1&hideNavigation=1&theme=light&view=editor",
         id:"syl3"
     },{
+        title: "DOM Methods",
+        icon: "https://e2ehiring-cms-assets.s3.ap-south-1.amazonaws.com/dom_img_46f7da9a93.png",
+        theoryLink:"https://programmingashram.github.io/DOM",
+        exampleLink:"/",
+        id:"syl7"
+    },{
         title: "Function in JS",
         icon: "../assest/images/function.svg",
         theoryLink:"https://programmingashram.github.io/javascript-function/",
