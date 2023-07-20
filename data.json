@@ -1,0 +1,261 @@
+[
+   
+      {
+         "Title":"JavaScript new updated Version in 2021.",
+         "image":"https://www.cloudsavvyit.com/p/uploads/2019/07/9608c9ff.png?width=1198&trim=1,1&bg-color=000&pad=1,1",
+         "Descriptionshort":"javascript",
+         "Descriptionfull":"ECMAScript is the official name of the language. ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6. Since 2016 new versions are named by year (ECMAScript 2016 / 2017 / 2018).",
+         "blogid":"blog1"
+      },
+      {
+         "Title":"Most asking question is what is current Bootsrap version ?",
+         "image":"https://labs.tadigital.com/wp-content/uploads/2020/03/MicrosoftTeams-image.png",
+         "Descriptionshort":"Bootstrap",
+         "Descriptionfull":"Bootstrap 5 stable was released on May 5, 2021.  Bootstrap  5 beta 3 was released on March 22, 2021. Bootstrap 5 beta 2 was released on February 10, 2021. Bootstrap 5 beta 1 was released on December 7, 2020.",
+         "blogid":"blog2"
+      },
+      {
+         "Title":"Most asking question in interview which is current PHP version ?",
+         "image":"https://sdtimes.com/wp-content/uploads/2015/07/0715.sdt-php7.jpg",
+         "Descriptionshort":"PHP",
+         "Descriptionfull":"Currently, the latest stable version is PHP 7.4.  Supported PHP versions and lifecycle.",
+         "blogid":"blog3"
+      },
+      {
+         "Title":"What is Sass ?",
+         "image":"https://images.iambacon.co.uk/blog/sass.png",
+         "Descriptionshort":"SASS",
+         "Descriptionfull":"Sass is a preprocessor scripting language that is interpreted  or compiled into Cascading Style Sheets. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called 'the indented syntax,' uses a syntax similar to Haml.",
+         "blogid":"blog4"
+      },{
+		"image":"https://cdn.hashnode.com/res/hashnode/image/upload/v1612056247319/v0Kv9jNjX.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+		"Title":"defer in javascript.",
+		"Descriptionshort":"JavaScript",
+		"Descriptionfull":"The defer is a Boolean value, used to indicate that script is executed after the document has been parsed. It works only with external scripts (i.e., works only when we are specifying the src attribute in<img src='http://programmingashram.in/images/javascript-defer.png' class='img-thumbnail'>",
+		"blogid":"blog5"
+	},{
+		"image":"http://www.programmingashram.in/images/jquery.jpg",
+		"Title":"jQuery Version 3.6.0 Released!",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"jQuery 3.6.0 has been released. jQuery is a lightweight, write less do more,JavaScript library.jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish,and wraps them into methods that you can call with a single line of code.",
+		"blogid":"blog6"
+	},{
+		"image":"https://i.ytimg.com/vi/sfKDOOJgbSI/maxresdefault.jpg",
+		"Title":"What is meant by event bubbling ?",
+		"Descriptionshort":"JavaScript",
+		"Descriptionfull":"Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object (Provided the handler is initialized).",
+		"blogid":"blog7"
+	},{
+		"image":"https://miro.medium.com/max/1838/1*2tmzU7bve-VlTkOMWsk_Hw.jpeg",
+		"Title":"What is next JS used for ?",
+		"Descriptionshort":"JavaScript",
+		"Descriptionfull":"Next. js is a React Framework used for front-end development that enables us to use functionalities such as generating static websites and server-side rendering for React-based web applications.",
+		"blogid":"blog8"
+	},{
+		"image":"https://www.tutsmake.com/wp-content/uploads/2019/04/jquery-events.jpeg",
+		"Title":"detach(), hide(), remove() in jQuery ?",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"<b>detach() - </b> The detach() is an inbuilt method in jQuery that removes the selected elements from the DOM tree including its all text and child nodes but it keeps the data and the events.<br> <b>Remove() -</b> The remove() method removes the selected elements, including all text and child nodes.This method also removes data and events of the selected elements.<br> <b>Hide() - </b>The hide method hides the selected elements.This is similar to the CSS property display:none.Hidden elements will not be displayed at all (no longer affects the layout of the page), To show hidden elements, look at the show() method.",
+		"blogid":"blog9"
+	}
+	,{
+		"image":"https://miro.medium.com/max/1024/1*YQgaKfVzK-YpxyT3NYqJAg.png",
+		"Title":"What is document in javascript ?",
+		"Descriptionshort":"javascript",
+		"Descriptionfull":"A Document object represents the HTML document that is displayed in that window. ... It is the outmost element of the object hierarchy. <b>Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.</b>",
+		"blogid":"blog10"
+	},{
+		"image":"https://www.ivanzugec.com/wp-content/uploads/2018/02/d8-bootstrap-layouts-feature.png",
+		"Title":"Grid in Bootsrap-4,Bootsrap-5?",
+		"Descriptionshort":"Bootsrap",
+		"Descriptionfull":"<em><b>Bootsrap-4</b>:<br></em> xs (for phones - screens less than 768px wide)<br>sm (for tablets - screens equal to or greater than 768px wide)<br>md (for small laptops - screens equal to or greater than 992px wide)<br>lg (for laptops and desktops - screens equal to or greater than 1200px wide)<br></b>,<em><b>Bootsrap-5</b></em>:<br> xs (for phones - screens less than 576px wide)<br>sm (for tablets - screens equal to or greater than 576px wide)<br>md (for small laptops - screens equal to or greater than 768px wide)<br>lg (for laptops and desktops - screens equal to or greater than 992px wide)<br>xl (for Extra large screen - screen equal to or greater than 1200px wide)<br>xxl (for Extra large screen - screen equal to or greater than 1400px wide)<br>",
+		"blogid":"blog11"
+	},{
+		"image":"https://www.edgica.com/wp-content/files/js-frameworks.png",
+		"Title":"What is JavaScript Framework ?",
+		"Descriptionshort":"javascript",
+		"Descriptionfull":"JavaScript framework is an application framework written in JavaScript where the programmers can manipulate the functions and use them for their convenience.Top Framework in 2021...<br>Vue.js<br>AngularJs<br>Angular<br>JQuery<br>Bootsrap<br>Next.js<br>Express.Js<br>Ruby.js<br>Meteor",
+		"blogid":"blog12"
+	},{
+		"image":"https://i.pinimg.com/originals/61/01/0a/61010a2c05dc3b97c46ae94051fe2b4c.jpg",
+		"Title":"What are developer tools?",
+		"Descriptionshort":"Basic",
+		"Descriptionfull":"Developer tools help you to find and fix issues in layouts and functionality you may find across browsers. For instance, if a button isn’t working or an image in the layout isn’t in the right place, these tools help you resolve those issues. These tools are shipped along with the browser. If they aren’t, we install them.like<br>Chorme Developer Tools,<br>Firebug Developer Tools,<br>Firefox Developer Tools,<br>Safari Developer Tools,<br>F12 Developer Tools",
+		"blogid":"blog13"
+	},{
+		"image":"https://media.sproutsocial.com/uploads/2015/04/What-is-an-API.png",
+		"Title":"What is Web API ?",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"<b>API</b> stands for Application Programming Interface. A Web API is an application programming interface for the Web. A Browser API can extend the functionality of a web browser. A Server API can extend the functionality of a web server.",
+		"blogid":"blog14"
+	},{
+		"image":"https://blog.alexdevero.com/wp-content/uploads/2020/07/getting-started-with-web-storage-api-local-storage-and-session-storage-blog.jpg",
+		"Title":"localStorage and session storage?",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"<strong>sessionStorage</strong> is similar to <strong>localStorage</strong>  the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.",
+		"blogid":"blog15"
+	},{
+		"image":"https://s3.ap-south-1.amazonaws.com/s3.studytonight.com/curious/uploads/pictures/1547454579-1.jpg",
+		"Title":"<span class='text-danger'><strong> 'use strict' </strong></span> Mode In javascript.",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"The <span class='text-danger'><strong> 'use strict' </strong></span> directive was new in ECMAScript version 5. You can use strict mode in all your programs. It helps you to write cleaner code, like preventing you from using undeclared variables.<br> <span class='text-danger'><strong> 'use strict' </strong></span> is just a string, so IE 9 will not throw an error even if it does not understand it.",
+		"blogid":"blog16"
+	},{
+		"image":"https://miro.medium.com/max/320/1*Xc7vCmdjT3ImRnW1knnCbw.png",
+		"Title":"<span class='text-primary'>let</span>, <span class='text-success'>const</span>, <span class='text-muted'>var</span> in javascript.",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"<strong>Var</strong> <br>Variables in TypeScript can be declared using var keyword, same as in JavaScript. The scoping rules remains the same as in JavaScript.<br><strong>let</strong><br>To solve problems with var declarations, ES6 introduced two new types of variable declarations in JavaScript, using the keywords let and const. TypeScript, being a superset of JavaScript, also supports these new types of variable declarations.<br><strong>Const</strong><br>Variables can be declared using const similar to var or let declarations. The const makes a variable a constant where its value cannot be changed. Const variables have the same scoping rules as let variables.",
+		"blogid":"blog17"
+	},{
+		"image":"https://embed-ssl.wistia.com/deliveries/e5dd2bcc0656207ef3572f76c02172c83d8fc185.jpg?image_crop_resized",
+		"Title":"Data Types in javascript.",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"Tow data Types present in javascript <br> <strong> Primitive Data Types</strong><br><strong>Non Primitive.</strong><br>In Primitive Contain Number, Boolean , String, Null, Undefind,<br> And  Non primitive contain - Object, Arrey, RegEx.",
+		"blogid":"blog18"
+	},{
+		"image":"https://miro.medium.com/max/2000/1*24ayqOY008AvW_VmkqsYdA.png",
+		"Title":"Spread Operator In javascript(ES6)",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"The spread operator is a new addition to the set of operators in JavaScript ES6.The spread operator is commonly used to make shallow copies of JS objects. Using this operator makes the code concise and enhances its readability.<br>The spread operator is denoted by three dots, <span class='text-danger bg-light'>…</span>",
+		"blogid":"blog19"
+	},{
+		"image":"https://d2aj9sy12tbpym.cloudfront.net/progate/shared/images/slide/html/study/4/1561018833153.png",
+		"Title":"What is flexbox.",
+		"Descriptionshort":"CSS",
+		"Descriptionfull":"Flexbox is a layout model that allows elements to align and distribute space within a container. Using flexible widths and heights, elements can be aligned to fill a space or distribute space between elements, which makes it a great tool to use for responsive design systems.",
+		"blogid":"blog20"
+	},{
+		"image":"https://web-crunch.s3.amazonaws.com/uploads/post/feature_image/100/sass-mixins.jpg",
+		"Title":"What is @mixin in Scss ?",
+		"Descriptionshort":"Scss/Sass",
+		"Descriptionfull":"Mixins. ... A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes.",
+		"blogid":"blog21"
+	},{
+		"image":"https://i.imgur.com/HAOa3g7.jpg",
+		"Title":"What is New in ES6",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"arrows<br> classes<br> enhanced object literals<br> template strings<br> destructuring <br> default + rest + spread <br> let + const<br> iterators +, for..of<br> generators<br> unicode<br> modules<br> module loaders<br> map + set + weakmap + weakset<br> proxies<br> symbols<br> subclassable built-ins<br> promises<br> math + number + string + array + object APIs<br> binary and octal literals<br> reflect api<br> tail calls",
+		"blogid":"blog22"
+	},{
+		"image":"https://www.edureka.co/blog/wp-content/uploads/2019/07/object-properties-2.png",
+		"Title":"What is Object in JavaScript?",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.JavaScript is an object-based language. Everything is an object in JavaScript.",
+		"blogid":"blog23"
+	},{
+		"image":"https://scaledynamix.com/wp-content/uploads/2018/12/jquery.jpg",
+		"Title":"document.ready() in JavaScript?",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"Technically not !! It’s better to create an organized code structure by using one document.ready() and either put all the functions in it or call them as per the requirements.",
+		"blogid":"blog24"
+	},{
+		"image":"https://miro.medium.com/max/1200/1*BLtPxxh9aeLwyfnAcHJW1g.png",
+		"Title":"jquery.ajax() and jquery.get().",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"<b>Jquery.get() –</b>  To build an ajax request for retrieval of information we use jquery.ajax. It also provides other requests such as jquery.post(), jquery.getJSON() etc. In this jquery.ajax is use under the hood.<br><b>Jquery.ajax() –</b> It makes the use of different ajax request methods easy. We can easily customize the requests, we can customize how long do we want the user to wait for the response, failure handling, blocking or non-blocking of a request.",
+		"blogid":"blog25"
+	},{
+		"image":"https://www.tutsmake.com/wp-content/uploads/2019/04/jquery-css-method.jpeg",
+		"Title":"css() method in jQuery?",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"The css() method is used to change style property of the selected element.",
+		"blogid":"blog26"
+	},{
+		"image":"https://i.ytimg.com/vi/WhU38HV-Iu8/maxresdefault.jpg",
+		"Title":"toggle() method in JQuery",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"The jQuery toggle() is a particular type of method which is used to toggle between the hide() and show() method. It shows the hidden elements and hides the shown element.",
+		"blogid":"blog27"
+	},{
+		"image":"https://uploads.toptal.io/blog/image/125413/toptal-blog-image-1518523133236-d2bc894552c77f954f1e5ce48da6604d.png",
+		"Title":"What is ViewModel in AnglaurJS?",
+		"Descriptionshort":"AnglaurJS",
+		"Descriptionfull":"A ViewModel is an object that provides specific data and methods to maintain specific views. Basically, it is a $scope object which lives within your AngularJS app's controller. A ViewModel is associated with an HTML element with the ng-model and ng-bind directives.",
+		"blogid":"blog28"
+	},{
+		"image":"https://www.sumanastech.com/wp-content/uploads/2018/10/angular-img1.jpg",
+		"Title":"scopes in AngularJS.",
+		"Descriptionshort":"AnglaurJS",
+		"Descriptionfull":"A ViewModel is an object that provides specific data and methods to maintain specific views. Basically, it is a $scope object which lives within your AngularJS app's controller. A ViewModel is associated with an HTML element with the ng-model and ng-bind directives.",
+		"blogid":"blog29"
+	},{
+		"image":"https://www.achieversit.com/management/uploads/blog/closuresmain.png",
+		"Title":"What is a “closure” in JavaScript?",
+		"Descriptionshort":"javaScript",
+		"Descriptionfull":"A closure is an inner function that is access to the variables in the outer (enclosing) function’s or parent functions scope chain. The closure has access to variables in three scopes; specifically:<br>(1) variable in its own scope,<br> (2) variables in the enclosing function’s scope, and <br>(3) global variables.",
+		"blogid":"blog30"
+	},{
+		"image":"https://i.morioh.com/9b568edada.png",
+		"Title":"How to submit form using javaScript?",
+		"Descriptionshort":"javaScript",
+		"Descriptionfull":"The submit() method submits the form (same as clicking the Submit button). Use the reset() method to reset the form.<code class='bg-light text-success'><pre>document.getElementById('myForm').submit();</pre></code>",
+		"blogid":"blog31"
+	},{
+		"image":"https://blog.alexdevero.com/wp-content/uploads/2021/02/01-02-21-undefined-and-null-in-javascript-explained-blog.jpg",
+		"Title":"What is Undefind & Null javaScript?",
+		"Descriptionshort":"javaScript",
+		"Descriptionfull":"null - is represents the intentional absence of any object value.<br><b>Ex. - var test = null;</b><br>undefined - A variable or an object has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.<br><b>Ex. - var test;</b>",
+		"blogid":"blog32"
+	},{
+		"image":"https://miro.medium.com/max/2000/1*UD-Xzx-VuOwSBGfhNS0etg.png",
+		"Title":"What is Hoisting in javaScript?",
+		"Descriptionshort":"javaScript",
+		"Descriptionfull":"in javaScript hoisting We can use variable before it has been declared.<br><b>EX.- <br>a = 23<br> console.log(a)<br>var a;</b>",
+		"blogid":"blog33"
+	},{
+		"image":"https://i.pinimg.com/originals/20/82/c4/2082c4f27fa74d1b7171a25abec29a12.jpg",
+		"Title":"What is Chaining in Jquery ?",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"In Chaining we can add multiple methods with a sigle statement.<br>Ex. - <br>$('.para01').show().css({'color':'red','font-size':'30px'});",
+		"blogid":"blog34"
+	},{
+		"image":"https://miro.medium.com/max/1200/1*BLtPxxh9aeLwyfnAcHJW1g.png",
+		"Title":"How to call ajax in jquery",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"Ex. - <br><img src='images/how-to-call-ajax-in-jquery.png' class='img-fluid'>",
+		"blogid":"blog35"
+	},{
+		"image":"https://res.cloudinary.com/kiing/image/upload/v1580924646/ninja-uploads/arrow-functions-1-_aajnjf.png",
+		"Title":"What is Arrow Function ?",
+		"Descriptionshort":"JavaScript",
+		"Descriptionfull":"Arrow function is  features of ES6 version of JavaScript. It allows you to create functions in a cleaner & easy way compared to regular functions.<br> For example<br>Ex. - <br><img src='images/what-is-arrow-function.png' class='img-fluid'>",
+		"blogid":"blog36"
+	},{
+		"image":"https://www.dreamsoftinfotech.com/images/ajax-banner.png",
+		"Title":"How to call AJAX in JS ?",
+		"Descriptionshort":"AJAX",
+		"Descriptionfull":"Ex. - <br><img src='images/how-to-call-ajax-in-javascript.png' class='img-fluid'>",
+		"blogid":"blog37"
+	},{
+		"image":"https://i.ytimg.com/vi/cJ42gJD7Xtc/maxresdefault.jpg",
+		"Title":"find duplicates array in javascript ?",
+		"Descriptionshort":"Javascript",
+		"Descriptionfull":"Ex. - <br><img src='images/find-duplicates-in-an-array-javascript.png' class='img-fluid'>",
+		"blogid":"blog38"
+	},{
+		"image":"https://sub1.kevinchisholm.com/blog/images/jquery-logo.png",
+		"Title":"jQuery noConflict() Method.",
+		"Descriptionshort":"JQuery",
+		"Descriptionfull":"There are many other popular JavaScript frameworks like: Angular, Backbone, Ember, Knockout, and more use $ for shortcut.<br> then we can use my own shortcut in jQuery <span class='text-red'>noConflict()</span> method.<br>Ex. - <br><img src='images/jQuery-noConflict()-Method.png' class='img-fluid'>",
+		"blogid":"blog39"
+	},{
+		"image":"https://www.clariontech.com/hubfs/Server.vs.Client.png",
+		"Title":"CSR & SSR in Javascript ?",
+		"Descriptionshort":"javascript",
+		"Descriptionfull":"<b>Client-side rendering</b> allows developers to make their websites entirely rendered in the browser with JavaScript. Instead of having a different HTML page per route, a client-side rendered website creates each route dynamically directly in the browser. This approach spread once JS frameworks made it easy to take.<br><b>Server-side rendering</b> refers to an application’s ability to display the web-page on the server rather than rendering it in the browser. When a website’s JavaScript is rendered on the website’s server, a fully rendered page is sent to the client and the client’s JavaScript bundle engages and enables the Single Page Application framework to operate.",
+		"blogid":"blog40"
+	},{
+		"image":"https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/3M9drY36LGC9hGbKLUqBidGJ/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882",
+		"Title":"Event Loop in Javascript ?",
+		"Descriptionshort":"javascript",
+		"Descriptionfull":"<b>Event Loop</b> is a special queue, which keeps track of all the functions queues, which are needed to be pushed into the call stack. The event queue is responsible for sending new functions to the track for processing. The queue data structure is required to maintain the correct sequence in which all operations should be sent for execution.<br><img src='images/what-is-event-loop-in-javascript.png' class='img-fluid'>",
+		"blogid":"blog41"
+	},{
+		"image":"https://miro.medium.com/max/800/1*IuHh_NZRbF3MQNzXhyxBRQ.png",
+		"Title":"Git Commands For VS code",
+		"Descriptionshort":"GIT",
+		"Descriptionfull":"GIT COMMANDS<br><b>git status</b> - check the status of file<br><b>git add</b> - select the files for update.<br><b>git commit -m 'branchName massege'</b> - let's commit the code.<br><b>git push origin bugfix/branchName</b> - let's push the update code.<br><br>JUMP ANOTHER BRANCH<br><b>git checkout branchName</b> ",
+		"blogid":"blog42"
+	}
+
+]
