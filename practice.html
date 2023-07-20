@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
 </head>
-<body >
+<body ng-app="myApp" ng-controller="AccordionController">
     <header>
         <div class="container">
             <div class="row">
@@ -62,8 +62,8 @@
         <div class="container">
            <div class="white-box reudce-pad">
             <div class="flex-item">
-                <div class="form-control">
-                    <input type="search" class="searchbox" placeholder="Search your topic...">
+                <div class="form-control"  >
+                    <input type="search" class="searchbox"  ng-model="searchText" placeholder="Search your topic...">
                     <img src="./assets/images/Search.svg" alt="" class="searchIcon">
                 </div>
                 <h4>
@@ -111,7 +111,7 @@
                     <div class="col-md-8"  ng-app="myApp" ng-controller="AccordionController">
                        <div class="white-box">
                             <div class="tab-panel active" id="tab1">
-                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
                                         <div class="accordion-content" ng-show="accordion.isOpen">
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="tab-panel" id="tab2" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
                                         <div class="accordion-content" ng-show="accordion.isOpen">
@@ -139,7 +139,7 @@
                                 </div>
                             </div>
                             <div class="tab-panel" id="tab3" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
                                         <div class="accordion-content" ng-show="accordion.isOpen">
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="tab-panel" id="tab4" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
                                         <div class="accordion-content" ng-show="accordion.isOpen">
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="tab-panel" id="tab5" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
                                         <div class="accordion-content" ng-show="accordion.isOpen">
@@ -377,6 +377,12 @@
         // Function to toggle the state of the accordion item
         $scope.toggleAccordion = function (accordion) {
             accordion.isOpen = !accordion.isOpen;
+        };
+
+        $scope.customFilter = function (accordion) {
+            var searchText = $scope.searchText ? $scope.searchText.toLowerCase() : '';
+            var title = accordion.title.toLowerCase();
+            return title.includes(searchText) || !searchText;
         };
     $http({
         method : "GET",
