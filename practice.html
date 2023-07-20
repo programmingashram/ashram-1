@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
 </head>
-<body ng-app="myApp" ng-controller="myCtrl">
+<body >
     <header>
         <div class="container">
             <div class="row">
@@ -108,21 +108,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8"  ng-app="myApp" ng-controller="AccordionController">
                        <div class="white-box">
                             <div class="tab-panel active" id="tab1">
-                                <div class="accordion">
-                                    <div class="accordion-item" ng-repeat="data in myWelcome">
-                                      <div class="accordion-header">{{data.Title}}</div>
-                                      <div class="accordion-content">{{data.Descriptionfull}}</div>
+                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-panel" id="tab2">
-                                <div class="accordion">
+                            <div class="tab-panel" id="tab2" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
-                                      <div class="accordion-header">Topic for Angular 1</div>
-                                      <div class="accordion-content">Content for Section 1</div>
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -233,47 +245,63 @@
     </footer>
 
     <script>
-      const searchInput = document.querySelector('.searchbox');
-        const accordionItems = document.querySelectorAll('.accordion-item');
 
-        searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
+        // JavaScript to handle the accordion functionality
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach((accordion) => {
+        const header = accordion.querySelector(".accordion-header");
+        const content = accordion.querySelector(".accordion-content");
+
+        header.addEventListener("click", () => {
+            content.classList.toggle("active");
+        });
+        });
+
+       
+
+
+        const searchInput = document.querySelector('.searchbox');
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const headerText = header.textContent.toLowerCase();
+                const isMatch = headerText.includes(searchTerm);
+
+                if (isMatch) {
+                item.classList.remove('hidden');
+                content.style.display = 'block';
+                } else {
+                item.classList.add('hidden');
+                content.style.display = 'none';
+                }
+            });
+            });
 
         accordionItems.forEach(item => {
-            const header = item.querySelector('.accordion-header');
-            const content = item.querySelector('.accordion-content');
-            const headerText = header.textContent.toLowerCase();
-            const isMatch = headerText.includes(searchTerm);
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
 
-            if (isMatch) {
-            item.classList.remove('hidden');
+        header.addEventListener('click', () => {
+            const isActive = header.classList.contains('active');
+
+            // Close all accordion items
+            accordionItems.forEach(item => {
+            item.querySelector('.accordion-header').classList.remove('active');
+            item.querySelector('.accordion-content').style.display = 'none';
+            });
+
+            if (!isActive) {
+            header.classList.add('active');
             content.style.display = 'block';
-            } else {
-            item.classList.add('hidden');
-            content.style.display = 'none';
             }
         });
         });
-
-    accordionItems.forEach(item => {
-    const header = item.querySelector('.accordion-header');
-    const content = item.querySelector('.accordion-content');
-
-    header.addEventListener('click', () => {
-        const isActive = header.classList.contains('active');
-
-        // Close all accordion items
-        accordionItems.forEach(item => {
-        item.querySelector('.accordion-header').classList.remove('active');
-        item.querySelector('.accordion-content').style.display = 'none';
-        });
-
-        if (!isActive) {
-        header.classList.add('active');
-        content.style.display = 'block';
-        }
-    });
-    });
 
 
         // Get all tab buttons
@@ -297,7 +325,17 @@
 
 
     var app = angular.module('myApp', []);
-    app.controller('myCtrl', function($scope, $http) {
+    app.controller('AccordionController', function($scope, $http) {
+        $scope.accordions = [
+            { title: 'Accordion Item 1', content: 'Content for Accordion Item 1', isOpen: false },
+            { title: 'Accordion Item 2', content: 'Content for Accordion Item 2', isOpen: false },
+            // Add more accordion items as needed
+        ];
+
+        // Function to toggle the state of the accordion item
+        $scope.toggleAccordion = function (accordion) {
+            accordion.isOpen = !accordion.isOpen;
+        };
     $http({
         method : "GET",
         url : "./data.json"

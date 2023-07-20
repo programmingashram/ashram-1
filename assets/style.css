@@ -449,7 +449,9 @@ footer .row {
 }
 
 .accordion-content {
-  display: none;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1px;
   padding: 10px;
 }
 
@@ -498,4 +500,16 @@ footer .row {
 }
 .interview-slot .flex-item.increase-mar {
   margin-bottom: 0px;
+}
+
+.accordion-item {
+  position: relative;
+}
+
+.indigatores {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+  top: 16px;
 }/*# sourceMappingURL=style.css.map */
