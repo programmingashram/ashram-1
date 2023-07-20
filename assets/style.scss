@@ -544,6 +544,7 @@ footer{
   }
 .accordion-item{
     position: relative;
+   
 }
 .indigatores{
     position: absolute;
@@ -552,3 +553,36 @@ footer{
     bottom: 0;
     top: 16px;
 }
+.accordion{
+    display: none;
+}
+#tab1{
+    #javascript{
+        display: block !important;
+    }
+}
+#tab2{
+    #AnglaurJS{
+        display: block !important;
+    }
+}
+#tab3{
+    #CSS{
+        display: block !important;
+    }
+}
+
+#tab4{
+    #JQuery{
+        display: block !important;
+    }
+}
+#tab5{
+    #AJAX{
+        display: block !important;
+    }
+}
+
+.fa-js{color: orange;}
+.fa-angular{color: red;}
+.fa-html5{color: blue;}

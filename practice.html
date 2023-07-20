@@ -95,10 +95,10 @@
                                         </a>
                                     </li>
                                     <li class="list tab-button " data-tab="tab1"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
-                                    <li class="list tab-button " data-tab="tab2"><a><i class="fa-brands fa-angular"></i> Angular</a></li>
-                                    <li class="list tab-button " data-tab="tab3"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
-                                    <li class="list tab-button " data-tab="tab4"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
-                                    <li class="list tab-button " data-tab="tab5"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab2"><a><i class="fa-brands fa-angular"></i> Angular Js</a></li>
+                                    <li class="list tab-button " data-tab="tab3"><a><i class="fa-brands fa-html5"></i> CSS 2</a></li>
+                                    <li class="list tab-button " data-tab="tab4"><a><i class="fa-brands fa-js"></i> JQuery</a></li>
+                                    <li class="list tab-button " data-tab="tab5"><a><i class="fa-brands fa-js"></i> Ajax</a></li>
                                     <li class="list tab-button " data-tab="tab6"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
                                     <li class="list tab-button " data-tab="tab7"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
                                     <li class="list tab-button " data-tab="tab8"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
@@ -125,6 +125,48 @@
                                 </div>
                             </div>
                             <div class="tab-panel" id="tab2" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab3" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab4" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab5" >
                                 <div class="accordion" ng-repeat="accordion in myWelcome" id="{{accordion.Descriptionshort}}">
                                     <div class="accordion-item">
                                         <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
