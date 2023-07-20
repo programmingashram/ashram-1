@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F8F8;
+}
+
+.color-green {
+  color: #3BB44A;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+.flex-item h1 {
+  font-size: 18px;
+}
+
+.container {
+  padding: 0px 50px;
+}
+@media (min-width: 1500px) {
+  .container {
+    padding: 0px 90px;
+    width: 77%;
+    margin: 0 auto;
+  }
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-md-8 {
+  width: 70%;
+  float: left;
+}
+
+.col-md-4 {
+  width: 33.333%;
+  float: left;
+}
+
+.col-md-5 {
+  width: 20%;
+  float: left;
+}
+
+.row {
+  display: flex;
+}
+
+header {
+  background-color: white;
+  padding: 6px;
+}
+
+.img-overly {
+  position: relative;
+}
+
+.ring {
+  animation: circle 5s infinite linear;
+  position: absolute;
+  top: -17px;
+  width: 160px !important;
+  left: 99px;
+  right: -19px;
+  margin: 0 auto;
+}
+
+.menu-side ul {
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  height: 46px;
+  padding-right: 4px;
+}
+.menu-side ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.content-overly h2 {
+  line-height: 39px;
+  font-size: 30px;
+}
+.content-overly h2, .content-overly h3 {
+  margin-bottom: 40px;
+}
+.content-overly h3 {
+  color: rgba(0, 0, 0, 0.53);
+  font-size: 26px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 8px;
+  color: white;
+  background-color: #3BB44A;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.white-box, .blue-box, .light-p-box, .perpul-box {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 50px 50px;
+}
+.white-box .img-overly, .blue-box .img-overly, .light-p-box .img-overly, .perpul-box .img-overly {
+  text-align: end;
+}
+.white-box .img-overly img, .blue-box .img-overly img, .light-p-box .img-overly img, .perpul-box .img-overly img {
+  width: 80%;
+}
+
+.content-area h4 {
+  color: #000;
+  font-family: Kaisei Decol;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom-width {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  float: left;
+}
+.custom-width::-webkit-scrollbar {
+  display: none;
+}
+
+.shape {
+  gap: 0 20px;
+  align-items: center;
+}
+
+.course-card {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.course-card .card-img img {
+  width: 262px;
+  height: 157px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-details {
+  padding: 18px;
+}
+.card-details h1 {
+  font-size: 18px;
+}
+.card-details ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 16px;
+  line-height: 22px;
+}
+.card-details ul li i {
+  color: rgba(0, 0, 0, 0.53);
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  gap: 0px 16px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: -36px;
+  right: 0;
+  left: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.carousel-control {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.interview-slot .badges-outline {
+  font-size: 18px !important;
+}
+
+.carousel-control.active-1 {
+  background: rgba(0, 0, 0, 0.53);
+  width: 20px;
+  border-radius: 8px;
+}
+
+.perpul-box {
+  background-color: rgb(191, 178, 243);
+}
+.perpul-box h2, .perpul-box a {
+  color: white;
+  font-size: 30px;
+}
+.perpul-box .right-content {
+  text-align: end;
+}
+
+.light-p-box {
+  background: rgba(59, 180, 74, 0.06);
+}
+
+.slots-block .row, .practice .row, .certi-details .row {
+  gap: 0 10px;
+}
+
+.session-slot .row {
+  gap: 0 64px;
+}
+
+.card-slot {
+  padding: 18px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.card-slot ul {
+  list-style: none;
+  padding-left: 0;
+}
+.card-slot.lg-card img {
+  width: 200px;
+  height: 200px;
+}
+.card-slot.lg-card ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card-slot.lg-card ul li .fa-check {
+  margin-right: 6px;
+  color: #3BB44A;
+}
+.card-slot .flex-item {
+  justify-content: space-between;
+}
+.card-slot h2 {
+  font-size: 22px;
+}
+.card-slot p, .card-slot a {
+  font-size: 13px;
+}
+.card-slot .badges-outline {
+  border-radius: 28px;
+  border: 1px solid #D9D9D9;
+  padding: 4px 7px;
+  color: rgba(0, 0, 0, 0.53);
+  font-size: 10px;
+  background-color: white;
+}
+.card-slot .slot-img {
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  width: 130px;
+  height: 145px;
+}
+
+footer .row {
+  gap: 0 46px;
+}
+
+.active-page a {
+  color: #3BB44A !important;
+  font-weight: 700;
+}
+
+.blue-box {
+  border: 1px solid #0011A8;
+  background: rgba(0, 17, 168, 0.65);
+  margin-bottom: 8px;
+}
+.blue-box .footer-widget {
+  border-right: 1px solid white;
+}
+.blue-box .footer-widget.last {
+  border: none;
+}
+.blue-box h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+.blue-box ul {
+  padding-left: 0;
+  list-style: none;
+}
+.blue-box ul li {
+  margin-bottom: 6px;
+}
+.blue-box ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.slide-animation {
+  position: relative;
+  animation: slide 4s infinite;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  33.33% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  66.66% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.jumbo .white-box, .jumbo .perpul-box, .jumbo .light-p-box, .jumbo .blue-box {
+  padding: 20px 50px;
+}
+.jumbo .flex-item {
+  justify-content: space-between !important;
+}
+.jumbo img {
+  width: 60px;
+}
+
+.toolBox .flex-item {
+  justify-content: space-between !important;
+}
+.toolBox .form-control {
+  position: relative;
+}
+.toolBox h4 {
+  text-align: center;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.53);
+}
+.toolBox .searchbox {
+  height: 40px;
+  width: 330px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #FFF;
+  padding: 4px 8px;
+}
+.toolBox .searchbox:focus {
+  outline: none;
+}
+.toolBox .searchIcon {
+  position: absolute;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.practice .col-md-8 .white-box, .practice .col-md-8 .perpul-box, .practice .col-md-8 .light-p-box, .practice .col-md-8 .blue-box {
+  padding: 16px;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.reudce-pad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left-panel .white-box, .left-panel .perpul-box, .left-panel .light-p-box, .left-panel .blue-box {
+  height: 350px;
+  overflow-y: auto;
+  padding: 0;
+}
+.left-panel .white-box .list-header, .left-panel .perpul-box .list-header, .left-panel .light-p-box .list-header, .left-panel .blue-box .list-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.left-panel .white-box ul, .left-panel .perpul-box ul, .left-panel .light-p-box ul, .left-panel .blue-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.left-panel .white-box ul .list, .left-panel .perpul-box ul .list, .left-panel .light-p-box ul .list, .left-panel .blue-box ul .list {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 0px;
+}
+.left-panel .white-box ul .list.active, .left-panel .perpul-box ul .list.active, .left-panel .light-p-box ul .list.active, .left-panel .blue-box ul .list.active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.left-panel .white-box ul .list a, .left-panel .perpul-box ul .list a, .left-panel .light-p-box ul .list a, .left-panel .blue-box ul .list a {
+  padding: 0 15px;
+}
+.left-panel .white-box ul .list:hover, .left-panel .perpul-box ul .list:hover, .left-panel .light-p-box ul .list:hover, .left-panel .blue-box ul .list:hover {
+  background-color: #D9D9D9;
+}
+.left-panel .white-box ul li a, .left-panel .perpul-box ul li a, .left-panel .light-p-box ul li a, .left-panel .blue-box ul li a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: white;
+  padding: 16px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.certificate .row {
+  align-items: center;
+}
+
+.certificate-box img {
+  width: 100%;
+}
+.certificate-box h3 {
+  color: rgba(0, 0, 0, 0.53);
+  margin-top: 8px;
+  text-align: center;
+}
+
+.user-box {
+  text-align: center;
+}
+
+.certi-details .content-overly h3 {
+  margin: 16px 0;
+  font-size: 20px;
+}
+.certi-details .content-overly p {
+  margin-bottom: 16px;
+}
+
+.card-slot:hover {
+  background-color: rgb(249, 248, 248);
+  cursor: pointer;
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.interview-slot .flex-item {
+  align-items: start;
+  margin-bottom: -20px;
+}
+.interview-slot .flex-item.increase-mar {
+  margin-bottom: 0px;
+}/*# sourceMappingURL=style.css.map */
