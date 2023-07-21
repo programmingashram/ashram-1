@@ -676,3 +676,39 @@ footer{
     position: absolute;
     width: 170px;
 }
+
+
+
+
+.choices{
+    position: relative;
+    button{
+        display: block;
+        display: block;
+        margin-bottom: $size-8 + 5;
+        margin-top:$size-8 + 5;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-left: 10px;
+        
+        &::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            border: 1px solid $color-green;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+          
+
+        }
+        &:hover{
+            color: $color-green;
+        }
+      
+    }
+}
+#submitBtn{
+    cursor: pointer;
+}

@@ -635,4 +635,34 @@ footer .row {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 170px;
+}
+
+.choices {
+  position: relative;
+}
+.choices button {
+  display: block;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.choices button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #3BB44A;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+}
+.choices button:hover {
+  color: #3BB44A;
+}
+
+#submitBtn {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

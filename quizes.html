@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize - Play a Quize game</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body ng-app="myApp" ng-controller="AccordionController">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo-side">
+                        <div class="flex-item">
+                            <img src="./assets/images/logo.png" alt="">
+                            <h1><span class="color-green">Programming</span> Ashram</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-side">
+                        <ul class="flex-item">
+                            <li>
+                                <a href="index.html">Ashram</a>
+                            </li>
+                            <li>
+                                <a href="#" disabled>Sessions</a>
+                            </li>
+                            <li class="active-page">
+                                <a>Practice</a>
+                            </li>
+                            <li>
+                                <a href="certificate.html">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="interview.html">Mock Interviews</a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="jumbo">
+        <div class="container">
+           <div class="white-box">
+            <div class="flex-item">
+                <h3>Quiz Game</h3>
+                 <img src="./assets/images/Man launching a paper airplane into a target with users.svg" alt="">
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="toolBox">
+        <div class="container">
+           <div class="white-box reudce-pad">
+            <div class="flex-item mobile-tool">
+                <h4>
+                    Quiz Game is Based on most <br> Asking Question in 2023
+                </h4>
+                <h4>
+                   
+                </h4>
+                <div class="flex-item">
+                   <a href=""> Compile code for test  </a>
+                    <img src="./assets/images/code.svg" alt="">
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <article class="practice">
+        <div class="container">
+            <div class="white-box reudce-pad">
+                <div class="quiz-container">
+                    <div class="question" id="question"></div>
+                    <div class="choices" id="choices"></div>
+                    <div>
+                        <a class="btn" for="check" id="submitBtn" onclick="checkAnswer()">Submit Answer</a>
+                    </div>
+                    <div class="result" id="result"></div>
+                    <div class="correct-answer" id="correctAnswer"></div> <!-- New element to display correct answer -->
+                </div>
+            </div>
+        </div>
+    </article>
+ 
+    <footer>
+        <div class="container">
+            <div class="blue-box">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Programming Ashram
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Mentors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Learn It now
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Front End</a>
+                                </li>
+                                <li>
+                                    <a href="#">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Video Editing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Certificates
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="certificate.html">For Training</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Internship</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Backdated</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Sessions
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">One-to-One Session</a>
+                                </li>
+                                <li>
+                                    <a href="#">Group Session</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget last">
+                            <h4>
+                                Follow Us
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define the quiz questions and choices
+      const questions = [
+        {
+          question: "Which of the following is not a programming language?",
+          choices: ["JavaScript", "HTML", "Python", "CSS"],
+          correctAnswer: "HTML"
+        },
+        {
+          question: "What does CSS stand for?",
+          choices: ["Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets", "Creative Style Sheets"],
+          correctAnswer: "Cascading Style Sheets"
+        },
+        {
+          question: "Which keyword is used to declare a variable in JavaScript?",
+          choices: ["var", "let", "const", "variable"],
+          correctAnswer: "var"
+        }
+      ];
+      
+      // Initialize variables
+      let currentQuestion = 0;
+      let score = 0;
+      
+      // Function to display a question and choices
+      function displayQuestion() {
+        const questionElement = document.getElementById("question");
+        const choicesElement = document.getElementById("choices");
+      
+        // Clear previous question and choices
+        questionElement.innerHTML = "";
+        choicesElement.innerHTML = "";
+      
+        // Display current question
+        questionElement.textContent = questions[currentQuestion].question;
+      
+        // Display choices
+        questions[currentQuestion].choices.forEach((choice, index) => {
+          const choiceButton = document.createElement("button");
+          choiceButton.textContent = choice;
+          choiceButton.classList.add("choice-btn");
+          choiceButton.addEventListener("click", () => checkAnswer(choice));
+          choicesElement.appendChild(choiceButton);
+        });
+      }
+      
+      // Function to check the user's answer
+      function checkAnswer(userAnswer) {
+        const correctAnswer = questions[currentQuestion].correctAnswer;
+        if (userAnswer === correctAnswer) {
+          score++;
+        }
+        currentQuestion++;
+      
+        // Check if the quiz is finished
+        if (currentQuestion === questions.length) {
+          displayResult();
+        } else {
+          displayQuestion();
+        }
+      }
+      
+      // Function to display the quiz result
+      function displayResult() {
+        const resultElement = document.getElementById("result");
+        resultElement.innerHTML = `You scored ${score} out of ${questions.length} questions!`;
+      }
+      
+      // Start the quiz when the page loads
+      document.addEventListener("DOMContentLoaded", displayQuestion);
+      
+      // Reset the quiz
+      document.getElementById("submitBtn").addEventListener("click", () => {
+        currentQuestion = 0;
+        score = 0;
+        displayQuestion();
+        document.getElementById("result").innerHTML = "";
+      });
+      
+        </script>
+</body>
+</html>

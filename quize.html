@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+
+  <script>
+  // Define the quiz questions and choices
+const questions = [
+  {
+    question: "Which of the following is not a programming language?",
+    choices: ["JavaScript", "HTML", "Python", "CSS"],
+    correctAnswer: "HTML"
+  },
+  {
+    question: "What does CSS stand for?",
+    choices: ["Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets", "Creative Style Sheets"],
+    correctAnswer: "Cascading Style Sheets"
+  },
+  {
+    question: "Which keyword is used to declare a variable in JavaScript?",
+    choices: ["var", "let", "const", "variable"],
+    correctAnswer: "var"
+  }
+];
+
+// Initialize variables
+let currentQuestion = 0;
+let score = 0;
+
+// Function to display a question and choices
+function displayQuestion() {
+  const questionElement = document.getElementById("question");
+  const choicesElement = document.getElementById("choices");
+
+  // Clear previous question and choices
+  questionElement.innerHTML = "";
+  choicesElement.innerHTML = "";
+
+  // Display current question
+  questionElement.textContent = questions[currentQuestion].question;
+
+  // Display choices
+  questions[currentQuestion].choices.forEach((choice, index) => {
+    const choiceButton = document.createElement("button");
+    choiceButton.textContent = choice;
+    choiceButton.classList.add("choice-btn");
+    choiceButton.addEventListener("click", () => checkAnswer(choice));
+    choicesElement.appendChild(choiceButton);
+  });
+}
+
+// Function to check the user's answer
+function checkAnswer(userAnswer) {
+  const correctAnswer = questions[currentQuestion].correctAnswer;
+  if (userAnswer === correctAnswer) {
+    score++;
+  }
+  currentQuestion++;
+
+  // Check if the quiz is finished
+  if (currentQuestion === questions.length) {
+    displayResult();
+  } else {
+    displayQuestion();
+  }
+}
+
+// Function to display the quiz result
+function displayResult() {
+  const resultElement = document.getElementById("result");
+  resultElement.innerHTML = `You scored ${score} out of ${questions.length} questions!`;
+}
+
+// Start the quiz when the page loads
+document.addEventListener("DOMContentLoaded", displayQuestion);
+
+// Reset the quiz
+document.getElementById("submitBtn").addEventListener("click", () => {
+  currentQuestion = 0;
+  score = 0;
+  displayQuestion();
+  document.getElementById("result").innerHTML = "";
+});
+
+  </script>
+</body>
+</html>
