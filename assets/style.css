@@ -30,6 +30,11 @@ body {
     margin: 0 auto;
   }
 }
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 15px;
+  }
+}
 
 .col-md-6 {
   width: 50%;
@@ -51,10 +56,39 @@ body {
   float: left;
 }
 
+@media (max-width: 767px) {
+  .col-md-6, .col-md-8, .col-md-6, .col-md-4, .col-md-5 {
+    width: 100%;
+    float: none;
+  }
+}
 .row {
   display: flex;
 }
+@media (max-width: 767px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
 
+@media (max-width: 767px) {
+  .white-box, .blue-box, .light-p-box, .perpul-box {
+    padding: 50px 15px !important;
+  }
+  .session-slot .flex-item:last-child {
+    display: block;
+  }
+  .perpul-box .right-content, .img-overly {
+    text-align: center !important;
+    margin-top: 16px;
+  }
+  .content-area {
+    margin-bottom: 32px;
+  }
+  .menu-side {
+    display: none;
+  }
+}
 header {
   background-color: white;
   padding: 6px;
@@ -231,11 +265,11 @@ header {
 }
 
 .slots-block .row, .practice .row, .certi-details .row {
-  gap: 0 10px;
+  gap: 10px 10px;
 }
 
 .session-slot .row {
-  gap: 0 64px;
+  gap: 10px 64px;
 }
 
 .card-slot {
@@ -302,6 +336,13 @@ footer .row {
 }
 .blue-box .footer-widget {
   border-right: 1px solid white;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .blue-box .footer-widget {
+    border: none;
+    border-bottom: 1px solid white;
+  }
 }
 .blue-box .footer-widget.last {
   border: none;

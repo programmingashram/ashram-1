@@ -34,6 +34,10 @@ body{background-color: #F9F8F8;;}
         width: 77%;
         margin: 0 auto;
     }
+
+    @media(max-width: 767px){
+        padding: 0px 15px;
+    }
 }
 
 
@@ -41,8 +45,38 @@ body{background-color: #F9F8F8;;}
 .col-md-8{width: 70%; float: left;}
 .col-md-4{width: 33.333%; float: left;}
 .col-md-5{width: 20%; float: left;}
-.row{display: flex;}
-
+@media(max-width: 767px){
+   .col-md-6, .col-md-8, .col-md-6, .col-md-4, .col-md-5{
+        width: 100%;
+        float: none;
+   }
+}
+.row{
+    display: flex;
+    @media(max-width: 767px){
+        flex-wrap: wrap;
+     }
+}
+@media(max-width: 767px){
+    .white-box, .blue-box, .light-p-box, .perpul-box {
+        padding: 50px 15px !important;
+    }
+    .session-slot{
+        .flex-item:last-child{
+            display: block;
+        }
+    }
+    .perpul-box .right-content, .img-overly{
+        text-align: center !important;
+        margin-top: $size-8 * 2;
+    }
+    .content-area{
+        margin-bottom: $size-32;
+    }
+    .menu-side{
+        display: none;
+    }
+}
 header{
     background-color: $color-white;
     padding: $size-4 + 2;
@@ -228,12 +262,12 @@ header{
 
 .slots-block, .practice , .certi-details{
     .row{
-        gap: 0 10px;
+        gap: 10px 10px;
     }
 }
 .session-slot{
     .row{
-        gap: 0 $size-32 * 2;
+        gap: $size-8 + 2 $size-32 * 2;
     }
 }
 .card-slot{
@@ -311,6 +345,11 @@ footer{
 
     .footer-widget{
         border-right: 1px solid $color-white;
+        @media(max-width: 767px){
+            border: none;
+            border-bottom: 1px solid $color-white;
+        }
+        margin-bottom: $size-8 * 3;
         &.last{
             border: none;
         }
