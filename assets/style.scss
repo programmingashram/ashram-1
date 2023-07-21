@@ -66,15 +66,36 @@ body{background-color: #F9F8F8;;}
             display: block;
         }
     }
+    .left-content{
+        text-align: center;
+    }
     .perpul-box .right-content, .img-overly{
         text-align: center !important;
-        margin-top: $size-8 * 2;
+        margin-top: $size-8 * 2;  
     }
     .content-area{
         margin-bottom: $size-32;
     }
+    .form-control input{
+        width: 100% !important;
+    }
     .menu-side{
         display: none;
+    }
+    .toolBox{
+        .flex-item {
+            gap: 10px 10px;
+            flex-wrap: wrap;
+        }
+    }
+    .card{
+        img{
+            width: 100%;
+        }
+    }
+    .mobile-tool{
+        flex-direction: column-reverse;
+        gap: 18px;
     }
 }
 header{

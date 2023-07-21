@@ -78,6 +78,9 @@ body {
   .session-slot .flex-item:last-child {
     display: block;
   }
+  .left-content {
+    text-align: center;
+  }
   .perpul-box .right-content, .img-overly {
     text-align: center !important;
     margin-top: 16px;
@@ -85,8 +88,22 @@ body {
   .content-area {
     margin-bottom: 32px;
   }
+  .form-control input {
+    width: 100% !important;
+  }
   .menu-side {
     display: none;
+  }
+  .toolBox .flex-item {
+    gap: 10px 10px;
+    flex-wrap: wrap;
+  }
+  .card img {
+    width: 100%;
+  }
+  .mobile-tool {
+    flex-direction: column-reverse;
+    gap: 18px;
   }
 }
 header {
