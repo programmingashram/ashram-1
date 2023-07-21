@@ -65,7 +65,7 @@
                                 <h5>Know our Bests Mentors</h5>
                                 <div class="tool-area"> 
                                     <img src="./assets/images/mentors.svg" alt="" id="tooltipBtn">
-                                    <div id="customTooltip">"Discover the magical realm of our exceptionally skilled mentors, ready to sprinkle stardust on your talents and transform them into radiant brilliance!"</div>
+                                    <div id="customTooltip">🤩 "Discover the magical realm of our exceptionally skilled mentors, ready to sprinkle stardust on your talents and transform them into radiant brilliance!"</div>
                                 </div>
                             </div>
                             <a href="#" class="btn">Book Session</a>
@@ -590,14 +590,22 @@
             const tooltipBtn = document.getElementById('tooltipBtn');
             const customTooltip = document.getElementById('customTooltip');
 
+            customTooltip.style.display = "block"
+            if(customTooltip.style.display = "block"){
+                setTimeout(function(){
+                    customTooltip.style.display = "none"
+                }, 4000);
+            }
+           
             // Function to show the tooltip
             function showTooltip() {
-            customTooltip.style.display = 'block';
+                customTooltip.style.display = 'block';
+                
             }
 
             // Function to hide the tooltip
             function hideTooltip() {
-            customTooltip.style.display = 'none';
+                customTooltip.style.display = 'none';
             }
 
             // Add event listeners to show and hide the tooltip

@@ -520,9 +520,8 @@ footer .row {
 }
 
 .accordion-content {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
-  letter-spacing: 1px;
   padding: 10px;
 }
 
@@ -636,6 +635,19 @@ footer .row {
   position: absolute;
   width: 170px;
   z-index: 999999;
+  border-radius: 8px;
+}
+#customTooltip::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 100px;
+  margin: 0 auto;
 }
 
 .choices {
