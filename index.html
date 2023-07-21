@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -60,14 +63,18 @@
                             </h3>
                            <div class="flex-item">
                                 <h5>Know our Bests Mentors</h5>
-                                <img src="./assets/images/mentors.svg" alt="">
+                                <div class="tool-area"> 
+                                    <img src="./assets/images/mentors.svg" alt="" id="tooltipBtn">
+                                    <div id="customTooltip">"Discover the magical realm of our exceptionally skilled mentors, ready to sprinkle stardust on your talents and transform them into radiant brilliance!"</div>
+                                </div>
                            </div>
                            <a href="#" class="btn">Book Session</a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="img-overly">
-                            <img src="./assets/images/main-side.svg" alt="">
+                            <img src="./assets/images/main-side.svg" alt="" >
+                           
                         </div>
                     </div>
                 </div>
@@ -225,7 +232,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="right-content">
-                            <a href="#">(+91) 8224973413</a>
+                            <a href="tel:918224973413"> (+91) 8224973413</a>
                         </div>
                     </div>
                 </div>
@@ -284,9 +291,10 @@
                         <div class="card-slot">
                             <div class="flex-item">
                                 <h2>Get  <br> Certificate</h2>
-                                <span class="badges-outline">
-                                    <i class="fa-solid fa-info-circle"></i>   MCQ /Tech
+                                <span class="badges-outline" > 
+                                    <i class="fa-solid fa-info-circle" ></i>   MCQ /Tech
                                 </span>
+                                
                             </div>
                             <br><!--Removable Content-->
                             <p>
@@ -521,6 +529,24 @@
             h1Element.text(text === "Talent" ? "प्रतिभा" : "Talent").css("color", "#3BB44A");
         }, 5000);
     });
+
+    // Get the tooltip button and the custom tooltip element
+        const tooltipBtn = document.getElementById('tooltipBtn');
+        const customTooltip = document.getElementById('customTooltip');
+
+        // Function to show the tooltip
+        function showTooltip() {
+        customTooltip.style.display = 'block';
+        }
+
+        // Function to hide the tooltip
+        function hideTooltip() {
+        customTooltip.style.display = 'none';
+        }
+
+        // Add event listeners to show and hide the tooltip
+        tooltipBtn.addEventListener('mouseenter', showTooltip);
+        tooltipBtn.addEventListener('mouseleave', hideTooltip);
     </script>
 </body>
 </html>
