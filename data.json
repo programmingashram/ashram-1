@@ -59,20 +59,20 @@
 		"image":"https://www.tutsmake.com/wp-content/uploads/2019/04/jquery-events.jpeg",
 		"Title":"detach(), hide(), remove() in jQuery ?",
 		"Descriptionshort":"JQuery",
-		"Descriptionfull":"<b>detach() - </b> The detach() is an inbuilt method in jQuery that removes the selected elements from the DOM tree including its all text and child nodes but it keeps the data and the events.<br> <b>Remove() -</b> The remove() method removes the selected elements, including all text and child nodes.This method also removes data and events of the selected elements.<br> <b>Hide() - </b>The hide method hides the selected elements.This is similar to the CSS property display:none.Hidden elements will not be displayed at all (no longer affects the layout of the page), To show hidden elements, look at the show() method.",
+		"Descriptionfull":"<b>detach() -  The detach() is an inbuilt method in jQuery that removes the selected elements from the DOM tree including its all text and child nodes but it keeps the data and the events.<br> <b>Remove() - The remove() method removes the selected elements, including all text and child nodes.This method also removes data and events of the selected elements.<br> <b>Hide() - The hide method hides the selected elements.This is similar to the CSS property display:none.Hidden elements will not be displayed at all (no longer affects the layout of the page), To show hidden elements, look at the show() method.",
 		"blogid":"blog9"
 	}
 	,{
 		"image":"https://miro.medium.com/max/1024/1*YQgaKfVzK-YpxyT3NYqJAg.png",
 		"Title":"What is document in javascript ?",
 		"Descriptionshort":"javascript",
-		"Descriptionfull":"A Document object represents the HTML document that is displayed in that window. ... It is the outmost element of the object hierarchy. <b>Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.</b>",
+		"Descriptionfull":"A Document object represents the HTML document that is displayed in that window. ... It is the outmost element of the object hierarchy. <b>Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.",
 		"blogid":"blog10"
 	},{
 		"image":"https://www.ivanzugec.com/wp-content/uploads/2018/02/d8-bootstrap-layouts-feature.png",
 		"Title":"Grid in Bootsrap-4,Bootsrap-5?",
 		"Descriptionshort":"Bootsrap",
-		"Descriptionfull":"<em><b>Bootsrap-4</b>:<br></em> xs (for phones - screens less than 768px wide)<br>sm (for tablets - screens equal to or greater than 768px wide)<br>md (for small laptops - screens equal to or greater than 992px wide)<br>lg (for laptops and desktops - screens equal to or greater than 1200px wide)<br></b>,<em><b>Bootsrap-5</b></em>:<br> xs (for phones - screens less than 576px wide)<br>sm (for tablets - screens equal to or greater than 576px wide)<br>md (for small laptops - screens equal to or greater than 768px wide)<br>lg (for laptops and desktops - screens equal to or greater than 992px wide)<br>xl (for Extra large screen - screen equal to or greater than 1200px wide)<br>xxl (for Extra large screen - screen equal to or greater than 1400px wide)<br>",
+		"Descriptionfull":"<em><b>Bootsrap-4:<br></em> xs (for phones - screens less than 768px wide)<br>sm (for tablets - screens equal to or greater than 768px wide)<br>md (for small laptops - screens equal to or greater than 992px wide)<br>lg (for laptops and desktops - screens equal to or greater than 1200px wide)<br>,<em><b>Bootsrap-5</em>:<br> xs (for phones - screens less than 576px wide)<br>sm (for tablets - screens equal to or greater than 576px wide)<br>md (for small laptops - screens equal to or greater than 768px wide)<br>lg (for laptops and desktops - screens equal to or greater than 992px wide)<br>xl (for Extra large screen - screen equal to or greater than 1200px wide)<br>xxl (for Extra large screen - screen equal to or greater than 1400px wide)<br>",
 		"blogid":"blog11"
 	},{
 		"image":"https://www.edgica.com/wp-content/files/js-frameworks.png",
@@ -90,7 +90,7 @@
 		"image":"https://media.sproutsocial.com/uploads/2015/04/What-is-an-API.png",
 		"Title":"What is Web API ?",
 		"Descriptionshort":"Javascript",
-		"Descriptionfull":"<b>API</b> stands for Application Programming Interface. A Web API is an application programming interface for the Web. A Browser API can extend the functionality of a web browser. A Server API can extend the functionality of a web server.",
+		"Descriptionfull":"<b>API stands for Application Programming Interface. A Web API is an application programming interface for the Web. A Browser API can extend the functionality of a web browser. A Server API can extend the functionality of a web server.",
 		"blogid":"blog14"
 	},{
 		"image":"https://blog.alexdevero.com/wp-content/uploads/2020/07/getting-started-with-web-storage-api-local-storage-and-session-storage-blog.jpg",
@@ -156,7 +156,7 @@
 		"image":"https://miro.medium.com/max/1200/1*BLtPxxh9aeLwyfnAcHJW1g.png",
 		"Title":"jquery.ajax() and jquery.get().",
 		"Descriptionshort":"JQuery",
-		"Descriptionfull":"<b>Jquery.get() –</b>  To build an ajax request for retrieval of information we use jquery.ajax. It also provides other requests such as jquery.post(), jquery.getJSON() etc. In this jquery.ajax is use under the hood.<br><b>Jquery.ajax() –</b> It makes the use of different ajax request methods easy. We can easily customize the requests, we can customize how long do we want the user to wait for the response, failure handling, blocking or non-blocking of a request.",
+		"Descriptionfull":"<b>Jquery.get() –  To build an ajax request for retrieval of information we use jquery.ajax. It also provides other requests such as jquery.post(), jquery.getJSON() etc. In this jquery.ajax is use under the hood.<br><b>Jquery.ajax() – It makes the use of different ajax request methods easy. We can easily customize the requests, we can customize how long do we want the user to wait for the response, failure handling, blocking or non-blocking of a request.",
 		"blogid":"blog25"
 	},{
 		"image":"https://www.tutsmake.com/wp-content/uploads/2019/04/jquery-css-method.jpeg",
@@ -198,13 +198,13 @@
 		"image":"https://blog.alexdevero.com/wp-content/uploads/2021/02/01-02-21-undefined-and-null-in-javascript-explained-blog.jpg",
 		"Title":"What is Undefind & Null javaScript?",
 		"Descriptionshort":"javaScript",
-		"Descriptionfull":"null - is represents the intentional absence of any object value.<br><b>Ex. - var test = null;</b><br>undefined - A variable or an object has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.<br><b>Ex. - var test;</b>",
+		"Descriptionfull":"null - is represents the intentional absence of any object value.<br><b>Ex. - var test = null;<br>undefined - A variable or an object has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.<br><b>Ex. - var test;",
 		"blogid":"blog32"
 	},{
 		"image":"https://miro.medium.com/max/2000/1*UD-Xzx-VuOwSBGfhNS0etg.png",
 		"Title":"What is Hoisting in javaScript?",
 		"Descriptionshort":"javaScript",
-		"Descriptionfull":"in javaScript hoisting We can use variable before it has been declared.<br><b>EX.- <br>a = 23<br> console.log(a)<br>var a;</b>",
+		"Descriptionfull":"in javaScript hoisting We can use variable before it has been declared.<br><b>EX.- <br>a = 23<br> console.log(a)<br>var a;",
 		"blogid":"blog33"
 	},{
 		"image":"https://i.pinimg.com/originals/20/82/c4/2082c4f27fa74d1b7171a25abec29a12.jpg",
@@ -246,19 +246,19 @@
 		"image":"https://www.clariontech.com/hubfs/Server.vs.Client.png",
 		"Title":"CSR & SSR in Javascript ?",
 		"Descriptionshort":"javascript",
-		"Descriptionfull":"<b>Client-side rendering</b> allows developers to make their websites entirely rendered in the browser with JavaScript. Instead of having a different HTML page per route, a client-side rendered website creates each route dynamically directly in the browser. This approach spread once JS frameworks made it easy to take.<br><b>Server-side rendering</b> refers to an application’s ability to display the web-page on the server rather than rendering it in the browser. When a website’s JavaScript is rendered on the website’s server, a fully rendered page is sent to the client and the client’s JavaScript bundle engages and enables the Single Page Application framework to operate.",
+		"Descriptionfull":"<b>Client-side rendering allows developers to make their websites entirely rendered in the browser with JavaScript. Instead of having a different HTML page per route, a client-side rendered website creates each route dynamically directly in the browser. This approach spread once JS frameworks made it easy to take.<br><b>Server-side rendering refers to an application’s ability to display the web-page on the server rather than rendering it in the browser. When a website’s JavaScript is rendered on the website’s server, a fully rendered page is sent to the client and the client’s JavaScript bundle engages and enables the Single Page Application framework to operate.",
 		"blogid":"blog40"
 	},{
 		"image":"https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/3M9drY36LGC9hGbKLUqBidGJ/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882",
 		"Title":"Event Loop in Javascript ?",
 		"Descriptionshort":"javascript",
-		"Descriptionfull":"<b>Event Loop</b> is a special queue, which keeps track of all the functions queues, which are needed to be pushed into the call stack. The event queue is responsible for sending new functions to the track for processing. The queue data structure is required to maintain the correct sequence in which all operations should be sent for execution.<br><img src='images/what-is-event-loop-in-javascript.png' class='img-fluid'>",
+		"Descriptionfull":"<b>Event Loop is a special queue, which keeps track of all the functions queues, which are needed to be pushed into the call stack. The event queue is responsible for sending new functions to the track for processing. The queue data structure is required to maintain the correct sequence in which all operations should be sent for execution.<br><img src='images/what-is-event-loop-in-javascript.png' class='img-fluid'>",
 		"blogid":"blog41"
 	},{
 		"image":"https://miro.medium.com/max/800/1*IuHh_NZRbF3MQNzXhyxBRQ.png",
 		"Title":"Git Commands For VS code",
 		"Descriptionshort":"GIT",
-		"Descriptionfull":"GIT COMMANDS<br><b>git status</b> - check the status of file<br><b>git add</b> - select the files for update.<br><b>git commit -m 'branchName massege'</b> - let's commit the code.<br><b>git push origin bugfix/branchName</b> - let's push the update code.<br><br>JUMP ANOTHER BRANCH<br><b>git checkout branchName</b> ",
+		"Descriptionfull":"GIT COMMANDS<br><b>git status - check the status of file<br><b>git add - select the files for update.<br><b>git commit -m 'branchName massege' - let's commit the code.<br><b>git push origin bugfix/branchName - let's push the update code.<br><br>JUMP ANOTHER BRANCH<br><b>git checkout branchName ",
 		"blogid":"blog42"
 	}
 

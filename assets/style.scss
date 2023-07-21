@@ -319,14 +319,14 @@ footer{
   
     h4{
         font-size: $size-16;
-        margin-bottom: $size-8;
+        margin-bottom: $size-8 + 4;
         color: $color-white;
     }
     ul{
         padding-left: 0;
         list-style: none;
         li{
-            margin-bottom: $size-4 + 2;
+            margin-bottom: $size-8 + 4;
             a{
                 color: $color-white;
                 text-decoration: none;
