@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice - Frequently Asked Questions (FAQ) Collection</title>
+    <title>Mentors - Frequently Asked Questions (FAQ) Collection</title>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,11 +31,11 @@
                             <li>
                                 <a href="index.html">Ashram</a>
                             </li>
-                            <li>
-                                <a href="mentors.html" disabled>Find Mentors</a>
+                            <li  class="active-page">
+                                <a>Find Mentors</a>
                             </li>
-                            <li class="active-page">
-                                <a>Practice</a>
+                            <li>
+                                <a href="practice.html">Practice</a>
                             </li>
                             <li>
                                 <a href="certificate.html">Certificates</a>
@@ -54,37 +54,14 @@
         <div class="container">
            <div class="white-box">
             <div class="flex-item">
-                <h3>Ashram's Practice Room</h3>
+                <h3>Ashram's Mentors</h3>
                  <img src="./assets/images/Man launching a paper airplane into a target with users.svg" alt="">
             </div>
            </div>
         </div>
     </section>
 
-    <section class="toolBox">
-        <div class="container">
-           <div class="white-box reudce-pad">
-            <div class="flex-item mobile-tool">
-                <div class="form-control"  >
-                    <input type="search" class="searchbox"  ng-model="searchText" placeholder="Search your topic...">
-                    <img src="./assets/images/Search.svg" alt="" class="searchIcon">
-                </div>
-                <h4>
-                    We have Top Most Asking <br> question collection
-                </h4>
-                <h4>
-                   
-                </h4>
-                <div class="flex-item">
-                   <a  href="https://codesandbox.io/s/?utm_source=landingpage" target="_blank"> Let’s Run Your Code  </a>
-                    <img src="./assets/images/code.svg" alt="">
-                </div>
-            </div>
-           </div>
-        </div>
-    </section>
-
-    <article class="practice">
+    <article class="practice mentors-main">
         <div class="container">
             <div class="white-box reudce-pad">
                 <div class="row">
@@ -113,76 +90,83 @@
                     </div>
                     <div class="col-md-8"  ng-app="myApp" ng-controller="AccordionController">
                        <div class="white-box">
-                            <div class="tab-panel active" id="tab1">
-                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
-                                    <div class="accordion-item">
-                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
-                                        <div class="accordion-content" ng-show="accordion.isOpen">
-                                            {{ accordion.Descriptionfull }}
-                                        </div>
-                                        <div class="indigatores">
-                                            <span ng-show="!accordion.isOpen">+</span>
-                                            <span ng-show="accordion.isOpen">-</span>
-                                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-slot">
+                                    <div class="flex-item mentors">
+                                        <h2>Harsh 
+                                            <br> 
+                                            Sancheti 
+                                        </h2>
+                                        <img src="./assets/images/purple user icon.svg" alt="">
                                     </div>
+                                    <div>
+                                        <span class="badges-outline">
+                                            <i class="fa-solid fa-info-circle"></i>JavaScript
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="flex-item increase-mar">
+                                        <a href="https://forms.gle/xcceLVzo831hWT1U6" target="_blank">Hire Now  <i class="fa-solid fa-fire"></i></a>
+                                       <p>Rs.- 999/Session</p>
+                                    </div>
+                                    <div>
+                                       
+                                    </div>
+                                    <!-- <img src="./assets/images/recruiter having an online job interview.svg" alt="" class="slot-img"> -->
                                 </div>
                             </div>
-                            <div class="tab-panel" id="tab2" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
-                                    <div class="accordion-item">
-                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
-                                        <div class="accordion-content" ng-show="accordion.isOpen">
-                                            {{ accordion.Descriptionfull }}
-                                        </div>
-                                        <div class="indigatores">
-                                            <span ng-show="!accordion.isOpen">+</span>
-                                            <span ng-show="accordion.isOpen">-</span>
-                                        </div>
+                            <div class="col-md-4">
+                                <div class="card-slot">
+                                    <div class="flex-item mentors">
+                                        <h2>Harsh 
+                                            <br> 
+                                            Sancheti 
+                                        </h2>
+                                        <img src="./assets/images/purple user icon.svg" alt="">
                                     </div>
+                                    <div>
+                                        <span class="badges-outline">
+                                            <i class="fa-solid fa-info-circle"></i>JavaScript
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="flex-item increase-mar">
+                                        <a href="https://forms.gle/xcceLVzo831hWT1U6" target="_blank">Hire Now  <i class="fa-solid fa-fire"></i></a>
+                                        <p>Rs.- 999/Session</p>
+                                    </div>
+                                    <div>
+                                       
+                                    </div>
+                                    <!-- <img src="./assets/images/recruiter having an online job interview.svg" alt="" class="slot-img"> -->
                                 </div>
                             </div>
-                            <div class="tab-panel" id="tab3" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
-                                    <div class="accordion-item">
-                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
-                                        <div class="accordion-content" ng-show="accordion.isOpen">
-                                            {{ accordion.Descriptionfull }}
-                                        </div>
-                                        <div class="indigatores">
-                                            <span ng-show="!accordion.isOpen">+</span>
-                                            <span ng-show="accordion.isOpen">-</span>
-                                        </div>
+                            <div class="col-md-4">
+                                <div class="card-slot">
+                                    <div class="flex-item mentors">
+                                        <h2>Harsh 
+                                            <br> 
+                                            Sancheti 
+                                        </h2>
+                                        <img src="./assets/images/purple user icon.svg" alt="">
                                     </div>
+                                    <div>
+                                        <span class="badges-outline">
+                                            <i class="fa-solid fa-info-circle"></i>JavaScript
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="flex-item increase-mar">
+                                        <a href="https://forms.gle/xcceLVzo831hWT1U6" target="_blank">Hire Now  <i class="fa-solid fa-fire"></i></a>
+                                        <p>Rs.- 999/Session</p>
+                                    </div>
+                                    <div>
+                                       
+                                    </div>
+                                    <!-- <img src="./assets/images/recruiter having an online job interview.svg" alt="" class="slot-img"> -->
                                 </div>
                             </div>
-                            <div class="tab-panel" id="tab4" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
-                                    <div class="accordion-item">
-                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
-                                        <div class="accordion-content" ng-show="accordion.isOpen">
-                                            {{ accordion.Descriptionfull }}
-                                        </div>
-                                        <div class="indigatores">
-                                            <span ng-show="!accordion.isOpen">+</span>
-                                            <span ng-show="accordion.isOpen">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-panel" id="tab5" >
-                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
-                                    <div class="accordion-item">
-                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
-                                        <div class="accordion-content" ng-show="accordion.isOpen">
-                                            {{ accordion.Descriptionfull }}
-                                        </div>
-                                        <div class="indigatores">
-                                            <span ng-show="!accordion.isOpen">+</span>
-                                            <span ng-show="accordion.isOpen">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                        </div>
                     </div>
                 </div>

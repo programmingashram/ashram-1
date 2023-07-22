@@ -624,6 +624,10 @@ footer .row {
   position: relative;
 }
 
+a {
+  color: black;
+}
+
 #customTooltip {
   display: none;
   padding: 15px;
@@ -678,4 +682,8 @@ footer .row {
 
 #submitBtn {
   cursor: pointer;
+}
+
+.mentors-main .mentors img {
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */

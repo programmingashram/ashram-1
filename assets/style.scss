@@ -484,7 +484,6 @@ footer{
   }
 
 .practice{
-    
     .col-md-8{
         .white-box{
             padding: $size-16;
@@ -608,8 +607,6 @@ footer{
     .flex-item{
         align-items: start;
         margin-bottom: -20px;
-
-
         &.increase-mar{
             margin-bottom: 0px;
         }
@@ -617,7 +614,6 @@ footer{
   }
 .accordion-item{
     position: relative;
-   
 }
 .indigatores{
     position: absolute;
@@ -663,7 +659,9 @@ footer{
 .tool-area{
     position: relative;
 }
-
+a{
+    color: black;
+}
 #customTooltip {
     display: none;
     padding: 15px;
@@ -711,8 +709,6 @@ footer{
             border-radius: 100%;
             position: absolute;
             left: 0;
-          
-
         }
         &:hover{
             color: $color-green;
@@ -722,4 +718,13 @@ footer{
 }
 #submitBtn{
     cursor: pointer;
+}
+
+
+.mentors-main{
+    .mentors{
+        img{
+            width: 80px;
+        }
+    }
 }
