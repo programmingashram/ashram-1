@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - Frequently Asked Questions (FAQ) Collection</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body ng-app="myApp" ng-controller="AccordionController">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo-side">
+                        <div class="flex-item">
+                            <img src="./assets/images/logo.png" alt="">
+                            <h1><span class="color-green">Programming</span> Ashram</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-side">
+                        <ul class="flex-item">
+                            <li>
+                                <a href="index.html">Ashram</a>
+                            </li>
+                            <li>
+                                <a href="mentors.html" disabled>Find Mentors</a>
+                            </li>
+                            <li class="active-page">
+                                <a>Practice</a>
+                            </li>
+                            <li>
+                                <a href="certificate.html">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="interview.html">Mock Interviews</a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="jumbo">
+        <div class="container">
+           <div class="white-box">
+            <div class="flex-item">
+                <h3>Find Dev Support</h3>
+                 <img src="./assets/images/adding new user window.svg" alt="">
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="toolBox">
+        <div class="container">
+           <div class="white-box reudce-pad">
+            <div class="flex-item mobile-tool">
+                <div class="form-control"  >
+                    <input type="search" class="searchbox"  ng-model="searchText" placeholder="Search By Language">
+                    <img src="./assets/images/Search.svg" alt="" class="searchIcon">
+                </div>
+                <h4>
+                    We have Top Experienced developer <br> groups for your support
+                </h4>
+                <h4>
+                   
+                </h4>
+                <div class="flex-item">
+                    <p>Join Now  </p>
+                   <a href="#" target="_blank">
+                      <img src="./assets/images/add-user.svg" alt="">
+                   </a>
+               
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <article class="practice">
+        <div class="container">
+            <div class="row">
+                <div class="white-box reudce-pad"  ng-app="myApp" ng-controller="AccordionController">
+                    <div class="col-md-4">
+                        <div class="card-slot">
+                            <div class="flex-item mentors">
+                                <h2>Harsh 
+                                    <br> 
+                                    Sancheti 
+                                </h2>
+                                <img src="./assets/images/purple user icon.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="badges-outline">
+                                    <i class="fa-brands fa-angular"></i> Angular
+                                </span>
+                                <span class="badges-outline">
+                                    <i class="fa-brands fa-js"></i> JavaScript
+                                </span>
+                            </div>
+                            <br>
+                            <div class="flex-item increase-mar">
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i> Connect Dev.</a>
+                                <p>₹ 80/Hour</p>
+                            </div>
+                            <div>
+                               
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </article>
+ 
+    <footer>
+        <div class="container">
+            <div class="blue-box">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Programming Ashram
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Mentors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Learn It now
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Front End</a>
+                                </li>
+                                <li>
+                                    <a href="#">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Video Editing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Certificates
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="certificate.html">For Training</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Internship</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Backdated</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Sessions
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">One-to-One Session</a>
+                                </li>
+                                <li>
+                                    <a href="#">Group Session</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget last">
+                            <h4>
+                                Follow Us
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
