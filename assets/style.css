@@ -355,6 +355,14 @@ footer .row {
   gap: 0 46px;
 }
 
+.banner-card .row {
+  gap: 10px 10px;
+}
+
+.card-i img {
+  width: 100%;
+}
+
 .active-page a {
   color: #3BB44A !important;
   font-weight: 700;
