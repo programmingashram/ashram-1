@@ -55,21 +55,25 @@
                         <div class="col-md-6">
                             <div class="content-overly">
                                 <h2>
-                                    <span class="slide-animation"  style="font-family: Arial, sans-serif;">Talent</span>  Management <br>
-                                    & Training Platform 
+                                    Talent  Management <br>
+                                    & <span class="slide-animation">Training</span> Platform 
                                 </h2>
                                 <h3>
                                     Kickstart your learning here
                                 </h3>
                             <div class="flex-item">
-                                <h5><i class="fa-solid fa-fire "></i> Know our Bests Mentors</h5>
+                                <h5><i class="fa-solid fa-fire "></i> 
+                                <a href="mentors.html">
+                                    Know our Bests Mentors
+                                </a>
+                            </h5>
                                 <div class="tool-area"> 
                                     <img src="./assets/images/mentors.svg" alt="" id="tooltipBtn">
                                     <div id="customTooltip">🤩 "Discover the magical realm of our exceptionally skilled mentors, ready to sprinkle stardust on your talents and transform them into radiant brilliance!"</div>
                                 </div>
                                 
                             </div>
-                            <a href="#" class="btn">Book Session</a>
+                            <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -191,16 +195,16 @@
                                                 <h1>Front-end Development</h1>
                                                 <ul>
                                                     <li>
-                                                        3 Days Free Demo Class 
+                                                      <i class="fa-solid fa-calendar"></i>  3 Days Free Demo Class 
                                                     </li>
                                                     <li>
-                                                        8 Months  Course
+                                                        <i class="fa-solid fa-clock"></i>   8 Months  Course
                                                     </li>
                                                     <li>
                                                         Live Session & Offline Sessions
                                                     </li>
                                                 </ul>
-                                                <a href="#" class="btn">Book Session</a>
+                                                <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                             </div>
                                         </div>
                                         <div class="course-card">
@@ -220,7 +224,7 @@
                                                         Live Session & Offline Sessions
                                                     </li>
                                                 </ul>
-                                                <a href="#" class="btn">Book Session</a>
+                                                <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                             </div>
                                         </div>
                                         <div class="course-card">
@@ -240,7 +244,7 @@
                                                         Live Session & Offline Sessions
                                                     </li>
                                                 </ul>
-                                                <a href="#" class="btn">Book Session</a>
+                                                <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                             </div>
                                         </div>
                                         <div class="course-card">
@@ -260,7 +264,7 @@
                                                         Live Session & Offline Sessions
                                                     </li>
                                                 </ul>
-                                                <a href="#" class="btn">Book Session</a>
+                                                <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                             </div>
                                         </div>
                                         <div class="course-card">
@@ -280,7 +284,7 @@
                                                         Live Session & Offline Sessions
                                                     </li>
                                                 </ul>
-                                                <a href="#" class="btn">Book Session</a>
+                                                <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                             </div>
                                         </div>
                                     </div>        
@@ -419,7 +423,7 @@
                                             <i class="fa-solid fa-check"></i> Graphic Design
                                         </li>
                                         <li>
-                                            <a href="#" class="btn">Book Session</a>
+                                            <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                         </li>
                                     </ul>
                                 
@@ -448,7 +452,7 @@
                                             <i class="fa-solid fa-check"></i>  Graphic Design
                                         </li>
                                         <li>
-                                            <a href="#" class="btn">Book Session</a>
+                                            <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Book Session</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -604,7 +608,7 @@
             setInterval(function() {
                 var h1Element = $(".slide-animation");
                 var text = h1Element.text().trim();
-                h1Element.text(text === "Talent" ? "प्रतिभा" : "Talent").css("color", "#3BB44A");
+                h1Element.text(text === "Training" ? "Preparation" : "Training").css("color", "#3BB44A");
             }, 5000);
         });
 
@@ -616,7 +620,7 @@
             if(customTooltip.style.display = "block"){
                 setTimeout(function(){
                     customTooltip.style.display = "none"
-                }, 10000);
+                }, 5000);
             }
            
             // Function to show the tooltip
