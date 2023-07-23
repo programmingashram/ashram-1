@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - Frequently Asked Questions (FAQ) Collection</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body ng-app="myApp" ng-controller="AccordionController">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo-side">
+                        <div class="flex-item">
+                            <img src="./assets/images/logo.png" alt="">
+                            <h1><span class="color-green">Programming</span> Ashram</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-side">
+                        <ul class="flex-item">
+                            <li>
+                                <a href="index.html">Ashram</a>
+                            </li>
+                            <li>
+                                <a href="mentors.html" disabled>Find Mentors</a>
+                            </li>
+                            <li class="active-page">
+                                <a>Practice</a>
+                            </li>
+                            <li>
+                                <a href="certificate.html">Certificates</a>
+                            </li>
+                            <li>
+                                <a href="interview.html">Mock Interviews</a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="jumbo">
+        <div class="container">
+           <div class="white-box">
+            <div class="flex-item">
+                <h3>Find Jobs</h3>
+                 <img src="./assets/images/Man launching a paper airplane into a target with users.svg" alt="">
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="toolBox">
+        <div class="container">
+           <div class="white-box reudce-pad">
+            <div class="flex-item mobile-tool">
+                <div class="form-control"  >
+                    <input type="search" class="searchbox"  ng-model="searchText" placeholder="Search your topic...">
+                    <img src="./assets/images/Search.svg" alt="" class="searchIcon">
+                </div>
+                <h4>
+                    We have Top Most Asking <br> question collection
+                </h4>
+                <h4>
+                   
+                </h4>
+                <div class="flex-item">
+                   <a  href="https://codesandbox.io/s/?utm_source=landingpage" target="_blank"> Let’s Run Your Code  </a>
+                    <img src="./assets/images/code.svg" alt="">
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+    <article class="practice">
+        <div class="container">
+            <div class="white-box reudce-pad">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left-panel">
+                            <div class="white-box">
+                                <ul>
+                                    <li class="list-header">
+                                        <a href="#">
+                                            LANGUAGE
+                                        </a>
+                                    </li>
+                                    <li class="list tab-button " data-tab="tab1"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab2"><a><i class="fa-brands fa-angular"></i> Angular Js</a></li>
+                                    <li class="list tab-button " data-tab="tab3"><a><i class="fa-brands fa-html5"></i> CSS 2</a></li>
+                                    <li class="list tab-button " data-tab="tab4"><a><i class="fa-brands fa-js"></i> JQuery</a></li>
+                                    <li class="list tab-button " data-tab="tab5"><a><i class="fa-brands fa-js"></i> Ajax</a></li>
+                                    <li class="list tab-button " data-tab="tab6"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab7"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab8"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab9"><a><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                    <li class="list tab-button " data-tab="tab10"><a href="#"><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8"  ng-app="myApp" ng-controller="AccordionController">
+                       <div class="white-box">
+                            <div class="tab-panel active" id="tab1">
+                                <div class="accordion" id="javascript">
+                                    <div class="accordion-item" >
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">
+                                            <div class="flex-item job-header">
+                                                <div class="flex-item">
+                                                    <img src="./assets/images/logo.png" alt="">
+                                                    <h3>Avenue Design Infotech</h3>
+                                                </div>
+                                                <div class="badge-area">
+                                                    <span class="badges-outline">
+                                                        <i class="fa-solid fa-info-circle"></i> Git Based
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            aaa
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab2" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab3" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab4" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab5" >
+                                <div class="accordion" ng-repeat="accordion in myWelcome |  filter:searchText" id="{{accordion.Descriptionshort}}">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" ng-click="toggleAccordion(accordion)">{{ accordion.Title }}</div>
+                                        <div class="accordion-content" ng-show="accordion.isOpen">
+                                            {{ accordion.Descriptionfull }}
+                                        </div>
+                                        <div class="indigatores">
+                                            <span ng-show="!accordion.isOpen">+</span>
+                                            <span ng-show="accordion.isOpen">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+ 
+    <footer>
+        <div class="container">
+            <div class="blue-box">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Programming Ashram
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Mentors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Learn It now
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Front End</a>
+                                </li>
+                                <li>
+                                    <a href="#">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Video Editing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Certificates
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="certificate.html">For Training</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Internship</a>
+                                </li>
+                                <li>
+                                    <a href="certificate.html">For Backdated</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <h4>
+                                Sessions
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">One-to-One Session</a>
+                                </li>
+                                <li>
+                                    <a href="#">Group Session</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-widget last">
+                            <h4>
+                                Follow Us
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // JavaScript to handle the accordion functionality
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach((accordion) => {
+        const header = accordion.querySelector(".accordion-header");
+        const content = accordion.querySelector(".accordion-content");
+
+        header.addEventListener("click", () => {
+            content.classList.toggle("active");
+        });
+        });
+
+       
+
+
+        const searchInput = document.querySelector('.searchbox');
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const headerText = header.textContent.toLowerCase();
+                const isMatch = headerText.includes(searchTerm);
+
+                if (isMatch) {
+                item.classList.remove('hidden');
+                content.style.display = 'block';
+                } else {
+                item.classList.add('hidden');
+                content.style.display = 'none';
+                }
+            });
+            });
+
+        accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
+
+        header.addEventListener('click', () => {
+            const isActive = header.classList.contains('active');
+
+            // Close all accordion items
+            accordionItems.forEach(item => {
+            item.querySelector('.accordion-header').classList.remove('active');
+            item.querySelector('.accordion-content').style.display = 'none';
+            });
+
+            if (!isActive) {
+            header.classList.add('active');
+            content.style.display = 'block';
+            }
+        });
+        });
+
+
+        // Get all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+
+    // Add click event listener to each tab button
+    tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Get the target tab from the data-tab attribute
+        const tab = button.getAttribute('data-tab');
+
+        // Remove the 'active' class from all tab buttons and panels
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+        // Add the 'active' class to the clicked tab button and panel
+        button.classList.add('active');
+        document.getElementById(tab).classList.add('active');
+    });
+    });
+
+
+    var app = angular.module('myApp', []);
+    app.controller('AccordionController', function($scope, $http) {
+        $scope.accordions = [
+            { title: 'Accordion Item 1', content: 'Content for Accordion Item 1', isOpen: false },
+            { title: 'Accordion Item 2', content: 'Content for Accordion Item 2', isOpen: false },
+            // Add more accordion items as needed
+        ];
+
+        // Function to toggle the state of the accordion item
+        $scope.toggleAccordion = function (accordion) {
+            accordion.isOpen = !accordion.isOpen;
+        };
+
+        $scope.customFilter = function (accordion) {
+            var searchText = $scope.searchText ? $scope.searchText.toLowerCase() : '';
+            var title = accordion.title.toLowerCase();
+            return title.includes(searchText) || !searchText;
+        };
+    $http({
+        method : "GET",
+        url : "./data.json"
+    }).then(function mySuccess(response) {
+        $scope.myWelcome = response.data;
+        console.log($scope.myWelcome)
+    }, function myError(response) {
+        $scope.myWelcome = response.statusText;
+    });
+    });
+
+
+    </script>
+</body>
+</html>

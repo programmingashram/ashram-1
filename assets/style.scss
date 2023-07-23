@@ -661,6 +661,10 @@ footer{
     }
 }
 
+.mentors-main, .dev{
+    opacity: 0.3;
+    pointer-events: none;
+}
 .fa-js{color: orange;}
 .fa-angular{color: red;}
 .fa-html5{color: blue;}

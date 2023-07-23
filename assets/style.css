@@ -617,6 +617,11 @@ footer .row {
   display: block !important;
 }
 
+.mentors-main, .dev {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .fa-js {
   color: orange;
 }
