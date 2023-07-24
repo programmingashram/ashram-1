@@ -306,6 +306,10 @@ header {
   width: 48px;
 }
 
+.alin {
+  align-items: center;
+}
+
 .card-slot {
   padding: 18px;
   border-radius: 8px;
