@@ -268,7 +268,7 @@ header{
 }
 .interview-slot{
     .badges-outline{
-        font-size: $size-16 + 2 !important;
+        font-size: $size-16 - 4 !important;
     }
 }
 
@@ -305,6 +305,9 @@ header{
         gap: $size-8 + 2 $size-32 * 2;
     }
 }
+.circle-img{
+    width: 48px;
+}
 .card-slot{
     padding: $size-16 + 2;
     border-radius: $size-8;
@@ -336,7 +339,7 @@ header{
         justify-content: space-between;
     }
     h2{
-        font-size: 22px;
+        font-size: 18px;
     }
     p, a{
         font-size: $size-16 - 3;
@@ -621,6 +624,9 @@ footer{
         }
     }
   }
+  .book-slot .increase-mar{
+    margin-top: 1rem;
+  }
 .accordion-item{
     position: relative;
 }
@@ -650,6 +656,10 @@ footer{
     }
 }
 
+.perpul{
+    background-color: #BFB2F3 !important;
+    color: white !important;
+}
 #tab4{
     #JQuery{
         display: block !important;

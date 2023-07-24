@@ -270,7 +270,7 @@ header {
 }
 
 .interview-slot .badges-outline {
-  font-size: 18px !important;
+  font-size: 12px !important;
 }
 
 .carousel-control.active-1 {
@@ -302,6 +302,10 @@ header {
   gap: 10px 64px;
 }
 
+.circle-img {
+  width: 48px;
+}
+
 .card-slot {
   padding: 18px;
   border-radius: 8px;
@@ -329,7 +333,7 @@ header {
   justify-content: space-between;
 }
 .card-slot h2 {
-  font-size: 22px;
+  font-size: 18px;
 }
 .card-slot p, .card-slot a {
   font-size: 13px;
@@ -581,6 +585,10 @@ footer .row {
   margin-bottom: 0px;
 }
 
+.book-slot .increase-mar {
+  margin-top: 1rem;
+}
+
 .accordion-item {
   position: relative;
 }
@@ -607,6 +615,11 @@ footer .row {
 
 #tab3 #CSS {
   display: block !important;
+}
+
+.perpul {
+  background-color: #BFB2F3 !important;
+  color: white !important;
 }
 
 #tab4 #JQuery {
