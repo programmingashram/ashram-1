@@ -6,105 +6,14 @@
   <title>Code Sorting Game</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
 
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.code-container {
-  list-style: none;
-  padding: 0;
-}
-
-.code-item {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.result-msg {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
+    *{
+      margin: 0;
+    }
+  
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Code Sorting Game</h1>
-    <p>Arrange the code snippets to produce the correct output:</p>
-    <div class="code-container" id="sortable">
-      <div class="code-item">for (let i = 0; i &lt;= 5; i++) {</div>
-      <div class="code-item">&nbsp;&nbsp;&nbsp;&nbsp;console.log(i);</div>
-      <div class="code-item">}</div>
-      <div class="code-item">console.log("Loop finished");</div>
-    </div>
-    <button id="checkBtn">Check Result</button>
-    <p class="result-msg"></p>
-  </div>
-  <script>
-    const codeContainer = document.getElementById("sortable");
-const checkBtn = document.getElementById("checkBtn");
-const resultMsg = document.querySelector(".result-msg");
-
-// Initialize the sortable list
-new Sortable(codeContainer, {
-  animation: 150,
-});
-
-// The correct order of code snippets
-const correctOrder = [
-  'for (let i = 0; i <= 5; i++) {',
-  '    console.log(i);',
-  '}',
-  'console.log("Loop finished");'
-];
-
-// Event listener for the check button
-checkBtn.addEventListener("click", () => {
-  const currentOrder = Array.from(codeContainer.children).map(item => item.textContent.trim());
-  const isCorrect = JSON.stringify(currentOrder) === JSON.stringify(correctOrder);
-  
-  if (isCorrect) {
-    resultMsg.textContent = "Congratulations! Your code is correct.";
-    resultMsg.style.color = "green";
-  } else {
-    resultMsg.textContent = "Oops! Your code is incorrect. Please try again.";
-    resultMsg.style.color = "red";
-  }
-});
-
-  </script>
+    <iframe src="./assets/data/The-Magic-of-Figma.pdf" frameborder="0"></iframe>
 </body>
 </html>
