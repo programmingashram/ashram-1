@@ -149,6 +149,12 @@ header{
         }
     }
 }
+.outline-card{
+    border: 1px solid $color-gray-light;
+    padding: $size-8 + 2 $size-8 + 2;
+    border-radius: $size-8;
+    width: fit-content;
+}
 
 .content-overly{
     h2{
