@@ -36,7 +36,7 @@ body {
 .container {
   padding: 0px 50px;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1490px) {
   .container {
     padding: 0px 90px;
     width: 77%;
