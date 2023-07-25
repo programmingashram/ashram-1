@@ -721,7 +721,7 @@ a {
 
 iframe {
   width: 100%;
-  height: 500px;
+  height: 800px;
 }
 
 .custom-modal {
@@ -749,6 +749,17 @@ iframe {
 .custom-modal-content {
   background: #ffffff;
   border-radius: 10px;
+}
+
+.close-modal {
+  border: none;
+  background-color: white;
+}
+.close-modal .fa-close {
+  color: white;
+  background-color: red;
+  border-radius: 100%;
+  padding: 6px 8px;
 }
 
 .custom-modal {
