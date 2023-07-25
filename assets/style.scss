@@ -760,7 +760,11 @@ iframe{
     height: 800px;
 }
 
-
+.contact{
+    a{
+        font-size: $size-16 + 2;
+    }
+}
 
 
 .custom-modal {

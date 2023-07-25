@@ -724,6 +724,10 @@ iframe {
   height: 800px;
 }
 
+.contact a {
+  font-size: 18px;
+}
+
 .custom-modal {
   position: fixed;
   overflow: auto;
