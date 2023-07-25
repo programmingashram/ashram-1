@@ -49,6 +49,15 @@ body {
   }
 }
 
+.img-inter {
+  width: 90px;
+}
+
+.practice-img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
 .col-md-6 {
   width: 50%;
   float: left;

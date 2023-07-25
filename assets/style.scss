@@ -52,8 +52,13 @@ body{background-color: #F9F8F8;;}
         padding: 0px 15px;
     }
 }
-
-
+.img-inter{
+    width: 90px;
+}
+.practice-img{
+    width: 100%;
+    margin-bottom: $size-8;
+}
 .col-md-6{width: 50%; float: left;}
 .col-md-8{width: 70%; float: left;}
 .col-md-4{width: 33.333%; float: left;}
