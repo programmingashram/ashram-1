@@ -719,11 +719,15 @@
                     // ...
                 }
 
-                // Function to share manually on WhatsApp
-                function shareOnWhatsApp() {
-                    const text = 'Check out this awesome e-book: "The Magic of Figma" - ' + window.location.href;
-                    alert("To share on WhatsApp, please open WhatsApp and manually create a new message with the following text:\n\n" + text);
-                }
+                // Function to share on WhatsApp with a shareable link
+    function shareOnWhatsApp(title, url) {
+        const text = "Check out this awesome e-book: 'The Magic of Figma'!";
+        const shareableText = `${title} - ${url}`;
+        const encodedText = encodeURIComponent(shareableText);
+        const whatsappUrl = `https://wa.me/?text=${text}`;
+        window.open(whatsappUrl, '_blank', 'width=600,height=300');
+    }
+
 
             // Function to dynamically generate content items and sharing buttons
                 function generateContentItems() {
@@ -762,7 +766,7 @@
                                         <p><b> Rs. ${contentItems[item].price}</b></p>    
                                     </div>
                                     <div>
-                                        <a class='green' onclick="shareOnWhatsApp('${contentItems[item].title}', '${contentItems[item].url}')" >
+                                        <a class='green' onclick="shareOnWhatsApp('${item.title}', '${item.url}')" >
                                           Share On  <i class='fa-brands fa-whatsapp green'></i>    
                                         </a>  
                                         &nbsp;
