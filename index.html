@@ -703,42 +703,26 @@
                     description: "This comprehensive guide will take you from a beginner to an advanced Figma user.",
                     price: "Free",
                     imageUrl: "./assets/images/figma-icon.svg",
-                    url: "https://studio.uxpincdn.com/studio/wp-content/uploads/2022/09/Turn-Figma-Designs-into-Interactive-Prototypes.png"
+                    url: "https://programmingashram.in/e-books.html",
+                    sharedImgUrl: 'https://studio.uxpincdn.com/studio/wp-content/uploads/2022/09/Turn-Figma-Designs-into-Interactive-Prototypes.png'
                 },
                 // Add more content items here...
             ];
-            // Function to share on Twitter
-                function shareOnTwitter(text, url) {
-                    const shareUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
-                    window.open(shareUrl, '_blank', 'width=600,height=300');
-                }
-
-                // Function to share manually on Instagram
-                function shareOnInstagram() {
-                    // Implementation for manual sharing on Instagram (same as before)
-                    // ...
-                }
-
+         
                 // Function to share on WhatsApp with a shareable link
-    function shareOnWhatsApp(title, url) {
-        const text = "Check out this awesome e-book: 'The Magic of Figma'!";
-        const shareableText = `${title} - ${url}`;
-        const encodedText = encodeURIComponent(shareableText);
-        const whatsappUrl = `https://wa.me/?text=${text}`;
-        window.open(whatsappUrl, '_blank', 'width=600,height=300');
-    }
+     // Function to share on WhatsApp with both title and link
+             // Function to share on WhatsApp with title, link, and image
+             function shareOnWhatsApp(title, url, imageUrl) {
+                const shareableText = `Check out this awesome e-book: "${title}" - ${url}`;
+                const encodedText = encodeURIComponent(shareableText);
+                const whatsappUrl = `https://wa.me/?text=${encodedText}%0A%0A${imageUrl}`;
+                window.open(whatsappUrl, '_blank', 'width=600,height=300');
+            }
 
 
             // Function to dynamically generate content items and sharing buttons
                 function generateContentItems() {
                     let container = document.querySelector('#book-slot .row');
-
-                    // Loop through each content item and create its HTML representation
-                    //  title: "The Magic of Figma",
-                    // description: "This comprehensive guide will take you from a beginner to an advanced Figma user.",
-                    // price: "Free",
-                    // imageUrl: "./assets/images/figma-icon.svg",
-                    // url: "https://example.com/figma-ebook"
                   
                     for(let item = 0; item < contentItems.length; item++){
                         container.innerHTML +=`
@@ -766,7 +750,7 @@
                                         <p><b> Rs. ${contentItems[item].price}</b></p>    
                                     </div>
                                     <div>
-                                        <a class='green' onclick="shareOnWhatsApp('${item.title}', '${item.url}')" >
+                                        <a class='green' onclick="shareOnWhatsApp('${contentItems[item].title}', '${contentItems[item].url}', '${contentItems[item].sharedImgUrl}')">
                                           Share On  <i class='fa-brands fa-whatsapp green'></i>    
                                         </a>  
                                         &nbsp;
