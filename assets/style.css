@@ -180,6 +180,10 @@ header {
   font-size: 26px;
 }
 
+.green {
+  color: #3BB44A !important;
+}
+
 .btn {
   display: inline-block;
   margin-top: 16px;

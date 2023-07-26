@@ -177,37 +177,11 @@
             </div>
         </article>
 
-        <article class="slots-block book-slot">
+        <article class="slots-block book-slot" id="book-slot">
             <div class="container">
                 <div class="perpul-box">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card-slot">
-                                <div class="flex-item">
-                                    <h3 class="flex-item">
-                                        <img src="./assets/images/figma-icon.svg" alt="" class="circle-img">
-                                        The Magic of
-                                      
-                                        Figma
-                                    </h3>
-                                    <div>
-                                        <span class="badges-outline perpul">
-                                            <i class="fa-solid fa-book"></i> e-book
-                                        </span>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="detai">
-                                    <p>
-                                        This comprehensive guide will take you from a beginner to an advanced Figma user.
-                                    </p>
-                                </div>
-                                <div class="flex-item alin">
-                                    <p> <del>Rs. 299/-</del> &nbsp; Free</p>
-                                    <a href="e-books.html" class="btn" >Get The E-book</a>
-                                </div>
-                            </div>
-                        </div>
+                      
                         <amp-auto-ads type="adsense"
                                 data-ad-client="ca-pub-1841451831403837">
                         </amp-auto-ads>
@@ -718,6 +692,92 @@
             // Add event listeners to show and hide the tooltip
             tooltipBtn.addEventListener('mouseenter', showTooltip);
             tooltipBtn.addEventListener('mouseleave', hideTooltip);
+
+
+
+
+            // shred content
+            const contentItems = [
+                {
+                    title: "The Magic of Figma",
+                    description: "This comprehensive guide will take you from a beginner to an advanced Figma user.",
+                    price: "Free",
+                    imageUrl: "./assets/images/figma-icon.svg",
+                    url: "https://studio.uxpincdn.com/studio/wp-content/uploads/2022/09/Turn-Figma-Designs-into-Interactive-Prototypes.png"
+                },
+                // Add more content items here...
+            ];
+            // Function to share on Twitter
+                function shareOnTwitter(text, url) {
+                    const shareUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
+                    window.open(shareUrl, '_blank', 'width=600,height=300');
+                }
+
+                // Function to share manually on Instagram
+                function shareOnInstagram() {
+                    // Implementation for manual sharing on Instagram (same as before)
+                    // ...
+                }
+
+                // Function to share manually on WhatsApp
+                function shareOnWhatsApp() {
+                    const text = 'Check out this awesome e-book: "The Magic of Figma" - ' + window.location.href;
+                    alert("To share on WhatsApp, please open WhatsApp and manually create a new message with the following text:\n\n" + text);
+                }
+
+            // Function to dynamically generate content items and sharing buttons
+                function generateContentItems() {
+                    let container = document.querySelector('#book-slot .row');
+
+                    // Loop through each content item and create its HTML representation
+                    //  title: "The Magic of Figma",
+                    // description: "This comprehensive guide will take you from a beginner to an advanced Figma user.",
+                    // price: "Free",
+                    // imageUrl: "./assets/images/figma-icon.svg",
+                    // url: "https://example.com/figma-ebook"
+                  
+                    for(let item = 0; item < contentItems.length; item++){
+                        container.innerHTML +=`
+                        <div class="col-md-4">
+                            <div class="card-slot">
+                                <div class="flex-item">
+                                    <h3 class="flex-item">
+                                        <img src='${contentItems[item].imageUrl}' alt="" class="circle-img">
+                                        ${contentItems[item].title}
+                                    </h3>
+                                    <div>
+                                        <span class="badges-outline perpul">
+                                            <i class="fa-solid fa-book"></i> e-book
+                                        </span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="detai">
+                                    <p>
+                                        ${contentItems[item].description}
+                                    </p>
+                                </div>
+                                <div class="flex-item alin">
+                                    <div>
+                                        <p><b> Rs. ${contentItems[item].price}</b></p>    
+                                    </div>
+                                    <div>
+                                        <a class='green' onclick="shareOnWhatsApp('${contentItems[item].title}', '${contentItems[item].url}')" >
+                                          Share On  <i class='fa-brands fa-whatsapp green'></i>    
+                                        </a>  
+                                        &nbsp;
+                                        <a href="e-books.html" class="btn" >Get The E-book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    }
+                   
+                }
+
+                // Call the function to generate content items and sharing buttons
+                generateContentItems();
         </script>
        
     </body>
