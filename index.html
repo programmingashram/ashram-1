@@ -766,6 +766,13 @@
 
                 // Call the function to generate content items and sharing buttons
                 generateContentItems();
+
+
+                let body = document.querySelector('body');
+                body.classList.add('react')
+                setTimeout(function(){
+                    body.classList.remove('react');
+                },3500);
         </script>
        
     </body>
