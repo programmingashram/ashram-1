@@ -180,11 +180,7 @@ header {
   }
   50% {
     opacity: 0.4;
-    filter: grayscale(1);
-  }
-  75% {
-    opacity: 0.1;
-    filter: grayscale(1);
+    filter: grayscale(0.5);
   }
   100% {
     opacity: 1;

@@ -166,12 +166,9 @@ header{
     }
     50%{
         opacity: 0.4;
-        filter: grayscale(1);
+        filter: grayscale(0.5);
     }
-    75%{
-        opacity: 0.1;
-        filter: grayscale(1);
-    }
+
     100%{
         opacity: 1;
         filter: grayscale(0);
