@@ -212,6 +212,44 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
 .green{
     color: $color-green !important;
 }
+.new-card-1{
+    border-radius: 16px;
+    background-color: #378BFF;
+    box-shadow: 3px -17px 33px -13px rgba(0, 0, 0, 0.48) inset;
+    border: none;
+    padding: $size-16 + 8 $size-16;
+    color: white;
+    .flex-item{
+        justify-content: space-between;
+    }
+
+    &:hover{
+        box-shadow: 3px -17px 33px -13px #000 inset;
+        transition: 0.4s;
+    }
+    .badge-simn{
+        padding: $size-4 $size-16;
+        color: white;
+        background-color: black;
+        border-radius: $size-4;
+        font-size: $size-8;
+        display: block;
+        width: fit-content;
+        margin-top: $size-4;
+    }
+    &.green-c{
+        background-color: #3BB44A;;
+    }
+    &.red-c{
+        background-color: #F23260;
+    }
+    a{
+        color: white !important;
+        text-decoration: none;
+        font-size: $size-8;
+    }
+
+}
 @mixin btn1{
     padding: $size-4 * 2 $size-4 * 3;
     color: $color-white;

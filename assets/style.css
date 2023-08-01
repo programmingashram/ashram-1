@@ -225,6 +225,44 @@ header {
   color: #3BB44A !important;
 }
 
+.new-card-1 {
+  border-radius: 16px;
+  background-color: #378BFF;
+  box-shadow: 3px -17px 33px -13px rgba(0, 0, 0, 0.48) inset;
+  border: none;
+  padding: 24px 16px;
+  color: white;
+}
+.new-card-1 .flex-item {
+  justify-content: space-between;
+}
+.new-card-1:hover {
+  box-shadow: 3px -17px 33px -13px #000 inset;
+  transition: 0.4s;
+}
+.new-card-1 .badge-simn {
+  padding: 4px 16px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  font-size: 8px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 4px;
+}
+.new-card-1.green-c {
+  background-color: #3BB44A;
+}
+.new-card-1.red-c {
+  background-color: #F23260;
+}
+.new-card-1 a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 8px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 16px;
