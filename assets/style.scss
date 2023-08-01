@@ -213,11 +213,12 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
     color: $color-green !important;
 }
 @mixin btn1{
-    padding: $size-4 * 2 $size-4 * 2;
+    padding: $size-4 * 2 $size-4 * 3;
     color: $color-white;
     background-color: $color-green;
     text-decoration: none;
-    border-radius: $size-4;
+    border-radius: 60px;
+    font-size: $size-16;
 }
 .btn{
     display: inline-block;
