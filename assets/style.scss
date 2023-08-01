@@ -254,10 +254,10 @@ $color-green-t:#608f81;
         margin-bottom: $size-8;
         font-size: $size-16;
     }
-    &:hover{
-        box-shadow: 3px -17px 33px -13px #000 inset;
-        transition: 0.4s;
-    }
+    // &:hover{
+    //     box-shadow: 3px -17px 33px -13px #000 inset;
+    //     transition: 0.4s;
+    // }
     .badge-simn{
         padding: $size-4 $size-16;
         color: white;
@@ -456,6 +456,7 @@ $color-green-t:#608f81;
     background-color: $color-white;
     border: 1px solid $color-gray-light;
     position: relative;
+   
     ul{
         list-style: none;
         padding-left: 0;
@@ -750,12 +751,12 @@ footer{
         }
     }
   }
-  .card-slot:hover{
-    background-color: rgba(249, 248, 248, 1);
-    cursor: pointer;
-    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.08);
+//   .card-slot:hover{
+//     background-color: rgba(249, 248, 248, 1);
+//     cursor: pointer;
+//     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.08);
 
-  }
+//   }
 
   .interview-slot{
     .flex-item{
