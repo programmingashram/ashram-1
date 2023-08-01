@@ -5,6 +5,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-family: "Noto Sans Tangsa", sans-serif;
   font-family: "Noto Serif Khitan Small Script", sans-serif;
+  font-family: "Noto Serif Vithkuqi", serif;
   font-family: "Poppins", sans-serif;
   font-family: "PT Serif", serif;
   font-family: "Roboto Slab", serif;
@@ -199,7 +200,7 @@ header {
   flex-shrink: 0;
   border-radius: 60px;
   background: #F23260;
-  padding: 6px;
+  padding: 6px 10px;
   color: white;
   font-size: 10px;
   display: block;

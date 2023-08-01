@@ -20,6 +20,7 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Noto Sans Tangsa', sans-serif;
     font-family: 'Noto Serif Khitan Small Script', sans-serif;
+    font-family: 'Noto Serif Vithkuqi', serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'PT Serif', serif;
     font-family: 'Roboto Slab', serif;
@@ -187,7 +188,7 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
         flex-shrink: 0;
         border-radius: 60px;
         background: #F23260;
-        padding: $size-4 + 2;
+        padding: $size-4 + 2 $size-8 + 2;
         color: $color-white;
         font-size: $size-16 - 6;
         display: block;
