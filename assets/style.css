@@ -196,17 +196,41 @@ header {
 .main-blk .main-title {
   color: white;
 }
-.main-blk .red-badge {
+
+.red-badge {
   flex-shrink: 0;
-  border-radius: 60px;
-  background: #F23260;
-  padding: 6px 10px;
+  border-radius: 8px;
+  padding: 4px 20px;
   color: white;
   font-size: 10px;
   display: block;
   margin-bottom: 16px;
   width: -moz-fit-content;
   width: fit-content;
+}
+.red-badge.c-r {
+  background-color: #fc6777;
+  color: white;
+}
+.red-badge.c-b {
+  background-color: #5794b4;
+  color: white;
+}
+.red-badge.c-g {
+  background-color: #608f81;
+  color: white;
+}
+
+.c-r {
+  color: #fc6777;
+}
+
+.c-b {
+  color: #5794b4;
+}
+
+.c-g {
+  color: #608f81;
 }
 
 .content-overly h2 {
@@ -276,6 +300,16 @@ header {
   text-decoration: none;
   border-radius: 60px;
   font-size: 16px;
+}
+
+.new-blk .card-slot {
+  border: none;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 10px 90px 0px rgba(217, 217, 217, 0.28);
+}
+.new-blk .card-slot h2 {
+  margin-bottom: 1rem;
 }
 
 .white-box, .blue-box, .light-p-box, .perpul-box {

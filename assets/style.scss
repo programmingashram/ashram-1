@@ -184,18 +184,45 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
     .main-title{
         color: white;
     }
-    .red-badge{
-        flex-shrink: 0;
-        border-radius: 60px;
-        background: #F23260;
-        padding: $size-4 + 2 $size-8 + 2;
+    
+}
+
+$color-red:#fc6777;
+$color-blue-t:#5794b4;
+$color-green-t:#608f81;
+.red-badge{
+    flex-shrink: 0;
+    border-radius: $size-8;
+    padding: $size-4  $size-16 + 4;
+    color: $color-white;
+    font-size: $size-16 - 6;
+    display: block;
+    margin-bottom: $size-16;
+    width: fit-content;
+
+    &.c-r{
+        background-color: $color-red;
         color: $color-white;
-        font-size: $size-16 - 6;
-        display: block;
-        margin-bottom: $size-16;
-        width: fit-content;
+    }
+    &.c-b{
+        background-color: $color-blue-t;
+        color: $color-white;
+    }
+    &.c-g{
+        background-color: $color-green-t;
+        color: $color-white;
     }
 }
+.c-r{
+    color: $color-red;
+}
+.c-b{
+    color: $color-blue-t;
+}
+.c-g{
+    color: $color-green-t;
+}
+
 
 .content-overly{
     h2{
@@ -266,6 +293,17 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
     display: inline-block;
     margin-top: $size-16;
     @include btn1();
+}
+.new-blk{
+   .card-slot{
+    border: none;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 10px 90px 0px rgba(217, 217, 217, 0.28);
+    h2{
+        margin-bottom: 1rem;
+    }
+   } 
 }
 
 .white-box{
