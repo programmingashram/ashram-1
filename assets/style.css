@@ -209,7 +209,7 @@ header {
   width: fit-content;
 }
 .red-badge.c-r {
-  background-color: #fc6777;
+  background-color: #F23260;
   color: white;
 }
 .red-badge.c-b {
@@ -222,7 +222,7 @@ header {
 }
 
 .c-r {
-  color: #fc6777;
+  color: #F23260;
 }
 
 .c-b {
@@ -234,7 +234,7 @@ header {
 }
 
 .b-r {
-  background-color: #fc6777 !important;
+  background-color: #F23260 !important;
   color: white;
 }
 
@@ -262,7 +262,7 @@ header {
   width: 19px;
 }
 .overivew-blk .bg-1 {
-  background-color: #fc6777;
+  background-color: #F23260;
   color: white;
 }
 .overivew-blk .bg-2 {
@@ -976,4 +976,49 @@ body.modal-open .custom-modal .custom-modal-dialog {
 
 .modal-header.flex-item {
   justify-content: space-between;
+}
+
+.tab-material {
+  width: 100%;
+}
+.tab-material ol {
+  padding-left: 0;
+  padding: 12px;
+  margin-top: 16px;
+}
+.tab-material .tab-panel .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.tab-material img {
+  width: 325px;
+}
+.tab-material .tab-data {
+  margin-top: 16px;
+}
+.tab-material .img {
+  text-align: center;
+}
+.tab-material ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+}
+.tab-material ul li {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.tab-material ul li.active {
+  background-color: #F23260;
+  transform: scale(1.1);
+}
+.tab-material ul li.active a {
+  color: white !important;
+}
+.tab-material ul li a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

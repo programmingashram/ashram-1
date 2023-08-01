@@ -86,7 +86,7 @@
                                 </div>
                                 
                             </div>
-                            <a href="https://forms.gle/siDgwCJtdbTBEXpp9" class="btn">Enroll Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="courses.html" class="btn">View Courses <i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -299,6 +299,108 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+        </article>
+
+        <article class="kids-blk">
+            <div class="container">
+                <div class="white-box">
+                    <div class="row">
+                        <div class="tab-material">
+                            <ul>
+                                <li class="list tab-button" data-tab="tab1"><a>
+                                    <i class="fa-solid fa-child"></i> For Kids</a></li>
+                                <li class="list tab-button active" data-tab="tab2"><a>
+                                    <i class="fa-solid fa-person"></i> For Bigginers</a></li>
+                                <li class="list tab-button " data-tab="tab3"><a>
+                                    <i class="fa-solid fa-ghost"></i> For Pro</a></li>
+                            </ul>
+                            <div class="tab-data">
+                                <div class="tab-panel " id="tab1">
+                                       <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>Make your kids Future <br> Bright with</h1>
+                                            <ol>
+                                                <li>
+                                                    Start With Basics of Computers Programming
+                                                </li>
+                                                <li>
+                                                    Python For Kids
+                                                </li>
+                                                <li>
+                                                    Knowledge of Machine Learning
+                                                </li>
+                                                <li>
+                                                    Algorithm
+                                                </li>
+                                            </ol>
+                                            <a href="#" class="btn">Enroll Now</a>
+                                       </div>
+                                       <div class="col-md-6">
+                                            <div class="img">
+                                                <img src="./assets/images/small children looking at a laptop.svg" alt="">
+                                            </div>
+                                       </div>
+                                       </div>
+                                </div>
+                                <div class="tab-panel active" id="tab2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>Learn Code with us,<br> we're responsible for your dream JOB </h1>
+                                            <ol>
+                                                <li>
+                                                    Start With Basics of Computers Programming
+                                                </li>
+                                                <li>
+                                                    Python For Kids
+                                                </li>
+                                                <li>
+                                                    Knowledge of Machine Learning
+                                                </li>
+                                                <li>
+                                                    Algorithm
+                                                </li>
+                                            </ol>
+                                            <a href="#" class="btn">Enroll Now</a>
+                                       </div>
+                                       <div class="col-md-6">
+                                            <div class="img">
+                                                <img src="./assets/images/team of four people discussing team project.svg" alt="">
+                                            </div>
+                                       </div>
+                                       </div>
+                                </div>
+                                <div class="tab-panel"  id="tab3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>Learn Code with us,<br> we're responsible for your dream JOB </h1>
+                                            <ol>
+                                                <li>
+                                                    Developer Support
+                                                </li>
+                                                <li>
+                                                    Code Review
+                                                </li>
+                                                <li>
+                                                    Work with us and Earn With Us
+                                                </li>
+                                                <li>
+                                                    Be a tutor
+                                                </li>
+                                            </ol>
+                                            <a href="#" class="btn">Enroll Now</a>
+                                       </div>
+                                       <div class="col-md-6">
+                                            <div class="img">
+                                                <img src="./assets/images/Man programs on laptop while sitting in an armchair.svg" alt="">
+                                            </div>
+                                       </div>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
@@ -742,7 +844,8 @@
             </div>
         </footer>
 
-        
+
+      
 
         <script>
         function setupCarousel(carousel) {
@@ -889,7 +992,23 @@
                 // Call the function to generate content items and sharing buttons
                 generateContentItems();
 
+                const tabButtons = document.querySelectorAll('.tab-button');
 
+                    // Add click event listener to each tab button
+                    tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Get the target tab from the data-tab attribute
+                        const tab = button.getAttribute('data-tab');
+
+                        // Remove the 'active' class from all tab buttons and panels
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+                        // Add the 'active' class to the clicked tab button and panel
+                        button.classList.add('active');
+                        document.getElementById(tab).classList.add('active');
+                    });
+                    });
                 // let body = document.querySelector('body');
                 // body.classList.add('react')
                 // setTimeout(function(){

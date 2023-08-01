@@ -187,7 +187,7 @@ background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%
     
 }
 
-$color-red:#fc6777;
+$color-red: #F23260;
 $color-blue-t:#5794b4;
 $color-green-t:#608f81;
 .red-badge{
@@ -249,11 +249,7 @@ $color-green-t:#608f81;
     img{
         width: 19px;
     }
-    // .bgs{
-    //     background-size: cover;
-    //     background-position: center;
-    //     background-color: black;
-    // }
+
     .bg-1{
         background-color: $color-red;
         color: white;
@@ -1035,4 +1031,53 @@ body.modal-open .custom-modal .custom-modal-dialog {
         justify-content: space-between;
   
 }
+}
+
+.tab-material{
+    width: 100%;
+    ol{
+        padding-left: 0;
+        padding: $size-16 - 4;
+        margin-top: $size-16;
+    }
+    .tab-panel{
+        .row{
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    img{
+        width: 325px;
+    }
+    .tab-data{
+        margin-top: $size-16;
+    }
+    .img{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        width: 50%;
+        margin: 0 auto;
+        
+        li{
+            padding: $size-8 $size-16;
+            font-size: $size-16;
+            border-radius: $size-16;
+            cursor: pointer;
+            &.active{
+                background-color: #F23260;
+                transform: scale(1.1);
+                
+               a{
+                color: white !important;
+               }
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 }
