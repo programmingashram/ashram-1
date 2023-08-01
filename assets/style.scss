@@ -222,7 +222,64 @@ $color-green-t:#608f81;
 .c-g{
     color: $color-green-t;
 }
+.b-r{
+    background-color: $color-red !important;
+    color: white;
+}
+.b-b{
+    background-color: $color-blue-t !important;
+    color: white;
+}
+.b-g{
+    background-color: $color-green-t !important;
+    color: white;
+}
+.b-g-l{
+    background-color: $color-green !important;
+    color: white;
+}
 
+.overivew-blk{
+    .card-slot{
+        box-shadow: 0px 4px 90px 0px rgba(217, 217, 217, 0.28);
+        border: none;
+        overflow: hidden;
+       
+    }
+    img{
+        width: 19px;
+    }
+    // .bgs{
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-color: black;
+    // }
+    .bg-1{
+        background-color: $color-red;
+        color: white;
+    }
+    .bg-2{
+        background-color: $color-blue-t;
+        color: white;
+    }
+    .bg-3{
+        background-color: $color-green-t;
+        color: white;
+    }
+    .bg-4{
+        background-image: url('./images/Excellent\ results!.png');
+    }
+    .bg-5{
+        background-image: url('./images/Teacher\ trying\ his\ best\ to\ explain\ the\ subject.png');
+    }
+    .bg-6{
+        background-image: url('./images/Elder\ brother\ has\ sense\ of\ the\ game.png');
+    }
+    .bg-7{
+        background-image: url('./images/Complete\ concentration\ on\ work.png');
+    }
+
+}
 
 .content-overly{
     h2{
