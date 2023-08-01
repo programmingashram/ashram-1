@@ -236,6 +236,10 @@ header {
 .new-card-1 .flex-item {
   justify-content: space-between;
 }
+.new-card-1 h2 {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
 .new-card-1:hover {
   box-shadow: 3px -17px 33px -13px #000 inset;
   transition: 0.4s;
