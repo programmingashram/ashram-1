@@ -174,6 +174,27 @@ header{
         filter: grayscale(0);
     }
 }
+.main-blk{
+    .white-box{
+        border: none;
+        border-radius: 12px;
+background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    .main-title{
+        color: white;
+    }
+    .red-badge{
+        flex-shrink: 0;
+        border-radius: 60px;
+        background: #F23260;
+        padding: $size-4 + 2;
+        color: $color-white;
+        font-size: $size-16 - 6;
+        display: block;
+        margin-bottom: $size-16;
+        width: fit-content;
+    }
+}
 
 .content-overly{
     h2{

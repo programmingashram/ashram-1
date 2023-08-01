@@ -3,17 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Sorting Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Programming Languages Animation</title>
   <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
-    *{
-      margin: 0;
-    }
-  
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.programming-languages {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.language-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.language-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.language-card h3 {
+  margin-top: 10px;
+  color: #333333;
+  font-size: 18px;
+}
+
+.language-card:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.language-card:hover:before {
+  opacity: 1;
+}
+
+.language-card:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
   </style>
 </head>
 <body>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fud3bkDyqmoOa12thR5NScn%2FProgramming-Ashram-UI%3Ftype%3Ddesign%26node-id%3D213%253A399%26mode%3Ddev" allowfullscreen></iframe>
+  <div class="animation-container">
+    <div class="languages">
+      <div class="language">HTML</div>
+      <div class="language">CSS</div>
+      <div class="language">JavaScript</div>
+      <div class="language">Python</div>
+      <div class="language">Java</div>
+      <!-- Add more languages here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -187,6 +187,27 @@ header {
     filter: grayscale(0);
   }
 }
+.main-blk .white-box, .main-blk .blue-box, .main-blk .light-p-box, .main-blk .perpul-box {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%, rgba(255, 255, 255, 0) 100%);
+}
+.main-blk .main-title {
+  color: white;
+}
+.main-blk .red-badge {
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #F23260;
+  padding: 6px;
+  color: white;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .content-overly h2 {
   line-height: 39px;
   font-size: 30px;
