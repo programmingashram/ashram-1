@@ -193,7 +193,7 @@ $color-green-t:#608f81;
 .red-badge{
     flex-shrink: 0;
     border-radius: $size-8;
-    padding: $size-4  $size-16 + 4;
+    padding: $size-4 - 2  $size-16 + 4;
     color: $color-white;
     font-size: $size-16 - 6;
     display: block;
@@ -251,7 +251,7 @@ $color-green-t:#608f81;
     }
 
     h2{
-        margin-bottom: $size-16;
+        margin-bottom: $size-8;
         font-size: $size-16;
     }
     &:hover{
@@ -301,7 +301,11 @@ $color-green-t:#608f81;
     background: #FFF;
     box-shadow: 0px 10px 90px 0px rgba(217, 217, 217, 0.28);
     h2{
-        margin-bottom: 1rem;
+        margin-bottom: $size-16 - 4;
+    }
+    a{
+        color: black;
+        text-decoration: none;
     }
    } 
 }

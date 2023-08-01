@@ -200,7 +200,7 @@ header {
 .red-badge {
   flex-shrink: 0;
   border-radius: 8px;
-  padding: 4px 20px;
+  padding: 2px 20px;
   color: white;
   font-size: 10px;
   display: block;
@@ -261,7 +261,7 @@ header {
   justify-content: space-between;
 }
 .new-card-1 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-size: 16px;
 }
 .new-card-1:hover {
@@ -309,7 +309,11 @@ header {
   box-shadow: 0px 10px 90px 0px rgba(217, 217, 217, 0.28);
 }
 .new-blk .card-slot h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
+}
+.new-blk .card-slot a {
+  color: black;
+  text-decoration: none;
 }
 
 .white-box, .blue-box, .light-p-box, .perpul-box {
