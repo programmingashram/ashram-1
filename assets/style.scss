@@ -1067,6 +1067,9 @@ body.modal-open .custom-modal .custom-modal-dialog {
     }
     .img{
         text-align: center;
+        @media (max-width: 767px) {
+            margin-top:  $size-32;
+        }
         .img-1{
           
             z-index: 9999;

@@ -1010,6 +1010,11 @@ body.modal-open .custom-modal .custom-modal-dialog {
 .tab-material .img {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .tab-material .img {
+    margin-top: 32px;
+  }
+}
 .tab-material .img .img-1 {
   z-index: 9999;
 }
