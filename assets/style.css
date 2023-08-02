@@ -134,7 +134,7 @@ header {
   padding: 6px;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 9999999999;
 }
 
 .img-overly {
@@ -1073,4 +1073,19 @@ body.modal-open .custom-modal .custom-modal-dialog {
   border: 1px solid #D9D9D9;
   border-radius: 28px;
   text-decoration: none;
+}
+
+.review {
+  text-align: center;
+}
+.review .profile {
+  border-radius: 100%;
+  display: block;
+  width: 41px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .review .course-card {
+    width: 234px;
+  }
 }/*# sourceMappingURL=style.css.map */

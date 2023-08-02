@@ -119,11 +119,11 @@ body{background-color: #F9F8F8;;}
     }
 }
 header{
-    background-color: $color-white;
-    padding: $size-4 + 2;
+    background-color: white;
+    padding: 6px;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 9999999999;
 }
 .img-overly{
     position: relative;
@@ -1131,5 +1131,21 @@ body.modal-open .custom-modal .custom-modal-dialog {
         border:1px solid $color-gray-teal;
         border-radius: $size-32 - 2 * 2;
         text-decoration: none;
+       
+    }
+}
+
+.review{
+    text-align: center;
+    .profile{
+        border-radius: 100%;
+        display: block;
+        width: 41px;
+        margin: 0 auto;
+    }
+    .course-card{
+        @media (max-width: 767px) {
+            width: 234px;
+        }
     }
 }
