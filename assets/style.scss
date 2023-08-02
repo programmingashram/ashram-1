@@ -1033,6 +1033,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 }
 
+.kids-blk{
+   .white-box{
+    position: relative;
+    overflow: hidden;
+   }
+}
 .tab-material{
     width: 100%;
     ol{
@@ -1049,27 +1055,43 @@ body.modal-open .custom-modal .custom-modal-dialog {
     img{
         width: 325px;
     }
+    .img-2{
+        position: absolute;
+        right: -51px;
+        margin: 0 auto;
+        top: 60px;
+    }
+
     .tab-data{
         margin-top: $size-16;
     }
     .img{
         text-align: center;
+        .img-1{
+          
+            z-index: 9999;
+        }
+       
     }
     ul{
         display: flex;
         list-style: none;
-        width: 50%;
+        width: 32%;
         margin: 0 auto;
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding-left: 0;
+        border-radius: 60px;
+        border: 1px solid $color-gray-light;
         
         li{
             padding: $size-8 $size-16;
             font-size: $size-16;
-            border-radius: $size-16;
+            border-radius: $size-32 - 2 *2;
             cursor: pointer;
             &.active{
                 background-color: #F23260;
-                transform: scale(1.1);
-                
+                transform: scale(1.12);
                a{
                 color: white !important;
                }
