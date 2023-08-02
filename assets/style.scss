@@ -1136,7 +1136,6 @@ body.modal-open .custom-modal .custom-modal-dialog {
 
             &.active{
                 background-color: #F23260;
-                transform: scale(1.10);
                 animation: fadeIn 0.5s ease;
                a{
                 color: white !important;
@@ -1147,6 +1146,13 @@ body.modal-open .custom-modal .custom-modal-dialog {
                 color: black;
             }
         }
+    }
+}
+.book-slot{
+    @media (max-width: 767px) {
+         h3{
+            font-size: 15px;
+         }
     }
 }
 @keyframes fadeIn {

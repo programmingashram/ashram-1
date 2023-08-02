@@ -1062,7 +1062,6 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .tab-material ul li.active {
   background-color: #F23260;
-  transform: scale(1.1);
   animation: fadeIn 0.5s ease;
 }
 .tab-material ul li.active a {
@@ -1071,6 +1070,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
 .tab-material ul li a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .book-slot h3 {
+    font-size: 15px;
+  }
 }
 
 @keyframes fadeIn {
