@@ -1151,7 +1151,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
 .book-slot{
     @media (max-width: 767px) {
          h3{
-            font-size: 15px;
+            font-size: 14px;
          }
     }
 }
@@ -1175,7 +1175,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
         justify-content: space-between;
     }
     .btn-1{
-        padding: $size-8 $size-16;
+        padding: $size-8 $size-16 - 2;
         border:1px solid $color-gray-teal;
         border-radius: $size-32 - 2 * 2;
         text-decoration: none;
