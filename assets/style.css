@@ -203,7 +203,7 @@ header {
 .red-badge {
   flex-shrink: 0;
   border-radius: 8px;
-  padding: 2px 20px;
+  padding: 2px 4px;
   color: white;
   font-size: 10px;
   display: block;
@@ -986,6 +986,14 @@ body.modal-open .custom-modal .custom-modal-dialog {
   overflow: hidden;
 }
 
+.review .white-box, .review .perpul-box, .review .light-p-box, .review .blue-box {
+  background: linear-gradient(128deg, #4F7166 0%, rgba(100, 130, 121, 0.88) 49.71%, rgba(255, 255, 255, 0) 100%);
+  border: none;
+}
+.review .course-card {
+  background-color: white;
+}
+
 .tab-material {
   width: 100%;
 }
@@ -1034,7 +1042,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .tab-material ul li {
   padding: 8px 16px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 28px;
   cursor: pointer;
 }
@@ -1046,7 +1054,8 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .tab-material ul li.active {
   background-color: #F23260;
-  transform: scale(1.12);
+  transform: scale(1.1);
+  animation: fadeIn 0.5s ease;
 }
 .tab-material ul li.active a {
   color: white !important;
@@ -1056,6 +1065,14 @@ body.modal-open .custom-modal .custom-modal-dialog {
   color: black;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .bottom-nav {
   padding: 8px 16px;
   background: white;
