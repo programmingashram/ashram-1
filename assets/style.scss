@@ -406,13 +406,13 @@ $color-green-t:#608f81;
     align-items: center;
 }
 .course-card{
+    padding: $size-8 + 2;
     border-radius: $size-8;
     border: 1px solid $color-gray-light;
     .card-img img{
         width: 262px;
         height: 157px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-radius: $size-8;
     }
 }
 .card-details{
@@ -1148,7 +1148,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
         border:1px solid $color-gray-teal;
         border-radius: $size-32 - 2 * 2;
         text-decoration: none;
-       
+        
     }
 }
 
