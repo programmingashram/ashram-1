@@ -1074,7 +1074,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
 
 @media (max-width: 767px) {
   .book-slot h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -1099,7 +1099,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
   justify-content: space-between;
 }
 .bottom-nav .btn-1 {
-  padding: 8px 14px;
+  padding: 8px 13px;
   border: 1px solid #D9D9D9;
   border-radius: 28px;
   text-decoration: none;
