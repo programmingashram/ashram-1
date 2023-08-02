@@ -121,7 +121,9 @@ body{background-color: #F9F8F8;;}
 header{
     background-color: $color-white;
     padding: $size-4 + 2;
-   
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 .img-overly{
     position: relative;
@@ -1110,5 +1112,24 @@ body.modal-open .custom-modal .custom-modal-dialog {
                 color: black;
             }
         }
+    }
+}
+
+.bottom-nav{
+    padding: $size-8 $size-16;
+    background: white;
+    position: fixed;
+    z-index: 99999999;
+    bottom: 0;
+    width: 100%;
+    .flex-item{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn-1{
+        padding: $size-8 $size-16;
+        border:1px solid $color-gray-teal;
+        border-radius: $size-32 - 2 * 2;
+        text-decoration: none;
     }
 }
