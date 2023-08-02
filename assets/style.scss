@@ -337,12 +337,12 @@ $color-green-t:#608f81;
 
 }
 @mixin btn1{
-    padding: $size-4 * 2 $size-4 * 3;
+    padding: $size-4 + 2 $size-4 + 4;
     color: $color-white;
     background-color: $color-green;
     text-decoration: none;
     border-radius: 60px;
-    font-size: $size-16;
+    font-size: $size-16 - 6;
 }
 .btn{
     display: inline-block;
@@ -405,15 +405,39 @@ $color-green-t:#608f81;
     gap: 0 20px;
     align-items: center;
 }
+.review{
+    .outline-card{
+        color: white;
+        border: 1px solid;
+        margin-bottom: 1rem;
+    }
+}
 .course-card{
     padding: $size-8 + 2;
-    border-radius: $size-8;
+    border-radius: $size-8 * 2;
     border: 1px solid $color-gray-light;
+    background-color: $color-white;
     .card-img img{
         width: 262px;
         height: 157px;
-        border-radius: $size-8;
+        border-radius: $size-8 * 2;
     }
+    // .shadow-1{
+    //     box-shadow: 0px 4px 90px 0px rgb(3 106 203 / 34%)
+    // }
+    // .shadow-2{
+    //     box-shadow: 0px 4px 90px 0px rgb(141 206 244 / 34%)
+    // }
+    // .shadow-3{
+    //     box-shadow: 0px 4px 90px 0px rgb(167 56 255 / 34%)
+    // }
+    // .shadow-4{
+    //     box-shadow: 0px 4px 90px 0px rgb(23 26 34 / 34%)
+    // }
+    // .shadow-5{
+    //     box-shadow: 0px 4px 90px 0px rgb(23 26 34 / 34%);
+    // }
+   
 }
 .card-details{
     padding: $size-16 + 2;
@@ -1047,6 +1071,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
         border: none;
     }
     .course-card{
+        width: 300px;
         background-color: white;
     }
 }

@@ -346,12 +346,12 @@ header {
 .btn {
   display: inline-block;
   margin-top: 16px;
-  padding: 8px 12px;
+  padding: 6px 8px;
   color: white;
   background-color: #3BB44A;
   text-decoration: none;
   border-radius: 60px;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 .new-blk .card-slot {
@@ -408,15 +408,22 @@ header {
   align-items: center;
 }
 
+.review .outline-card {
+  color: white;
+  border: 1px solid;
+  margin-bottom: 1rem;
+}
+
 .course-card {
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: white;
 }
 .course-card .card-img img {
   width: 262px;
   height: 157px;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .card-details {
@@ -991,6 +998,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
   border: none;
 }
 .review .course-card {
+  width: 300px;
   background-color: white;
 }
 
