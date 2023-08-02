@@ -1089,6 +1089,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
             font-size: $size-16;
             border-radius: $size-32 - 2 *2;
             cursor: pointer;
+
+            @media (max-width: 767px) {
+                white-space: nowrap;
+                z-index: 99999;
+            }
+
             &.active{
                 background-color: #F23260;
                 transform: scale(1.12);

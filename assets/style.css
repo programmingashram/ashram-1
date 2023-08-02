@@ -1030,6 +1030,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
   border-radius: 28px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .tab-material ul li {
+    white-space: nowrap;
+    z-index: 99999;
+  }
+}
 .tab-material ul li.active {
   background-color: #F23260;
   transform: scale(1.12);
