@@ -1168,8 +1168,11 @@ body.modal-open .custom-modal .custom-modal-dialog {
 .course .img-icon.ng {
   background-color: rgba(166, 18, 13, 0.29);
 }
-.course .img-icon.react {
+.course .img-icon.react-bg {
   background: rgba(114, 114, 114, 0.368627451);
+}
+.course .img-icon.py {
+  background: rgba(249, 185, 12, 0.11);
 }
 .course .row {
   gap: 10px 20px;

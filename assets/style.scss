@@ -1247,13 +1247,18 @@ body.modal-open .custom-modal .custom-modal-dialog {
         &.ng{
             background-color: rgb(166 18 13 / 29%);
         }
-        &.react{
+        &.react-bg{
             background: #7272725e;
+        }
+        &.py{
+            background: rgb(249 185 12 / 11%);
         }
     }
     .row{
         gap: 10px 20px;
+
     }
+    
     .delta{
         flex-wrap: wrap;
         .card-slot{
