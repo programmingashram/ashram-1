@@ -1,109 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Languages Animation</title>
-  <style>
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tab Slider Stepper</title>
+<style>
+  .tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+  }
 
-.prism {
-  position: relative;
-  width: 300px;
-  height: 260px;
-  margin-top: 50px;
-  transform-style: preserve-3d;
-  transform: rotateX(-15deg) rotateY(45deg);
-}
+  .tab {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-.layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateZ(calc(-150px));
-}
+  .line {
+    height: 2px;
+    width: 30px;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+  }
 
-.layer:nth-child(2) { transform: translateZ(0); }
-.layer:nth-child(3) { transform: translateZ(calc(150px)); }
+  .active-tab {
+    background-color: #007bff;
+    color: white;
+  }
 
-.block {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
-  border: 2px solid #2980b9;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.block:hover {
-  transform: scale(1.1);
-}
-
-.tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 4px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.block:hover .tooltip {
-  opacity: 1;
-}
-
-
-  </style>
+  .active-line {
+    background-color: #007bff;
+  }
+</style>
 </head>
 <body>
-  <div class="prism">
-    <div class="layer">
-      <div class="block" data-tooltip="Beginner Courses"></div>
-    </div>
-    <div class="layer">
-      <div class="block" data-tooltip="Intermediate Courses"></div>
-    </div>
-    <div class="layer">
-      <div class="block" data-tooltip="Advanced Courses"></div>
-    </div>
-  </div>
-  <script>
-    const blocks = document.querySelectorAll('.block');
-
-blocks.forEach((block) => {
-  block.addEventListener('mouseenter', (event) => {
-    const tooltip = document.createElement('div');
-    tooltip.classList.add('tooltip');
-    tooltip.textContent = event.target.getAttribute('data-tooltip');
-    event.target.appendChild(tooltip);
-  });
-
-  block.addEventListener('mouseleave', (event) => {
-    const tooltip = event.target.querySelector('.tooltip');
-    if (tooltip) {
-      tooltip.remove();
-    }
-  });
-});
 
 
-  </script>
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const lines = document.querySelectorAll('.line');
   
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs and lines
+      tabs.forEach(tab => tab.classList.remove('active-tab'));
+      lines.forEach(line => line.classList.remove('active-line'));
+      
+      // Add active class to the clicked tab and lines
+      tab.classList.add('active-tab');
+      for (let i = 0; i < index; i++) {
+        lines[i].classList.add('active-line');
+      }
+    });
+  });
+</script>
 </body>
 </html>

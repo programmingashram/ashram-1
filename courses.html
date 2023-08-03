@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Courses - Stepper</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/style.css">
-  <title>Custom Stepper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=Noto+Serif+Vithkuqi:wght@500&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
+  
 </head>
 <body class="course">
     <header>
@@ -45,43 +52,76 @@
         </div>
     </header>
     
-  
+    <section class="jumbo">
+        <div class="container">
+           <div class="white-box">
+            <div class="flex-item">
+                <h3>Course Structures</h3>
+                <img src="./assets/images/interview composition.svg" alt="">
+            </div>
+           </div>
+        </div>
+    </section>
 
      <article>
         <div class="container">
             <div class="white-box">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="stepper">
-                            <div class="tabs">
-                              <div class="tab active" onclick="showLevel(1)">Level 1</div>
-                              <div class="tab" onclick="showLevel(2)">Level 2</div>
-                              <div class="tab" onclick="showLevel(3)">Level 3</div>
+                    <div class="col-md-4">
+                        <div class="card-slot">
+                            <div class="img-icon front">
+                                <img src="./assets/images/coding sign.svg" alt="">
                             </div>
-                            <div class="content">
-                              <div class="level active" id="level1">
-                                <h2>Level One</h2>
-                                <div class="block">
-                                  <label for="name">Name:</label>
-                                  <input type="text" id="name">
-                                </div>
-                                <div class="block">
-                                  <label for="email">Email:</label>
-                                  <input type="email" id="email">
-                                </div>
-                                <div class="block">
-                                  <label for="phone">Phone:</label>
-                                  <input type="tel" id="phone">
-                                </div>
-                              </div>
-                              <div class="level" id="level2">
-                                <!-- Similar structure for Level Two -->
-                              </div>
-                              <div class="level" id="level3">
-                                <!-- Similar structure for Level Three -->
-                              </div>
+                            <br>
+                            <div class="card-data">
+                                <h4>Frontend</h4>
+                                <p>
+                                    Complete HTML, CSS, Javascript and Angular along with frameworks and Library like Bootstrap & Material.
+                                </p>
                             </div>
-                        </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-slot">
+                            <div class="img-icon data">
+                                <img src="./assets/images/pie chart.svg" alt="">
+                            </div>
+                            <br>
+                            <div class="card-data">
+                                <h4>Backend</h4>
+                                <p>
+                                    Complete Express.js & Node.js. Discover APIs, templating, deployment & much more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-slot">
+                            <div class="img-icon ng">
+                                <img src="./assets/images/angular-icon-logo-png-transparent.png" alt="">
+                            </div>
+                            <br>
+                            <div class="card-data">
+                                <h4>Angular</h4>
+                                <p>
+                                    Learn complete angular, with basic to pro and craete an projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-slot">
+                            <div class="img-icon react">
+                                <img src="./assets/images/React-Icon-Black.png" alt="">
+                            </div>
+                            <br>
+                            <div class="card-data">
+                                <h4>React</h4>
+                                <p>
+                                    Learn complete angular, with basic to pro and craete an projects.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,9 +231,10 @@
         </div>
     </footer>
   <script>
-   function showLevel(level) {
-  const levels = document.querySelectorAll('.level');
-  const tabs = document.querySelectorAll('.tab');
+   function showLevel(stepperIndex, level) {
+  const stepper = document.querySelectorAll('.stepper')[stepperIndex];
+  const levels = stepper.querySelectorAll('.level');
+  const tabs = stepper.querySelectorAll('.tab');
 
   levels.forEach((el, index) => {
     if (index + 1 === level) {
