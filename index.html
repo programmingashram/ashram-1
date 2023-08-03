@@ -43,7 +43,7 @@
                                     <a href="index.html">Ashram</a>
                                 </li>
                                 <li>
-                                    <a href="mentors.html" disabled>Find Mentors</a>
+                                    <a href="courses.html">Courses</a>
                                 </li>
                                 <li>
                                     <a href="practice.html">Practice</a>
@@ -75,17 +75,58 @@
                                 <h3>
                                     Kickstart your learning here
                                 </h3>
-                            <div class="flex-item">
-                                <h5><i class="fa-solid fa-fire "></i> 
-                                <a href="mentors.html">
-                                    Know our Bests Mentors
+                            <div class="flex-item overivew-blk">
+                                <a href="courses.html" data-tooltip="Beginner Courses">
+                                    <div class="card-slot" >
+                                        <div class="layer">
+                                            <div class="flex-item">
+                                                <div>
+                                                    <img src="./assets/images/one.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>Level 
+                                                        <br>
+                                                            One
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </a>
-                            </h5>
-                                <div class="tool-area"> 
-                                    <img src="./assets/images/mentors.svg" alt="" id="tooltipBtn">
-                                    <div id="customTooltip">🤩 "Discover the magical realm of our exceptionally skilled mentors, ready to sprinkle stardust on your talents and transform them into radiant brilliance!"</div>
-                                </div>
-                                
+                                <a href="courses.html">
+                                    <div class="card-slot ">
+                                        <div class="layer">
+                                            <div class="flex-item">
+                                                <div>
+                                                    <img src="./assets/images/purple number two.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>Level  
+                                                        <br> 
+                                                        Second
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="courses.html">
+                                    <div class="card-slot ">
+                                        <div class="layer">
+                                            <div class="flex-item">
+                                                <div>
+                                                    <img src="./assets/images/green number three.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>Level  
+                                                        <br> 
+                                                        Third
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <a href="courses.html" class="btn">View Courses <i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
@@ -1000,34 +1041,6 @@
             }, 5000);
         });
 
-        // Get the tooltip button and the custom tooltip element
-            const tooltipBtn = document.getElementById('tooltipBtn');
-            const customTooltip = document.getElementById('customTooltip');
-
-            customTooltip.style.display = "block"
-            if(customTooltip.style.display = "block"){
-                setTimeout(function(){
-                    customTooltip.style.display = "none"
-                }, 10000);
-            }
-           
-            // Function to show the tooltip
-            function showTooltip() {
-                customTooltip.style.display = 'block';
-                
-            }
-
-            // Function to hide the tooltip
-            function hideTooltip() {
-                customTooltip.style.display = 'none';
-            }
-
-            // Add event listeners to show and hide the tooltip
-            tooltipBtn.addEventListener('mouseenter', showTooltip);
-            tooltipBtn.addEventListener('mouseleave', hideTooltip);
-
-
-
 
             // shred content
             const contentItems = [
@@ -1117,6 +1130,27 @@
                         document.getElementById(tab).classList.add('active');
                     });
                     });
+
+
+                    const blocks = document.querySelectorAll('.block');
+
+                        blocks.forEach((block) => {
+                        block.addEventListener('mouseenter', (event) => {
+                            const tooltip = document.createElement('div');
+                            tooltip.classList.add('tooltip');
+                            tooltip.textContent = event.target.getAttribute('data-tooltip');
+                            event.target.appendChild(tooltip);
+                        });
+
+                        block.addEventListener('mouseleave', (event) => {
+                            const tooltip = event.target.querySelector('.tooltip');
+                            if (tooltip) {
+                            tooltip.remove();
+                            }
+                        });
+                        });
+
+
               
         </script>
        
