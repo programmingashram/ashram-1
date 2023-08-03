@@ -34,13 +34,13 @@
                             <li>
                                 <a href="index.html">Ashram</a>
                             </li>
-                            <li>
-                                <a href="courses.html">Courses</a>
+                            <li class="active-page"> 
+                                <a >Courses</a>
                             </li>
-                            <li class="active-page">
-                                <a>Practice</a>
+                            <li >
+                                <a href="practice.html">Practice</a>
                             </li>
-                            <li>
+                            <li >
                                 <a href="certificate.html">Certificates</a>
                             </li>
                             <li>
@@ -48,6 +48,9 @@
                             </li>
                        </ul>
                     </div>
+                    <a href="#" class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -287,6 +290,11 @@
     }
   });
 }
+
+
+$('.menu').click(function(){
+                            $('.menu-side').toggle();
+                       })
 
   </script>
 </body>

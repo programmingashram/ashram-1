@@ -23,6 +23,7 @@
         </script>
     </head>
     <body>
+        <div class="custom-cursor"></div>
         <header>
             <div class="container">
                 <div class="row">
@@ -54,8 +55,11 @@
                                 <li>
                                     <a href="interview.html">Mock Interviews</a>
                                 </li>
-                        </ul>
+                            </ul>
                         </div>
+                        <a href="#" class="menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1184,8 +1188,16 @@
                             tooltip.style.display = 'none';
                         });
                         });
+
+
+
+                       $('.menu').click(function(){
+                            $('.menu-side').toggle();
+                       })
                     
         </script>
+
+
        
     </body>
 </html>

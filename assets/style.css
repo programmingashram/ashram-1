@@ -1,8 +1,5 @@
-html {
-  cursor: url("./images/up-sign.png"), auto;
-}
-
 body {
+  cursor: url("/up-sign.png"), auto;
   font-family: "Dancing Script", cursive;
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Noto Sans Cherokee", sans-serif;
@@ -98,6 +95,10 @@ body {
   }
 }
 
+.menu {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
   .white-box, .blue-box, .light-p-box, .perpul-box {
     padding: 50px 15px !important;
@@ -120,7 +121,28 @@ body {
   }
   .menu-side {
     display: none;
+    display: none;
+    height: 100vh;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 0px;
   }
+  .menu-side ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .menu-side ~ .menu {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+  .menu-side .flex-item {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
   .toolBox .flex-item {
     gap: 10px 10px;
     flex-wrap: wrap;

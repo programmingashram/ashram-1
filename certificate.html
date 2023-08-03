@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate - Become a Certified Developer with Ashram</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Noto+Sans+Cherokee:wght@300&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+Tangsa&family=Noto+Serif+Khitan+Small+Script&family=PT+Serif&family=Poppins:wght@300&family=Roboto+Slab&family=Ysabeau+Infant:wght@400;500&display=swap" rel="stylesheet">
@@ -44,6 +45,9 @@
                             </li>
                        </ul>
                     </div>
+                    <a href="#" class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -244,5 +248,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $('.menu').click(function(){
+                            $('.menu-side').toggle();
+                       })
+    </script>
 </body>
 </html>
