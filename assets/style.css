@@ -1274,4 +1274,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.course .card-center {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
