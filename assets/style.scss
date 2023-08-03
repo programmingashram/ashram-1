@@ -1,3 +1,7 @@
+html{
+    cursor: url('./images/cursor.png'), default ;
+}
+
 $color-green:#3BB44A;
 $color-green-light: rgba(59, 180, 74, 1);
 $color-link:rgba(0, 17, 168, 1);
@@ -14,6 +18,7 @@ $size-4: 4px;
 $size-32: $size-16 * 2;
 
 body{
+  
     font-family: 'Dancing Script', cursive;
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Noto Sans Cherokee', sans-serif;
@@ -25,6 +30,7 @@ body{
     font-family: 'PT Serif', serif;
     font-family: 'Roboto Slab', serif;
     font-family: 'Ysabeau Infant', sans-serif;
+   
 }
 
 *{margin: 0;box-sizing: border-box;}

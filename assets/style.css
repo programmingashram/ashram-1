@@ -1,3 +1,7 @@
+html {
+  cursor: url("./images/cursor.png"), default;
+}
+
 body {
   font-family: "Dancing Script", cursive;
   font-family: "Nanum Gothic", sans-serif;
