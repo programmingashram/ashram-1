@@ -6,7 +6,7 @@
         <title>Welcome - Programing Ashram</title>
         <meta property="og:title" content="IT Training Courses | Mock Interviews | Job Preparation | JavaScript | HTML | Angular | React">
         <meta property="og:description" content="Offering comprehensive IT training courses, mock interviews, and job preparation services. Learn Java Script, HTML, Angular, and React to boost your career in the tech industry.">
-        <meta property="og:image" content="https://studio.uxpincdn.com/studio/wp-content/uploads/2022/09/Turn-Figma-Designs-into-Interactive-Prototypes.png">
+        <meta property="og:image" content="./assets/images/69ca05c5-7ea9-4510-bd31-a76ca6b2430a.jpg">
         <meta property="og:url" content="https://programmingashram.in/">
         <meta name="robots" content="index, follow">
         <meta property="og:type" content="website">
@@ -76,7 +76,7 @@
                                     Kickstart your learning here
                                 </h3>
                             <div class="flex-item overivew-blk">
-                                <a href="courses.html" data-tooltip="Beginner Courses">
+                                <a href="courses.html"  class="tooltip-trigger" data-tooltip="Tooltip 1">
                                     <div class="card-slot" >
                                         <div class="layer">
                                             <div class="flex-item">
@@ -92,9 +92,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="tooltipcontent">
+                                        <p>
+                                            <strong>Learning</strong>: In this Level 1, you'll immerse yourself in the world of programming languages, learn th concepts and syntax. You'll build a strong coding base, setting the stage for advanced development skills.
+                                        </p>
+                                    </div>
                                 </a>
-                                <a href="courses.html">
-                                    <div class="card-slot ">
+                                <div class="tooltip" id="tooltip">Tooltip Text</div>
+                                <a href="courses.html"  class="tooltip-trigger" data-tooltip="Tooltip 1">
+                                    <div class="card-slot">
                                         <div class="layer">
                                             <div class="flex-item">
                                                 <div>
@@ -109,8 +115,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="tooltipcontent">
+                                        <p>
+                                            <strong>Practice : </strong> in this Level 2  involves your skills through hands-on projects. You'll apply your knowledge to create generic applications, gaining practical experience and problem-solving abilities.
+                                        </p>
+                                    </div>
                                 </a>
-                                <a href="courses.html">
+                                <a href="courses.html"  class="tooltip-trigger" data-tooltip="Tooltip 1">
                                     <div class="card-slot ">
                                         <div class="layer">
                                             <div class="flex-item">
@@ -126,9 +137,16 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="tooltipcontent">
+                                        <p>
+                                            <strong>Job Placement:</strong> This ultimate stage centers on showcase on your expertise to attain a position within the IT industry. You'll enhance your portfolio, refine interview techniques, and adeptly steer through the job market, culminating in the achievement of a gratifying role that harmonizes with your programming aptitude.
+                                        </p>
+                                    </div>
                                 </a>
+                            
                             </div>
-                            <a href="courses.html" class="btn">View Courses <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="courses.html" class="btn">View Courses <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -1150,8 +1168,23 @@
                         });
                         });
 
+                        const tooltipTriggers = document.querySelectorAll('.tooltip-trigger');
+                        const tooltip = document.getElementById('tooltip');
 
-              
+                        tooltipTriggers.forEach(trigger => {
+                        trigger.addEventListener('mouseenter', () => {
+                            const tooltipText = trigger.getAttribute('data-tooltip');
+                            tooltip.textContent = tooltipText;
+                            tooltip.style.display = 'block';
+                            tooltip.style.left = trigger.getBoundingClientRect().left + 'px';
+                            tooltip.style.top = trigger.getBoundingClientRect().bottom + 'px';
+                        });
+
+                        trigger.addEventListener('mouseleave', () => {
+                            tooltip.style.display = 'none';
+                        });
+                        });
+                    
         </script>
        
     </body>

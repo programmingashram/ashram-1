@@ -1,68 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tab Slider Stepper</title>
-<style>
-  .tab-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  .tab {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .line {
-    height: 2px;
-    width: 30px;
-    background-color: #ccc;
-    transition: background-color 0.3s;
-  }
-
-  .active-tab {
-    background-color: #007bff;
-    color: white;
-  }
-
-  .active-line {
-    background-color: #007bff;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Custom Tooltips</title>
 </head>
 <body>
+  <div class="tooltip-container">
+    <span class="tooltip-trigger" data-tooltip="Tooltip 1">Hover me</span>
+    <span class="tooltip-trigger" data-tooltip="Tooltip 2">Hover me</span>
+    <span class="tooltip-trigger" data-tooltip="Tooltip 3">Hover me</span>
+  </div>
 
+  <div class="tooltip" id="tooltip">Tooltip Text</div>
 
-<script>
-  const tabs = document.querySelectorAll('.tab');
-  const lines = document.querySelectorAll('.line');
-  
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-      // Remove active class from all tabs and lines
-      tabs.forEach(tab => tab.classList.remove('active-tab'));
-      lines.forEach(line => line.classList.remove('active-line'));
-      
-      // Add active class to the clicked tab and lines
-      tab.classList.add('active-tab');
-      for (let i = 0; i < index; i++) {
-        lines[i].classList.add('active-line');
-      }
+  <script>
+    const tooltipTriggers = document.querySelectorAll('.tooltip-trigger');
+    const tooltip = document.getElementById('tooltip');
+
+    tooltipTriggers.forEach(trigger => {
+      trigger.addEventListener('mouseenter', () => {
+        const tooltipText = trigger.getAttribute('data-tooltip');
+        tooltip.textContent = tooltipText;
+        tooltip.style.display = 'block';
+        tooltip.style.left = trigger.getBoundingClientRect().left + 'px';
+        tooltip.style.top = trigger.getBoundingClientRect().bottom + 'px';
+      });
+
+      trigger.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
     });
-  });
-</script>
+
+  </script>
 </body>
 </html>
