@@ -905,11 +905,11 @@ a {
 .tooltip-trigger span {
   position: absolute;
   top: -20px;
-  display: none;
+  display: none !important;
 }
 @media (max-width: 767px) {
   .tooltip-trigger span {
-    display: block;
+    display: block !important;
   }
 }
 

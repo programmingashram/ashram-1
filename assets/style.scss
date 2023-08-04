@@ -953,9 +953,9 @@ a{
     span{
     position: absolute;
     top: -20px;
-        display: none;
+        display: none !important;
         @media(max-width: 767px){
-            display: block;
+            display: block !important;
         }
     }
 }
