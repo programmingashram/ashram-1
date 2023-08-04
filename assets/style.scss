@@ -1276,18 +1276,20 @@ body.modal-open .custom-modal .custom-modal-dialog {
 
 
 
-
+.img{
+    width: 100%;
+}
 .course{
     .img-icon{
         width: 67px;
-        padding: 13px 15px;
+        padding: 13px 13px;
         border-radius: 100%;
         height: 67px;
         display: flex;
         align-items: center;
         height: 67px;
         img{
-            width: 35px;
+            width: 40px;
         }
         &.front{
             background: rgba(87, 97, 195, 0.1019607843);

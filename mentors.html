@@ -379,16 +379,16 @@
             var title = accordion.title.toLowerCase();
             return title.includes(searchText) || !searchText;
         };
-    $http({
-        method : "GET",
-        url : "./data.json"
-    }).then(function mySuccess(response) {
-        $scope.myWelcome = response.data;
-        console.log($scope.myWelcome)
-    }, function myError(response) {
-        $scope.myWelcome = response.statusText;
-    });
-    });
+        $http({
+            method : "GET",
+            url : "./data.json"
+        }).then(function mySuccess(response) {
+            $scope.myWelcome = response.data;
+            console.log($scope.myWelcome)
+        }, function myError(response) {
+            $scope.myWelcome = response.statusText;
+        });
+        });
 
 
     </script>
