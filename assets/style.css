@@ -1338,4 +1338,8 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .course .card-center {
   text-align: center;
+}
+
+.review p {
+  font-size: 11px;
 }/*# sourceMappingURL=style.css.map */
