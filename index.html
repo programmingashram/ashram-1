@@ -167,7 +167,8 @@
                                     & <span class="slide-animation">IT Training</span> Platform 
                                 </h2>
                                 <h3>
-                                    Kickstart your learning here
+                                    Kickstart your learning 
+                              
                                 </h3>
                             <div class="flex-item overivew-blk">
                                 <a href="courses.html"  class="tooltip-trigger" data-tooltip="Tooltip 1">
@@ -647,33 +648,6 @@
         </article>
         <br><br><br><b></b> <!--Removable Content-->
 
-        <!-- <article class="banner-card">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card-i">
-                            <a href="">
-                                <img src="./assets/images/dimg-card-1.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-i">
-                            <a href="">
-                                <img src="./assets/images/Section-2.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-i">
-                            <a href="">
-                                <img src="./assets/images/Section-3.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article> -->
 
         <article>
             <div class="container">
@@ -1055,10 +1029,49 @@
            </div>
         </div>
 
-
-      
+        <div id="modalContainer" class="modal-container open">
+            <div class="modal-content open">
+                <i id="closeModalBtn" class="fa-solid fa-close close-btn"></i>
+               <div>
+                <h3>Welcome to Ashram</h3>
+                <p>
+                    Are you curious about coding and want to dive into the exciting world of technology? Look no further! Our <strong>Programming Ashram</strong> is the perfect place for beginners and experienced learners alike to explore the magic of programming.
+                </p>
+               </div>
+               <br>
+               <div class="grid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>🚀 Why Wait? Join Us Today and Unleash Your Coding Potential! 🚀</p>
+                            <div>  <a href="https://forms.gle/fT1FJSDQdrzSddxa6" class="btn-1">🔥 Join Now</a></div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>🤝 Get Personalized Help with One-to-One Doubt Clarification 🤝</p>
+                            <div>  <a href="https://forms.gle/fT1FJSDQdrzSddxa6" class="btn-1">🔥 Connect Now</a></div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
 
         <script>
+        
+        // const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalContainer = document.getElementById('modalContainer');
+        const modalContent = document.querySelector('.modal-content');
+
+        // openModalBtn.addEventListener('click', () => {
+        //     modalContainer.classList.add('open');
+        //     modalContent.classList.add('open');
+        // });
+
+        closeModalBtn.addEventListener('click', () => {
+            modalContainer.classList.remove('open');
+            modalContent.classList.remove('open');
+        });
+
+
         function setupCarousel(carousel) {
             let carouselWrapper = carousel.querySelector('.carousel-wrapper');
             let carouselControls = carousel.querySelectorAll('.carousel-control');
@@ -1128,52 +1141,6 @@
             }
 
 
-            // Function to dynamically generate content items and sharing buttons
-                function generateContentItems() {
-                    let container = document.querySelector('#book-slot .row');
-                  
-                    for(let item = 0; item < contentItems.length; item++){
-                        container.innerHTML +=`
-                        <div class="col-md-4">
-                            <div class="card-slot">
-                                <div class="flex-item">
-                                    <h3 class="flex-item">
-                                        <img src='${contentItems[item].imageUrl}' alt="" class="circle-img">
-                                        ${contentItems[item].title}
-                                    </h3>
-                                    <div>
-                                        <span class="badges-outline perpul">
-                                            <i class="fa-solid fa-book"></i> e-book
-                                        </span>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="detai">
-                                    <p>
-                                        ${contentItems[item].description}
-                                    </p>
-                                </div>
-                                <div class="flex-item alin">
-                                    <div>
-                                        <p><b> Rs. ${contentItems[item].price}</b></p>    
-                                    </div>
-                                    <div>
-                                        <a class='green' onclick="shareOnWhatsApp('${contentItems[item].title}', '${contentItems[item].url}', '${contentItems[item].sharedImgUrl}')">
-                                          Share On  <i class='fa-brands fa-whatsapp green'></i>    
-                                        </a>  
-                                        &nbsp;
-                                        <a href="e-books.html" class="btn" >Get The E-book</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        `;
-                    }
-                   
-                }
-
-                // Call the function to generate content items and sharing buttons
-                generateContentItems();
 
                 const tabButtons = document.querySelectorAll('.tab-button');
 
@@ -1234,6 +1201,8 @@
                        $('.menu').click(function(){
                             $('.menu-side').toggle();
                        })
+
+
                     
         </script>
 
