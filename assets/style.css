@@ -1408,4 +1408,10 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .white-box.grap .carousel-slide, .grap.perpul-box .carousel-slide, .grap.light-p-box .carousel-slide, .grap.blue-box .carousel-slide {
   padding-left: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-controls {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

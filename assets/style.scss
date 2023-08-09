@@ -1506,3 +1506,9 @@ body.modal-open .custom-modal .custom-modal-dialog {
     }
 
 }
+
+@media(max-width: 767px){
+    .carousel-controls{
+        display: none;
+    }
+}
