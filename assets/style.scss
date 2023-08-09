@@ -1489,3 +1489,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
     text-align: center;
 }
 
+.white-box {
+    &.grap{
+        background: linear-gradient(to right, #6441a5, #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        h3, a{
+            color: white;
+        }
+    }
+
+}

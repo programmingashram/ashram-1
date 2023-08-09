@@ -1393,4 +1393,11 @@ body.modal-open .custom-modal .custom-modal-dialog {
 
 .grid {
   text-align: center;
+}
+
+.white-box.grap, .grap.perpul-box, .grap.light-p-box, .grap.blue-box {
+  background: linear-gradient(to right, #6441a5, #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.white-box.grap h3, .grap.perpul-box h3, .grap.light-p-box h3, .grap.blue-box h3, .white-box.grap a, .grap.perpul-box a, .grap.light-p-box a, .grap.blue-box a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
