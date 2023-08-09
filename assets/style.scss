@@ -1495,6 +1495,14 @@ body.modal-open .custom-modal .custom-modal-dialog {
         h3, a{
             color: white;
         }
+        .col-md-4{
+            @media (max-width: 767px) {
+                margin-top: 1rem;
+            }
+        }
+        .carousel-slide{
+            padding-left: 1.5rem;
+        }
     }
 
 }

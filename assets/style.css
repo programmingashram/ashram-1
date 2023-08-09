@@ -1400,4 +1400,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 .white-box.grap h3, .grap.perpul-box h3, .grap.light-p-box h3, .grap.blue-box h3, .white-box.grap a, .grap.perpul-box a, .grap.light-p-box a, .grap.blue-box a {
   color: white;
+}
+@media (max-width: 767px) {
+  .white-box.grap .col-md-4, .grap.perpul-box .col-md-4, .grap.light-p-box .col-md-4, .grap.blue-box .col-md-4 {
+    margin-top: 1rem;
+  }
+}
+.white-box.grap .carousel-slide, .grap.perpul-box .carousel-slide, .grap.light-p-box .carousel-slide, .grap.blue-box .carousel-slide {
+  padding-left: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
