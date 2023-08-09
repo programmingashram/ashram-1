@@ -1176,6 +1176,10 @@ body.modal-open .custom-modal .custom-modal-dialog {
   display: block;
   width: 41px;
   margin: 0 auto;
+  outline: 2px solid green;
+  outline-offset: 3px;
+  height: 41px;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .review .course-card {
