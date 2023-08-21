@@ -1262,10 +1262,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
         border: 1px solid rgba(0, 0, 0, 0.08);
         margin-top: 1rem;
     }
+  @media(max-width : 767px){
     .flex-item{
         flex-wrap: wrap;
         gap: 30px;
     }
+  }
 }
 .review{
     text-align: center;

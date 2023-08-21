@@ -1190,9 +1190,11 @@ body.modal-open .custom-modal .custom-modal-dialog {
   border: 1px solid rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
 }
-.compet .flex-item {
-  flex-wrap: wrap;
-  gap: 30px;
+@media (max-width: 767px) {
+  .compet .flex-item {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .review {
