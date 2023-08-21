@@ -1168,6 +1168,33 @@ body.modal-open .custom-modal .custom-modal-dialog {
   font-size: 12px;
 }
 
+.compet img {
+  width: 100% !important;
+}
+.compet ol {
+  padding-left: 10px;
+}
+.compet .row {
+  align-items: center;
+}
+.compet .disableBlok {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.compet #countdown {
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 4px 90px 0px rgba(217, 217, 217, 0.28);
+  border: 1px solid gray;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+.compet .flex-item {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .review {
   text-align: center;
 }
