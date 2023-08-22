@@ -1182,13 +1182,27 @@ body.modal-open .custom-modal .custom-modal-dialog {
   pointer-events: none;
 }
 .compet #countdown {
-  background: white;
+  background: #3BB44A;
+  color: white;
   padding: 10px;
   box-shadow: 0px 4px 90px 0px rgba(217, 217, 217, 0.28);
   border: 1px solid gray;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
+}
+.compet .candi {
+  margin: 10px 0;
+  overflow: scroll;
+}
+.compet .candi h5 {
+  white-space: nowrap;
+}
+.compet .candi img {
+  width: 25px !important;
+}
+.compet .candi::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 767px) {
   .compet .flex-item {
