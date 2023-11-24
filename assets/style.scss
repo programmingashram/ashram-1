@@ -59,8 +59,10 @@ body{background-color: #F9F8F8;;}
     width: 90px;
 }
 .practice-img{
-    width: 100%;
+    width: 94px;
     margin-bottom: $size-8;
+    border-radius: 8px;
+    display: block;
 }
 
 .col-md-6{width: 50%; float: left;}
